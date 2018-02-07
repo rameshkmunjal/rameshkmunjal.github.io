@@ -1,0 +1,147 @@
+/*Common CSS Settings */
+
+body { 
+	position:relative;  
+}
+h1 { 
+	text-align:center; 
+}
+
+p { 
+	text-align:center; 
+}
+.portfolio-para {
+	padding-top:12.5rem; 
+	height:30.0rem;
+}
+
+
+/*Specific CSS Settings */
+
+#header { 
+	width:100%; 
+	position:fixed; 
+	z-index:1; 
+}
+
+#intro { 
+	background:black; 
+	color:white;
+}
+
+#intro img { 
+	float:left; 
+	margin-top:0.5rem; 
+}
+
+#intro  h1 { 
+	float:left;
+	margin-top:2.0rem; 
+	margin-left:1.25rem;
+}
+
+#navbar { 
+	background:#eee; 
+}
+
+#navbar  ul { 
+	float:right; 
+	list-style-type:none;  
+}
+
+#navbar  li { 
+	float:left;  
+	display:inline; 
+	margin-left:2.0rem; 
+	padding-top:0.75rem; 
+	font-weight:bold;
+}
+
+#navbar  li  a{ 
+	color:black; 
+	text-decoration:none;
+}
+
+
+#about-info p { 
+	text-align:justify;
+	padding: 0  3.0rem;
+}
+
+
+
+#about-info {  
+	background:#fdf; 
+}
+
+#skills {  
+	background: #ffb; 
+}
+
+#projects {   
+	background: #afd; 
+}
+#blogs {   
+	background: #efb; 
+}
+
+#contact {   
+	background: #dff; 
+}
+
+
+#footer {	 
+	height:2.0rem;   
+	background: black; 
+	text-align:center; 
+	color:white;
+}
+
+/* Media CSS Settings */
+
+@media screen and (max-width:990px)
+{
+	#navbar ul { 
+		margin-right:0px; 
+	}
+}
+
+@media screen and (max-width:768px)
+{
+	#header  h1 { 
+		font-size:200%;
+	}
+}
+
+
+@media screen and (max-width:500px)
+{
+	#intro  h1 { 
+		font-size:120%; 
+		margin-left:2.5rem; 
+		margin-top:0.75rem;
+	}
+
+	#about-info { 
+		padding-top:20.0rem;
+		height:35.0rem;
+	}
+
+	#navbar ul { 
+		clear:right; 
+		float:left;
+		width:6.0rem;
+	}
+
+	#navbar li { 
+		font-size:0.75rem;  
+		padding-top:0.75rem; 
+		display:block; 
+	}
+
+	#intro img {  
+		margin-left:5.0rem;
+	}
+
+}
+
