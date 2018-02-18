@@ -1,7 +1,8 @@
 /*Common CSS Settings */
 
 body { 
-	position:relative;  
+	position:relative;
+	background:#ddd;
 }
 h1 { 
 	text-align:center; 
@@ -41,7 +42,7 @@ p {
 }
 
 #navbar { 
-	background:#eee; 
+	background:rgb(50, 50, 50); 
 }
 
 #navbar  ul { 
@@ -58,35 +59,53 @@ p {
 }
 
 #navbar  li  a{ 
-	color:black; 
+	color:white; 
 	text-decoration:none;
 }
 
 
 #about-info p { 
-	text-align:justify;
-	padding: 0  3.0rem;
+	text-align:center;
+	padding: 0  6.0rem;
+	font-size:1.0rem;
+	
 }
 
+#about-info h1{
+	text-align:center;
+
+}
 
 
 #about-info {  
-	background:#fdf; 
+	background:rgb(7, 34, 76); 
+	color:white;	 
+	height:50.0rem;
+	padding-top:20.0rem;
+	
 }
 
 #skills {  
-	background: #ffb; 
+	background:rgb(9, 101, 239); 
+	color:white;
 }
 
 #projects {   
-	background: #afd; 
+	background:rgb(7, 34, 76);
+	color:white;
 }
 #blogs {   
-	background: #efb; 
+	background:rgb(9, 101, 239);
+	color:white;
+}
+
+#projects a, #blogs a{
+	color:white;
 }
 
 #contact {   
-	background: #dff; 
+	background:rgb(7, 34, 76);
+	color:white;
 }
 
 
@@ -125,6 +144,11 @@ p {
 	#about-info { 
 		padding-top:20.0rem;
 		height:35.0rem;
+	}
+	#about-info p { 
+	text-align:center;
+	padding: 0  3.0rem;
+	font-size:1.0rem;	
 	}
 
 	#navbar ul { 
