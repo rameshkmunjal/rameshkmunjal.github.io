@@ -1,44 +1,44 @@
-# AssignmentLevel-3
+# AssignmentLevel-4
 
-Edwisor course Assignment Level 3
+Edwisor course Assignment Level 4
 
-## Problem
-	Using Responsive Web Design that you have learnt in this level, you are required to create
-	a single page website of your own which will serve as your portfolio. It should have the 
-	following sections at minimum -
- 
-	1) A section describing yourself with your photo. You are allowed to write anything about you 
-      	   including your hobbies etc.
-	2) A section describing your interests in technologies. You can write names of all technologies
-	   that you are interested in learning now and in future. You may use icons and images etc. to
-	   make the view more appealing.
-	3) A section describing your professional experience (if you have any) till now.
-	4) A project section which contains all the web related work you have done till now ( if your don't 
-	   have any , just mention this porfolio website itself that your are creating.
+## Problem Statement-
+	Using Bootstrap skills that you have learnt in this level, you are required to create a
+	fully responsive design of WhatsApp. You are supposed to get the basic layout from the 
+	mobile application and the web application. You are free to change the theme colors, 
+	Icons, message features etc. 
+	
+	Your submission should have following pages-
+	
+	1) A main page displaying all the chat messages.
+	2) A chat view page containing messages with an individulal or a group.
+	3) A view to change the profile picture.
+	4) Another main page view which displays all the chat messages but contains
+	   some unread messages from some people. 
 	   
-## Synopsis	  
-	1. We have divided our portfolio page into 5 sections - Home Page, About Me, Skills, Experience, Projects.
-	2. We have created a Navigation Bar to navigate to these sections.
-	3. This Navigation Bar is available only for large screens.
-	4. For screen sizes below 990px , we have created a icon-bar to help navigation.
-	5. As the icon clicked , Nav slider is opened .
-	6. If close button is clicked , Nav Slider disappear.
-	7. We have used Javascript for above functionality.
-	8. Skills have been displayed through images of technologies acquired / to be acquired.
-	9. To show Projects completed , images and brief about these projects have been displayed.
-	10.CSS Flexbox properties, meta viewport and media queries  have been used to make page responsive.
-	11.To enhance responsiveness - vw, vh , rem etc. have been used.
+	You have to create this website and then push it to a github repository and then host it 
+	using Github pages.	
+	   
+## Synopsis	
+	1) We have used Bootstrap skills and created this fully responsive design of WhatsApp . 
+	2) We have used Bootstrap to create nav, modal, table, form and grid layout etc.
+	3) We have added functionality to this website to create it a real-like chat site.
+	4) For this purpose , we have added two JSON format data files .
+	5) File - users - is having details about users including list of their friends in an array. 
+	6) File - chats - is having details about messages shared between two users.
+	7) We have created a separate file of Javascript functions that can be used like a utility in other programmes too.
+	8) We have created a separate file of common functions that are shared by one or more other functions.
+	9) mainFunctions file is having  functions used to create pages.
+   	10) The site can be further scaled up into a full fledged chat site with addition of back-end technology.	
 	
 ## Technical Specifications
-
-    	1. We have used HTML , CSS and Javascript with ES6 features.
-	2. We have used CSS flexbox rules to make website responsive.
+	Technologies used in this project are - HTML, CSS, Bootstrap, Javascript.   
 
 ## Installation
 
     	Complete code of this api has been uploaded to my github page and address is :
  
-	https://github.com/rameshkmunjal/MeanStackAssignment_3
+		https://github.com/rameshkmunjal/MeanStackAssignment_4	
 
 ## Contributors
 

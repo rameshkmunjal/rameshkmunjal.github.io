@@ -1,211 +1,148 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html5>
+<html lang="en">
 <head>
-	<meta charset="utf-8" />
-	<!--meta settings for all screen sizes    -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- link google CDN for google fonts   -->
-	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-	<!--Embedding stylesheet externally   -->
-	<link rel="stylesheet" href="portfolio.css" />
+	<meta charset="utf-8">
+	<!--To make responsive using viewport and to make mobile first using user-scalable -->
+	<meta name="viewport" content="width=device-width, initial-scale=1,  maximum-scale=1.0, user-scalable=no">
+    <!-- linking with Bootstrap CSS CDN-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- embedding custom CSS file  -->
+	<link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-<!--Creating three bars icons for medium to extra small sizes    -->
-<div class="nav-icon-box" id="navIconBox" >
-	<div id="icon-box">
-		<div class="icon-bar"></div>
-		<div class="icon-bar"></div>
-		<div class="icon-bar"></div>
-	</div>
-</div><!--- end of nav-icon-box ----->
+<!---Start of Container Div-- Creating Login Form --->
+<h1 id="loginPageTitle" >Welcome To ChatApp</h1>
+<div class="container" id="formContainer">
+	<!--To position form in middle of page   --->
+	<div class="login-form col-md-4 col-md-offset-4"  >		
+		<form id="loginForm">
+			<h1 class="title">Login Here</h1>
+			<div class="form-group">
+				<label>Mobile Number</label>
+				<input id="mobile" type="text" name="" class="form-control" />		
+			</div>			
+			<div class="form-group">
+				<label>Password</label>
+				<input id="password" type="password" name="" class="form-control" />		
+			</div>			
+		
+			<button id="loginBtn"  class="btn  btn-block">Login</button>		
+		</form>
+	</div>	
+</div><!----End of Container Div   ---->
 
-<!-- Creating NAV Slider - it will appear on click of nav-icons   -->
-<div id="mySidenav" class="sidenav">
-	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	<a href="#home-page">Home</a>
-	<a href="#about">About Me</a>
-	<a href="#skills">Skills</a>
-	<a href="#experience">Experience</a>
-	<a href="#projects">Projects</a> 
+<!---Start of Container Div -- Creating Modal - it will contain user mobile and password for help ----->
+<div class="container" id="modalContainer">
+	<button  id="btnClick" type="button" class="btn" data-toggle="modal" data-target="#modal-1">
+	Get Help</button>
+	<div class="modal " id="modal-1">
+		<div class="modal-dialog modal-md ">
+			<div class="modal-content">
+				<div class="modal-header">					
+					<h3 class="modal-title">User Details</h3>
+					<button type="button"  class="close" data-dismiss="modal">&times;</button>
+				</div>
+				
+				<div class="modal-body" id="table-box">
+					<!----List of Mobile Numbers and Password to be displayed here  ---->
+				</div>
+				
+				<div class="modal-footer">
+					<a href="#" class="btn btn-default" data-dismiss="modal">Close</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><!----End of Container Div   ---->
+<!----Start of mainPage section - visible only after successful login of user   ---->
+<section id="mainPage">
+
+<div class="container" id="nav-box"><!----Container Div having NAV  ---->
+	<nav class="navbar">  
+		<div class="navbar-header"><!----icon bar will appear in small and extra small screen   ---->
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>                        
+		  </button>
+		  <a class="navbar-brand" id="profileImgBox" href="#"></a>
+		</div>
+		<!----NAV will collapse in small and extra small screen  ---->
+		<div class="collapse navbar-collapse" id="myNavbar">
+			  <ul class="nav navbar-nav">				
+				<li><a id="home" href="#">Home</a></li>				
+				<li><a id="profile" href="#">Profile</a></li>
+				<li><a id="unread" href="#">What's New</a></li>
+			  </ul>
+			  <!----separate ul for logout menu   ---->
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="index.html" >Log out</a></li>
+			  </ul>
+		</div>		  
+	</nav>
 </div>
-<!--- end of NAV Slider ----->
+<!----Container Div used to create page heading - will replace nav   ---->
+<div class="container" id="userSection">
+	<div class="row">		
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 " id="backBtnBox">
+					<a id="backBtn">&larr;</a><!----back button to navigate to main page ---->
+				</div>
+				
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 " id="userImgBox">
+					<!----page related image here   ---->
+				</div>
+				
+				<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 " id="pageNameBox">
+					<!----page related name here   ---->
+				</div>						
+	</div>
+</div>
+<!----Container Div to display as requested by user  ---->
+<div class="container" id="displayContainer">
+	<div class="row" id="displayArea">				
+	<!----This is important Div - information for display to be inserted in it   ---->	
+	</div>
+</div>
 
-<!------ inline NAV Menu bar for Large screen size  ------>
-<div class="nav-container">	
-	<a href="#home-page">Home</a>
-	<a href="#about">About Me</a>
-	<a href="#skills">Skills</a>
-	<a href="#experience">Experience</a>
-	<a href="#projects">Projects</a>	
-</div><!--- end of nav-container ----->
+<!---- Container Div visible only in 121ChatPage ,  to facilitate sending of message to friend  ---->
+<div class="container" id="sendMsgContainer">
+	<div class="row">
+		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2"  >	<!----to keep input box in center   ---->
+			<div class="row" id="sendMsgRow">
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" >
+					<img src="images/emoji.png" width="20" height="20" /><!----emoji images here  ---->
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 " id="sendMsgInput">					
+					<input id="inputBox" type="text" placeholder="Write msg..." />	<!----Write msg here   ---->				
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 " >	
+					<img id="sendIcon" src="images/send.png" width="20" height="20" class="pull-right img-responsive"> <!----send msg icon here   ---->
+					<img id="cameraIcon" src="images/camera.png" width="20" height="20"class="pull-right img-responsive"> <!----camera icon here  ---->
+					<img id="attachment" src="images/attachment.png" width="20" height="20" class="pull-right img-responsive"> <!----attachment icon here  ---->					
+				</div>
+			</div>
+		</div>								
+	</div>
+</div>
 
-<!-------Creating Home Page Section ------>
-<div class="home-container color-white" id="home-page">	
-	<div class="title-box">
-		<p class="top-line center-text">PORTFOLIO<p>
-		<p class="home-title center-text font-cursive">Web Development  </p>
-		<p class="home-sub-title center-text font-cursive">** Front End and Back End  **</p>
-		<p class="center-text">- by Ramesh Kumar Munjal</p>
-	</div>
-</div><!--- end of Home Section ----->
-
-<!-------------Creating About Me Section ------------------>
-<h1 id="about"class="center-text color-white">About Me</h1>
-<div class="intro-container color-white" >	
-	<!------------div contains profile image   ------------->
-	<div class="intro-image-box">
-		<img src="images/ramesh.png" alt="intro image" />		
-	</div><!-- div ends --->
-	
-	<!------------ div contains introduction  ------------->
-	<div class="intro-details font-cursive">
-		<p>A player in field mounts strike, dribbles, dodges and shoots the goal. </p>
-		<p>I like coding to solve riddles and construct something interesting.   </p>		
-		<p>An avid photographer, nature-lover.    </p>				
-		<p>You can reach me at: </p>
-		<!------------ div contains Social Media icons  ------------->	
-		<div class="sm-icon-group">
-				<a href="https://goo.gl/fsuamz"><img src="images/fb.png" class="sm-icon"></a>
-				<a href="https://goo.gl/FiUEs6"><img src="images/twitter.png" class="sm-icon"></a>
-				<a href="https://goo.gl/t6gVh4"><img src="images/linkedin.png" class="sm-icon"></a>
-				<a href="https://goo.gl/hZjy4i"><img src="images/instagram.png" class="sm-icon"></a>
-				<a href="https://goo.gl/kaMJhW"><img src="images/github.png" class="sm-icon"></a>
-		</div><!------------ div ends  ------------->
-	</div>	<!------------ intro details ends  ------------->
-</div><!--- end of About Me Section ----->
-
-<!--------------- Creating Skills Section ------------------->
-<h1 id="skills" class="center-text color-white">Skills</h1>
-<div class="skills-container" >
-	<div class="skills-box">
-		<img src="images/html.png" alt="skills-image"/>
-	</div>
-	
-	<div class="skills-box">
-		<img src="images/css.jpg" alt="skills-image"/>
-	</div>
-	
-	<div class="skills-box">
-		<img src="images/js.jpg" alt="skills-image"/>
-	</div>
-	
-	<div class="skills-box">
-		<img src="images/jquery.png" alt="skills-image"/>
-	</div>
-	
-	<div class="skills-box">
-		<img src="images/bootstrap.png" alt="skills-image"/>
-	</div>
-	
-	<div class="skills-box">
-		<img src="images/angular.png" alt="skills-image"/>
-	</div>
-	
-	<div class="skills-box">
-		<img src="images/nodejs.png" alt="skills-image"/>
-	</div>
-	
-	<div class="skills-box">
-		<img src="images/php.jpg" alt="skills-image"/>
-	</div>
-</div><!--- end of Skills Section ----->
-
-<!------------------Creating Experience Section   -------------->
-<h1 id="experience"class="center-text color-white">Experience</h1>
-<div class="experience-container center-text color-white" >
-	<p> Professional Experience - NIL  </p>
-	<p> 31 Years of Experience in Banking . Understand financial products well.  </p>
-	<p> Experience does not mean Skills Always </p>
-	<p>  Like</p>
-	<p> Baldness does not mean Riches Always </p>
-</div><!-- experience container div ends --->
-
-<!------------------Creating Projects Section ---------------->
-<h1 id="projects" class="center-text color-white">Projects</h1>
-<div class="projects-container" >		  
-	<div class="project-box">
-		<div class="project-image-box"><img src="images/photo-8.jpg" alt="project image" /></div>				
-		<div class="project-brief">
-			<h2 class="center-text">Big Bang Theory  </h2>
-			<p>An American series . You have to input name / id / number of episode and you will get all info about that.
-				My database is JSON format. Used javascript with ES6  features to extract information.
-			</p>
-			<a class="git-note" href="https://goo.gl/oKqL8F">**See Code</a>
-		</div>
-	</div>
-		  
-	<div class="project-box">
-		<div class="project-image-box"><img src="images/photo-9.jpg" alt="project image" /></div>				
-		<div class="project-brief">
-			<h2 class="center-text">Pokemon Game  </h2>
-			<p>Wanna meet Pokemon Game characters. Input id  or weakness or  next-evolution , 
-				you will get all info on that Pokemon.  Again JSON and Javascript used. </p>
-			<a class="git-note" href="https://goo.gl/wqKAGg">** See Code </a>
-		</div>		
-	</div>
-		  
-	<div class="project-box">
-		<div class="project-image-box"><img src="images/photo-10.jpg" alt="project image" /></div>			
-		<div class="project-brief">
-			<h2 class="center-text">English Premier League </h2>
-				<p>Catch the fervour of EPL. Who won a match or who won against whom in a season, 
-					who scored/conceded maximum goals. Who topped the chart.
-					A SPA website developed using AngularJs.</p>
-				<a class="git-note" href="https://goo.gl/UJXk9Z">**See Code</a>
-		</div>
-	</div>
-		  
-	<div class="project-box">
-		<div class="project-image-box"><img src="images/photo-2.png" alt="project image" /></div>			
-		<div class="project-brief">
-			<h2 class="center-text">Aashiana Homes</h2>
-			<p>Your search for dream home ends here. A website developed in HTML , CSS, Jquery , PHP and mysqli 
-			for online shopping of homes. </p>			
-		</div>
-	</div>
-		  
-	<div class="project-box">
-		<div class="project-image-box"><img src="images/photo-3.png" alt="project image" /></div>				
-		<div class="project-brief">
-			<h2 class="center-text">Mock Dukaan</h2>
-			<p>An e-commerce website for online shopping . Technologies used are HTML, CSS, Javascript and PHP.   </p>			
-		</div>
-	</div>
-		  
-	<div class="project-box">
-		<div class="project-image-box"><img src="images/photo-4.png" alt="project image" /></div>
-		<div class="project-brief">
-			<h2 class="center-text">Snake Game </h2>
-			<p>Just for fun. A  Primary kind of HTML5 Game -  developed using Javascript .    </p>		
-		</div>
-	</div>
-		  
-	<div class="project-box">
-		<div class="project-image-box"><img src="images/photo-5.png" alt="project image"/></div>			
-		<div class="project-brief">
-			<h2 class="center-text">Ball and Bar Game</h2>
-			<p>Use the Bar to avoid the Ball hitting bottom of canvas and get score . A simple game using Javascript.   </p>			
-		</div>
-	</div>
-		  
-	<div class="project-box">
-		<div class="project-image-box"><img src="images/photo-6.png" alt="project image" /></div>
-		<div class="project-brief">
-			<h2 class="center-text">Shooting Balloon</h2>
-			<p>Shoot the flying balloon. You would have tried your hand in this game in old time melas. Again use of Javascript.   </p>			
-		</div>
-	</div>
-		  
-	<div class="project-box">
-		<div class="project-image-box"><img src="images/photo-7.png" alt="project image" /></div>
-		<div class="project-brief">
-			<h2 class="center-text" >Fighter in Enemy Sky</h2>
-			<p>Missiles are raining to shoot down my fighter and challenge is to evade the strike. A game developed using Javascript.   </p>			
+<!----Container Div having footer of page  ---->	
+<div class="container" id="footer">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >				
+					<p style="text-align:center;">Copyright &copy; Ramesh Kumar Munjal</p>				
+			</div>
 		</div>
 	</div>	
-</div> <!-- End of project container ---->
-<p class="center-text color-white" >&copy Ramesh Kumar Munjal</p>
-<!--------------------Embedding external Javascript file ------------------>
-<script src="portfolio.js"></script>
+</section>
+
+<!----embedding bootstrap jquery and javascript CDN files  ---->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="users.js"></script><!----JS file contains user JSON data   ---->
+<script src="chats.js"></script><!----JS file contains chats JSON data   ---->
+<script src="utilityFunctions.js"></script><!----JS file contains utility functions   ---->
+<script src="commonFunctions.js"></script><!----JS file contains common functions shared by other functions  ---->
+<script src="mainFunctions.js"></script><!----JS file contains functions creating requested Pages  ---->
+
 </body>
 </html>
