@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!---- This Programme is about how to create an accordion - a collapsible component ---->
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!---- meta viewport used to make page responsive ---->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />	
+	<link rel="stylesheet" href="style.css" />	<!---- CSS embedded ---->
+</head>
+
+<body>
+<div class="container"> <!---- holds entire page ---->
+	<div class="header"><!---- header of page ---->
+		<h3>Underworld ! You don't know</h3>
+		<h1>Aquatic Animals</h1>
+	</div>
+	
+	<p>
+		A aquatic animal is an animal, either vertebrate or invertebrate, which lives in the water for most or all of its lifetime. 
+		Many insects such as mosquitoes, mayflies, dragonflies and caddisflies have aquatic larvae, with winged adults. 
+		Aquatic animals may breathe air or extract oxygen that dissolved in water through specialised organs called gills, 
+		or directly through the skin. Natural environments and the animals that live in them can be categorized as aquatic (water) 
+		or terrestrial (land).
+	</p>
+	
+	<p>
+		The term aquatic can be applied to animals that live in either fresh water (fresh water animals) or salt water (marine animals). 
+		However, the adjective marine is most commonly used for animals that live in saltwater, i.e. in oceans, seas, etc.
+	</p>
+	
+	<p>
+		Aquatic animals (especially freshwater animals) are often of special concern to conservationists because of the fragility of 
+		their environments. Aquatic animals are subject to pressure from overfishing, destructive fishing, marine pollution 
+		and climate change.
+	</p>
+
+	<div class="accordion"><!----container element for accordion- holding many sections ---->
+	
+		<div class="accordion-section"><!---- section holding button for title and another div for content---->
+			<button class="accordion-title" href="#accordion-1">Aquatic Animal</button><!---- title of one section ---->
+
+			<div id="accordion-1" class="accordion-content"><!---- content of  section ---->
+				<img src="images/animal.jpg" alt="aquatic animal image">
+				<p>
+					In addition to water breathing animals, e.g., fish, mollusks etc., the term "aquatic animal" can be applied 
+					to air-breathing aquatic or sea mammals such as those in the orders Cetacea (whales) and Sirenia (sea cows),
+					which cannot survive on land, as well as the pinnipeds (true seals, eared seals, and the walrus). 
+					The term "aquatic mammal" is also applied to four-footed mammals like the river otter (Lontra canadensis) 
+					and beavers (family Castoridae), although these are technically amphibious or semiaquatic.
+				</p>
+			</div><!--content ends-->		
+		</div><!--section ends-->
+		
+		<div class="accordion-section"><!---- section holding button for title and another div for content---->
+			<button class="accordion-title" href="#accordion-2">Aquatic Mammals</button><!---- title of one section ---->
+
+			<div id="accordion-2" class="accordion-content"><!---- content of  section ---->
+				<img src="images/mammals.jpg" alt="mammals" ><!----image ---->
+				<p>
+					Aquatic and semiaquatic mammals are a diverse group of mammals that dwell partly or entirely in bodies of water. 
+					They include the various marine mammals who dwell in oceans, as well as various freshwater species, such as the 
+					European otter. They are not a taxon and are not unified by any distinct biological grouping, but rather their 
+					dependence on and integral relation to aquatic ecosystems. The level of dependence on aquatic life are vastly 
+					different among species, with the Amazonian manatee and river dolphins being completely aquatic and fully dependent 
+					on aquatic ecosystems; whereas the Baikal seal feeds underwater but rests, molts, and breeds on land; and the capybara 
+					and hippopotamus are able to venture in and out of water in search of food.
+				</p>
+			</div><!--content ends-->		
+		</div><!--section ends-->
+		
+		<div class="accordion-section"><!---- section holding button for title and another div for content---->
+			<button class="accordion-title" href="#accordion-3">Aquatic Plants</button><!---- title of  section ---->
+
+			<div id="accordion-3" class="accordion-content"><!---- content of section---->
+				<img src="images/plant.jpg" alt="plant" ><!---- image---->
+				<p>				
+					Aquatic plants are plants that have adapted to living in aquatic environments (saltwater or freshwater).
+					They are also referred to as hydrophytes or macrophytes. A macrophyte is an aquatic plant that grows in
+					or near water and is either emergent, submergent, or floating, and includes helophytes (a plant that 
+					grows in marsh, partly submerged in water, so that it regrows from buds below the water surface).
+					In lakes and rivers macrophytes provide cover for fish and substrate for aquatic invertebrates, produce 
+					oxygen, and act as food for some fish and wildlife.
+				</p>
+			</div><!--content ends-->		
+		</div><!--section ends-->
+		
+		<div class="accordion-section"><!---- section holding button for title and another div for content---->
+			<button class="accordion-title" href="#accordion-4">Freshwater Snails</button><!---- title of  section ---->
+
+			<div id="accordion-4" class="accordion-content"><!---- content of section---->
+				<img src="images/snail.jpg" alt="snail" ><!---- image---->
+				<p>
+					Freshwater snails are gastropod mollusks which live in freshwater. There are many different
+					families. They are found throughout the world in various habitats, ranging from ephemeral pools
+					to the largest lakes, and from small seeps and springs to major rivers. The great majority of 
+					freshwater gastropods have a shell, with very few exceptions. Some groups of snails that live 
+					in freshwater respire using gills, whereas other groups need to reach the surface to breathe air.
+					Most feed on algae, but many are detritivors and some are filter feeders.
+				</p>
+			</div><!--content ends-->		
+		</div><!--section ends-->
+	</div><!--accordion container ends-->
+
+
+	<div class="footer"><!---- routine footer---->
+		&copy Ramesh Kumar Munjal
+	</div>
+
+</div>
+<!---- embedding jquery minified and js file---->
+<script src="jquery-3.3.1.min.js" >   </script>
+<script src="script.js"></script>
+</body>
+</html>

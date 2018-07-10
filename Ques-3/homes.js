@@ -1,0 +1,110 @@
+let homes =[
+			{
+				"id" : 1,
+				"city" : "Delhi",
+				"type" : "Residential",
+				"builder": "Supertech",
+				"status" : "Under Construction",
+				"size" : "1250 sqft.",
+				"cost" : "50 Lacs",
+				"agentName" : "A.K. Properties",
+				"agentMobile" : 9898989898,
+				"image" : "images/img1.jpg"
+			},
+			{
+				"id" : 2,
+				"city" : "Chandigarh",
+				"type" : "Residential",
+				"builder": "Godrej Properties",
+				"status" : "Under Construction",
+				"size" : "1350 sqft.",
+				"cost" : "54 Lacs",
+				"agentName" : "Rajesh Properties",
+				"agentMobile" : 9898989877,
+				"image" : "images/img2.jpg"
+			},
+			{
+				"id" : 3,
+				"city" : "Gurgaon",
+				"type" : "Residential",
+				"builder": "Sobha Developers",
+				"status" : "Under Construction",
+				"size" : "1550 sqft.",
+				"cost" : "60 Lacs",
+				"agentName" : "Brijesh Properties",
+				"agentMobile" : 9898989866,
+				"image" : "images/img3.jpg"
+			},
+			{
+				"id" : 4,
+				"city" : "Jaipur",
+				"type" : "Residential",
+				"builder": "Ajnara Developers",
+				"status" : "Under Construction",
+				"size" : "1450 sqft.",
+				"cost" : "58 Lacs",
+				"agentName" : "Mahesh Properties",
+				"agentMobile" : 9898989855,
+				"image" : "images/img4.jpg"
+			},
+			{
+				"id" : 5,
+				"city" : "Bengaluru",
+				"type" : "Residential",
+				"builder": "Prestige Developers",
+				"status" : "Under Construction",
+				"size" : "1350 sqft.",
+				"cost" : "54 Lacs",
+				"agentName" : "S.K. Properties",
+				"agentMobile" : 9898989844,
+				"image" : "images/img5.jpg"
+			},
+			{
+				"id" : 6,
+				"city" : "Lucknow",
+				"type" : "Residential",
+				"builder": "Gomti Constructions",
+				"status" : "Under Construction",
+				"size" : "1850 sqft.",
+				"cost" : "75 Lacs",
+				"agentName" : "D.K. Properties",
+				"agentMobile" : 9898989833,
+				"image" : "images/img6.jpg"
+			},
+			{
+				"id" : 7,
+				"city" : "Hyderabad",
+				"type" : "Residential",
+				"builder": "Godrej Properties",
+				"status" : "Under Construction",
+				"size" : "1350 sqft.",
+				"cost" : "55 Lacs",
+				"agentName" : "R.K. Properties",
+				"agentMobile" : 9898989822,
+				"image" : "images/img7.jpg"
+			},
+			{
+				"id" : 8,
+				"city" : "Mumbai",
+				"type" : "Residential",
+				"builder": "Oberoi Reality",
+				"status" : "Under Construction",
+				"size" : "1750 sqft.",
+				"cost" : "72 Lacs",
+				"agentName" : "K.K. Properties",
+				"agentMobile" : 9898989811,
+				"image" : "images/img8.jpg"
+			},
+			{
+				"id" : 9,
+				"city" : "Pune",
+				"type" : "Residential",
+				"builder": "DLF ",
+				"status" : "Under Construction",
+				"size" : "2250 sqft.",
+				"cost" : "100 Lacs",
+				"agentName" : "Ram Properties",
+				"agentMobile" : 9898989999,
+				"image" : "images/img9.jpg"
+			}
+	];

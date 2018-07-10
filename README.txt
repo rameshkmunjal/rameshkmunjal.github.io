@@ -1,44 +1,47 @@
-# AssignmentLevel-4
+##Problem Statement
+	As a solution to this assignment, you are supposed to create a replica of 
+	following Bootstrap components using CSS (flexbox for layout) and Jquery only. 
+	You are not allowed to use bootstrap files. Here is the list of components that you 
+	are supposed to create-
 
-Edwisor course Assignment Level 4
+	1. Collapse component - accordion format.
+	2. Navbar component.
+	3. Modal Component.
 
-## Problem Statement-
-	Using Bootstrap skills that you have learnt in this level, you are required to create a
-	fully responsive design of WhatsApp. You are supposed to get the basic layout from the 
-	mobile application and the web application. You are free to change the theme colors, 
-	Icons, message features etc. 
+	In your submission , you should create separate HTML, CSS  and JS file for each of 
+	the components, You may create the most basic version of these components . The 
+	components must be fully responsive. You are supposed to use flexboxes for responsiveness. 
+	So when your HTML file is opened, it would contain one of the components. For example - The 
+	Navbar and it should show the behaviour exactly as  original Bootstrap navbar . But your 
+	code must not use bootstrap to create it. You are supposed to write it from Scratch.
+
+## Synopsis
+	Collapse component - accordion format.
+	1) We have created a button and a content div to make accordion. 
+	2) Content div has been kept hidden and its id matches with href link of button.
+	3) As the button is clicked , its href link is grabbed and used as a handle to show content div.
+	4) Jquery Functions have been used to toggle hide and show features .
 	
-	Your submission should have following pages-
+	Navbar component
+	1) We have created a navbar which collapses and turns into icon-bar when  screen is small or extra-small. 
+	2) We have used a function to link a nav-slider with this icon-bar.
+	3) When icon-bar is clicked nav-slider appears on screen and it retreats  when close button is clicked.
 	
-	1) A main page displaying all the chat messages.
-	2) A chat view page containing messages with an individulal or a group.
-	3) A view to change the profile picture.
-	4) Another main page view which displays all the chat messages but contains
-	   some unread messages from some people. 
-	   
-	You have to create this website and then push it to a github repository and then host it 
-	using Github pages.	
-	   
-## Synopsis	
-	1) We have used Bootstrap skills and created this fully responsive design of WhatsApp . 
-	2) We have used Bootstrap to create nav, modal, table, form and grid layout etc.
-	3) We have added functionality to this website to create it a real-like chat site.
-	4) For this purpose , we have added two JSON format data files .
-	5) File - users - is having details about users including list of their friends in an array. 
-	6) File - chats - is having details about messages shared between two users.
-	7) We have created a separate file of Javascript functions that can be used like a utility in other programmes too.
-	8) We have created a separate file of common functions that are shared by one or more other functions.
-	9) mainFunctions file is having  functions used to create pages.
-   	10) The site can be further scaled up into a full fledged chat site with addition of back-end technology.	
+	Modal Component
+	1) We have created a web page where houses are on sale.
+	2) A button below every house details is given to contact agent selling this house.
+   	3) When button is clicked - a modal appears and by clicking - back - button one can return to main page.
+	4) We have included a form inside modal to make it more purposeful.
+	5) Interested party can fill form and send it to agent. An alert of message sent appears on screen.
 	
 ## Technical Specifications
-	Technologies used in this project are - HTML, CSS, Bootstrap, Javascript.   
+	Technologies used in this project are - HTML, CSS, Jquery, Javascript.   
 
 ## Installation
 
     	Complete code of this api has been uploaded to my github page and address is :
  
-		https://github.com/rameshkmunjal/MeanStackAssignment_4	
+		https://github.com/rameshkmunjal/MeanStackAssignment_5
 
 ## Contributors
 
