@@ -44,6 +44,6 @@
 		https://github.com/rameshkmunjal/MeanStackAssignment_5
 
 	However multiple projects have been added since then. Wait for an update
-## Contributors
+## Contributors.
 
     1. Ramesh Kumar Munjal
