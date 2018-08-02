@@ -45,6 +45,6 @@ let project =[
 		"heading" :"IMDB Website",
 		"details":"This Project is about accessing imdb api with use of AJAX Jquery call  .",
 		"technologies": "Techonologies - HTML, CSS, Bootstrap, Jquery ",
-		"fileSrc":"Project2Assignment-6/index.html"	
+		"fileSrc":"Project2Assignment6/index.html"	
 	}
 ];
