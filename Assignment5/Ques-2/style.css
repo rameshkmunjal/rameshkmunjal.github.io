@@ -1,0 +1,277 @@
+/*  zeroising  all browser settings of margin and padding     */
+*{
+	padding:0;
+	margin:0;
+}
+/*  font setting for all elements    */
+body{
+	font-family:arial;
+	font-size:16px;
+}
+/*  heading of dynamically created containers   */
+h2{
+	color:#fff;
+	margin-left:2vw;
+	padding-top:2vh;
+}
+/* class to set background color   */
+.bg-mycolor{
+	background:#2E1114;
+}
+/* -----------------------------------display area settings -------------------------------------  */
+/* displayArea will show  webpage created dynamically    */
+#displayArea{		
+	background:#fff;
+}
+/* class for div elements that house other divs insided it   */
+.container{	
+	width:100%;		
+	margin-bottom:2px;	
+	background:#83677B;
+}
+
+/* This class will set flexbox properties for its child elements   */
+.row{
+	width:98%;
+	padding-left:1%;
+	padding-right:1%;
+	display:flex;
+	justify-content:space-between;	
+	padding-top:10px;
+	padding-bottom:10px;	
+}
+/*  div element that houses two divs - img-box and content-box  */
+.box{
+	width:23%; /*  four in a large page */
+	height:auto;
+	margin-bottom:5vh;
+	box-sizing:border-box;
+	display:flex;
+	flex-direction:column; /* to keep img-box and content-box in a column - not row direction   */	
+}
+.box:hover{
+	width:23.5%;	
+}
+
+/* houses img  */	
+.img-box{
+	width:auto;
+	height:30vh;
+	overflow:hidden;	
+}
+/*  making img responsive  */
+.img-box img{
+	height:30vh;
+	max-width:325px;
+	width:100%;
+}
+/*  settings for content-box  */
+.content-box{
+	padding-top:5px;
+	width:100%;
+	height:auto;
+	color:#777;	
+	background:white;
+}
+/*  ul inside content-box - no style means removing bullets etc.  */
+.content-box ul{
+	list-style-type:none;
+}
+/* list items settings   */
+.content-box ul  li{
+	width:98%;
+	display:block;
+	line-height:5px;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:2%;
+}
+
+/* button inside content-box  */
+.connectBtn{
+	margin-left:25%;
+	width:50%;
+	text-align:center;
+	border-radius:5px;
+	font-weight:bold;
+	padding-top:5px;
+	padding-bottom:5px;	
+}
+/*  a tag in button : css settings  */
+.connectBtn a{
+	color:white;
+	text-decoration:none;
+}
+/* ---------------------------------visitor row settings -------------------------------------  */
+/* bottom most container is having images of visitors who visited the page */
+/*  image of visitor : css settings  */
+.visitorImage{
+	height:80px;
+	width:80px;
+	border-radius:50%;
+}
+/*  Div containing visitor images row  */
+.visitorDiv{
+	width:100px;
+	height:auto;
+	margin-left:1.5vw;
+	margin-top:2vh;
+	padding-bottom:20px;
+}
+/*  Div as row of images - for flexbox settings  */
+.visitorRow{
+	display:flex;
+	flex:flex-start;
+}
+
+/* -------------------------------------- footer -------------------------------------  */
+.footer{
+	width:100%;
+	color:white;	
+	font-weight:bold;
+	text-align:center;
+	padding:10px 0px 12px 0px;		
+}
+
+/*----------------------------------NAV Settings--------------------------------------*/
+/*  nav based on flexbox - default setting - flex:flex-start - so nav items will float left  */
+.nav{
+	display:flex;
+	flex-wrap:wrap;
+	height:7vh;	
+	width:100%;
+	padding-left:2%;
+	padding-top:2vh;
+	margin-bottom:2px;
+}
+.nav li{
+	width:17%;
+	margin-left:3%;
+}
+/*  a tag in nav : css settings  */
+.nav a {
+	color:white;
+	text-align:center;
+	text-decoration:none;	
+	font-weight:bold;
+}
+/* icon-box in navbar and left-side slider both invisible in large or medium screens */
+.nav-icon-box, .sidenav{
+	display:none;
+}
+
+/* -----------------Media settings start here - to create responsiveness------------  */
+
+/*  Media settings for small and extra small screens i.e. 0-768px */
+@media screen and (min-width: 0px) and (max-width:768px){
+	.nav{
+		display:none;	/*  making main nav disappear in small and extra small screens  */	
+	}	
+	.nav-icon-box{ /*  making nav icon box appear in small and extra small screens  */	
+		display:block;
+		margin:0;
+		width:100%;
+		height:auto;		
+		padding-top:10px;
+		padding-bottom:10px;	
+	}
+	.icon-bar{ /* icon bars inside icon box  */	
+		height:5px;
+		width:6vw;
+		min-width:40px;
+		background-color:white;
+		margin-bottom:5px;
+		margin-left:10px;
+	}
+	.sidenav { /*  nav slider - fixed at left : -250px to keep out of view */	
+		display:block;
+		height: 100vh;
+		width: 250px;
+		position: fixed; /* to keep slider nav fixed  */
+		z-index: 1;     /* and over other content */
+		top: 0;
+		left:-250px;
+		background-color: #501B1D;				
+		padding-top: 10vh;
+	}
+
+	.sidenav  a{ /*  slider nav items  */	
+		width:250px;
+		display:block;
+		line-height:40px;
+		text-align:center;
+		color:#fff;
+		text-decoration:none;
+		border-bottom:1px solid #fff;
+	}	
+	.sidenav .closebtn { /* position close button in right corner*/		
+		font-size: 2.5rem;		
+		background-color:transparent;
+		border:none;
+		border-color:transparent;
+		color:white;
+	}
+}
+/*  Media settings for medium screens i.e. 768-990px */	
+@media screen and (min-width: 769px) and (max-width: 990px){
+	.box{ /* 3 boxes of img and content to appear*/
+		width:30.0%;
+		height:auto;
+		margin-bottom:10vh;		
+	}
+	.box:hover{
+		width:30.5%;	
+	}
+	
+	#box-4{ /* 4th box of img and content to disappear*/
+		display:none;	
+	}	
+}
+/*  Media settings for small screens i.e. 401-768px */	
+@media screen and (min-width: 401px) and (max-width: 768px){
+	.box{
+		width:48.0%;
+		height:auto;
+		margin-bottom:10vh;		
+	}
+	.box:hover{
+		width:48.5%;	
+	}
+	#box-3, #box-4{/* 3rd and 4th box of img and content to disappear*/
+		display:none;	
+	}		
+}
+/*  Media settings for extra-small screens i.e. 0-400px */
+@media screen and (max-width: 400px){	
+	.box{ /* to show one image in a row */
+		width:90.0%;
+		height:auto;
+		margin-left:4%;
+	}
+	.box:hover{
+		width:90.5%;	
+	}
+	.content-box{ /*  font as per screen */		
+		font-size:0.85rem;
+	}
+	/* 2nd , 3rd and 4th box of img and content to disappear*/
+	#box-2, #box-3, #box-4{
+		display:none;	
+	}
+	/* visitors image as per screen*/
+	.visitorImage{
+		height:40px;
+		width:40px;
+		border-radius:50%;
+	}
+	/* visitors div size changed as per screen*/
+	.visitorDiv{
+		width:60px;		
+		margin-left:1.5vw;
+		margin-top:2vh;
+	}	
+	.footer{ /* padding removed to change size - as per screen*/
+		padding:10px 0px;
+		font-size:0.75rem;		
+	}
+}

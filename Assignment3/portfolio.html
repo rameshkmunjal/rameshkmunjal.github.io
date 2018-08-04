@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--meta settings for all screen sizes    -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- link google CDN for google fonts   -->
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<!--Embedding stylesheet externally   -->
+	<link rel="stylesheet" href="portfolio.css" />
+</head>
+<body>
+<!--Creating three bars icons for medium to extra small sizes    -->
+<div class="nav-icon-box" id="navIconBox" >
+	<div id="icon-box">
+		<div class="icon-bar"></div>
+		<div class="icon-bar"></div>
+		<div class="icon-bar"></div>
+	</div>
+</div><!--- end of nav-icon-box ----->
+
+<!-- Creating NAV Slider - it will appear on click of nav-icons   -->
+<div id="mySidenav" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<a href="#home-page">Home</a>
+	<a href="#about">About Me</a>
+	<a href="#skills">Skills</a>
+	<a href="#experience">Experience</a>
+	<a href="#projects">Projects</a> 
+</div>
+<!--- end of NAV Slider ----->
+
+<!------ inline NAV Menu bar for Large screen size  ------>
+<div class="nav-container">	
+	<a href="#home-page">Home</a>
+	<a href="#about">About Me</a>
+	<a href="#skills">Skills</a>
+	<a href="#experience">Experience</a>
+	<a href="#projects">Projects</a>	
+</div><!--- end of nav-container ----->
+
+<!-------Creating Home Page Section ------>
+<div class="home-container color-white" id="home-page">	
+	<div class="title-box">
+		<p class="top-line center-text">PORTFOLIO<p>
+		<p class="home-title center-text font-cursive">Web Development  </p>
+		<p class="home-sub-title center-text font-cursive">** Front End and Back End  **</p>
+		<p class="center-text">- by Ramesh Kumar Munjal</p>
+	</div>
+</div><!--- end of Home Section ----->
+
+<!-------------Creating About Me Section ------------------>
+<h1 id="about"class="center-text color-white">About Me</h1>
+<div class="intro-container color-white" >	
+	<!------------div contains profile image   ------------->
+	<div class="intro-image-box">
+		<img src="images/ramesh.png" alt="intro image" />		
+	</div><!-- div ends --->
+	
+	<!------------ div contains introduction  ------------->
+	<div class="intro-details font-cursive">
+		<p>A player in field mounts strike, dribbles, dodges and shoots the goal. </p>
+		<p>I like coding to solve riddles and construct something interesting.   </p>		
+		<p>An avid photographer, nature-lover.    </p>				
+		<p>You can reach me at: </p>
+		<!------------ div contains Social Media icons  ------------->	
+		<div class="sm-icon-group">
+				<a href="https://goo.gl/fsuamz"><img src="images/fb.png" class="sm-icon"></a>
+				<a href="https://goo.gl/FiUEs6"><img src="images/twitter.png" class="sm-icon"></a>
+				<a href="https://goo.gl/t6gVh4"><img src="images/linkedin.png" class="sm-icon"></a>
+				<a href="https://goo.gl/hZjy4i"><img src="images/instagram.png" class="sm-icon"></a>
+				<a href="https://goo.gl/kaMJhW"><img src="images/github.png" class="sm-icon"></a>
+		</div><!------------ div ends  ------------->
+	</div>	<!------------ intro details ends  ------------->
+</div><!--- end of About Me Section ----->
+
+<!--------------- Creating Skills Section ------------------->
+<h1 id="skills" class="center-text color-white">Skills</h1>
+<div class="skills-container" >
+	<div class="skills-box">
+		<img src="images/html.png" alt="skills-image"/>
+	</div>
+	
+	<div class="skills-box">
+		<img src="images/css.jpg" alt="skills-image"/>
+	</div>
+	
+	<div class="skills-box">
+		<img src="images/js.jpg" alt="skills-image"/>
+	</div>
+	
+	<div class="skills-box">
+		<img src="images/jquery.png" alt="skills-image"/>
+	</div>
+	
+	<div class="skills-box">
+		<img src="images/bootstrap.png" alt="skills-image"/>
+	</div>
+	
+	<div class="skills-box">
+		<img src="images/angular.png" alt="skills-image"/>
+	</div>
+	
+	<div class="skills-box">
+		<img src="images/nodejs.png" alt="skills-image"/>
+	</div>
+	
+	<div class="skills-box">
+		<img src="images/php.jpg" alt="skills-image"/>
+	</div>
+</div><!--- end of Skills Section ----->
+
+<!------------------Creating Experience Section   -------------->
+<h1 id="experience"class="center-text color-white">Experience</h1>
+<div class="experience-container center-text color-white" >
+	<p> Professional Experience - NIL  </p>
+	<p> 31 Years of Experience in Banking . Understand financial products well.  </p>
+	<p> Experience does not mean Skills Always </p>
+	<p>  Like</p>
+	<p> Baldness does not mean Riches Always </p>
+</div><!-- experience container div ends --->
+
+<!------------------Creating Projects Section ---------------->
+<h1 id="projects" class="center-text color-white">Projects</h1>
+<div class="projects-container" >		  
+	<div class="project-box">
+		<div class="project-image-box"><img src="images/photo-8.jpg" alt="project image" /></div>				
+		<div class="project-brief">
+			<h2 class="center-text">Big Bang Theory  </h2>
+			<p>An American series . You have to input name / id / number of episode and you will get all info about that.
+				My database is JSON format. Used javascript with ES6  features to extract information.
+			</p>
+			<a class="git-note" href="https://goo.gl/oKqL8F">**See Code</a>
+		</div>
+	</div>
+		  
+	<div class="project-box">
+		<div class="project-image-box"><img src="images/photo-9.jpg" alt="project image" /></div>				
+		<div class="project-brief">
+			<h2 class="center-text">Pokemon Game  </h2>
+			<p>Wanna meet Pokemon Game characters. Input id  or weakness or  next-evolution , 
+				you will get all info on that Pokemon.  Again JSON and Javascript used. </p>
+			<a class="git-note" href="https://goo.gl/wqKAGg">** See Code </a>
+		</div>		
+	</div>
+		  
+	<div class="project-box">
+		<div class="project-image-box"><img src="images/photo-10.jpg" alt="project image" /></div>			
+		<div class="project-brief">
+			<h2 class="center-text">English Premier League </h2>
+				<p>Catch the fervour of EPL. Who won a match or who won against whom in a season, 
+					who scored/conceded maximum goals. Who topped the chart.
+					A SPA website developed using AngularJs.</p>
+				<a class="git-note" href="https://goo.gl/UJXk9Z">**See Code</a>
+		</div>
+	</div>
+		  
+	<div class="project-box">
+		<div class="project-image-box"><img src="images/photo-2.png" alt="project image" /></div>			
+		<div class="project-brief">
+			<h2 class="center-text">Aashiana Homes</h2>
+			<p>Your search for dream home ends here. A website developed in HTML , CSS, Jquery , PHP and mysqli 
+			for online shopping of homes. </p>			
+		</div>
+	</div>
+		  
+	<div class="project-box">
+		<div class="project-image-box"><img src="images/photo-3.png" alt="project image" /></div>				
+		<div class="project-brief">
+			<h2 class="center-text">Mock Dukaan</h2>
+			<p>An e-commerce website for online shopping . Technologies used are HTML, CSS, Javascript and PHP.   </p>			
+		</div>
+	</div>
+		  
+	<div class="project-box">
+		<div class="project-image-box"><img src="images/photo-4.png" alt="project image" /></div>
+		<div class="project-brief">
+			<h2 class="center-text">Snake Game </h2>
+			<p>Just for fun. A  Primary kind of HTML5 Game -  developed using Javascript .    </p>		
+		</div>
+	</div>
+		  
+	<div class="project-box">
+		<div class="project-image-box"><img src="images/photo-5.png" alt="project image"/></div>			
+		<div class="project-brief">
+			<h2 class="center-text">Ball and Bar Game</h2>
+			<p>Use the Bar to avoid the Ball hitting bottom of canvas and get score . A simple game using Javascript.   </p>			
+		</div>
+	</div>
+		  
+	<div class="project-box">
+		<div class="project-image-box"><img src="images/photo-6.png" alt="project image" /></div>
+		<div class="project-brief">
+			<h2 class="center-text">Shooting Balloon</h2>
+			<p>Shoot the flying balloon. You would have tried your hand in this game in old time melas. Again use of Javascript.   </p>			
+		</div>
+	</div>
+		  
+	<div class="project-box">
+		<div class="project-image-box"><img src="images/photo-7.png" alt="project image" /></div>
+		<div class="project-brief">
+			<h2 class="center-text" >Fighter in Enemy Sky</h2>
+			<p>Missiles are raining to shoot down my fighter and challenge is to evade the strike. A game developed using Javascript.   </p>			
+		</div>
+	</div>	
+</div> <!-- End of project container ---->
+<p class="center-text color-white" >&copy Ramesh Kumar Munjal</p>
+<!--------------------Embedding external Javascript file ------------------>
+<script src="portfolio.js"></script>
+</body>
+</html>
