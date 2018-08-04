@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<form>
+	<input type="text" id="email" name="email" /><br>
+	<input type="text" id="password" name="password" /><br>
+	<button id="submit">Submit</button>
+</form>
+<script>
+//Declaring array of objects : JSON format
+let allUsers = [{
+		email : "abc@gmail.com",
+		password:"abc123"
+	},
+	{
+		email : "xyz@gmail.com",
+		password:"xyz123"
+	},
+	{
+		email : "mno@gmail.com",
+		password:"mno123"
+	}
+];
+//arrow function to check email and password is correct
+//by looping through JSON records one by  one
+let checkLogin = (email, password, allUsers) =>{
+	let isUserFound = false;
+	let passwordCorrect = false;
+	let x = allUsers;
+	//alert(email +": "+ password + " : " + x[0].email);
+	//for of loop 
+	for (currentUser of allUsers) {		
+		console.log(currentUser);		
+		if( currentUser.email == email){ //if user email tested true
+			if(currentUser.password == password){ //if user password tested true
+				isUserFound = true;
+				passwordCorrect = true;
+				break; // get out of loop to display login message - next step
+			} 
+			else {//password is false
+				isUserFound = true;
+				passwordCorrect=false;
+				break; // get out of loop to display  message - password not correct
+			}
+		} 
+		else { // email not found 
+			isUserFound = false; // get out of loop to display  message - user not found
+		}
+	}
+// displaying message as per test results	
+	if(isUserFound == true && passwordCorrect == true){
+		alert("You are logged in");
+	} else if ( isUserFound == true && passwordCorrect == false){
+		alert("You have provided incorrect password");
+	} else {
+		alert("No user with this email found");
+	}
+}	
+
+
+let grabInput = () => {
+	const email = document.getElementById("email").value; // set const since not to be reassigned
+	const password = document.getElementById("password").value; // set const since not to be reassigned
+	
+	checkLogin(email, password, allUsers); //function to test input values and displaying message accordingly
+}
+
+let init = () =>{ 
+	const button = document.getElementById("submit"); //grab button id - set const since not to be reassigned
+	button.onclick = grabInput;
+}
+window.onload = init;
+</script>
+</body>
+</html>

@@ -40,6 +40,8 @@ Assignment Name - Jquery Advance
     	Complete code of this api has been uploaded to my github page and address is :
  
 		https://github.com/rameshkmunjal/MeanStackAssignment_6
+		
+		https://rameshkmunjal.github.io/Project2Assignment6/index.html
 
 ## Contributors
 

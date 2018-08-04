@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="urf-8"/>
+	<link rel="stylesheet" href="bigbang.css" />
+</head>
+<body>	<!--- user to enter mouse on  this div  and get nav buttons visible  --->
+	<div id="nav-icon">
+		<div class="icon-bar"></div>
+		<div class="icon-bar"></div>
+		<div class="icon-bar"></div>
+	</div>
+	
+	<!---This div will hold output data : visible only when mouse entered on nav-icon  --->
+	<div id="searchButtonHolder">
+		<button class="searchButton" id="showEpiBtn">Show An Episode</button>
+		<button class="searchButton"  id="showAllEpiBtn">Show Episodes By ID</button>
+		<button class="searchButton"  id="searchNameBtn">Search Episode By Name</button>
+	</div>
+	<!---first modal will be visible on clicking showEpiBtn --->
+	<div class="inputModal" id="firstModal">
+		<h2>The Big Bang Theory </h2>
+		<div id="firstForm"> <!---this div holder of input element  --->				
+			<div class="box"><label for="seasonNumber">Season Number</label><input type="number" id="seasonNum" min="1" max="11"  required></div>	
+			<div class="box"><label for="episodeNumber">Episode Number</label><input type="number" id="episodeNum" min="1" max="24"  required></div>
+			<div class="box"><button class="submit" id="submitNumber">Submit</button></div>
+		</div>
+		<p class="message">**use HELP to ensure correct input</p>
+	</div>
+	<!---second modal will be visible on clicking showAllEpiBtn --->
+	<div class="inputModal" id="secondModal">
+		<h2>The Big Bang Theory </h2>
+		<div id="secondForm"> <!---this div holder of input element  --->	
+			<div class="box"><label for="episodeId">Episode Id</label><input type="text" id="episodeId"   required></div>	
+			<div class="box"><button class="submit" id="submitId">Submit</button></div>
+		</div>
+		<p class="message">**Use comma separator in case of multiple id</p>
+	</div>
+	<!---third modal will be visible on clicking searchNameBtn --->
+	<div class="inputModal" id="thirdModal">
+		<h2>The Big Bang Theory </h2>
+		<div id="thirdForm"> <!---this div holder of input element  --->					
+			<div class="box"><label for="name">Episode Name :</label><input type="text" id="episodeName"   required></div>
+			<div class="box"><button class="submit" id="submitName">Submit</button></div>
+		</div>
+		<p class="message">**Input case sensitive . Get help by clicking HELP</p>
+	</div>
+	
+	<!----This div will show output as and when supplied by JS functions---->
+	<div id="container">
+	</div>
+	<!----This div will show Help Page info when Help Button clicked---->
+	<div id="helpPage">
+		<button id="closeBtn">X</button>
+	</div>
+	<!----This Button will fire event to show help page---->
+	<button id="helpBtn">HELP</button>
+
+<!--embedding JSON data file holding data related big bang theory  --->
+<script src="bigbangJSON.js"></script>
+<!---embedding javascript file - that will process JSON data  --->
+<script src="bigbang.js"></script>
+</body>
+</html>
+
