@@ -5,7 +5,7 @@ body{
 #header{
 	background:#233237;
 	height:30vh;
-	padding-top:10vh;
+	padding-top:5vh;
 	margin-bottom:20px;
 }
 h1{
@@ -14,7 +14,9 @@ h1{
 	font-family:Brush Script std , cursive;
 }
 
-
+#header h3{
+	color:white;
+}
 .btn{
 	padding:5px 20px;	
 	background: #EAC67A;	
