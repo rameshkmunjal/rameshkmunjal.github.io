@@ -28,7 +28,7 @@ let init=()=>{
 	row.setAttribute("class" , "row");
 	let arrayLength = project.length;	
 	
-	for(let i=0; i < arrayLength; i++){
+	for(let i=arrayLength - 1 ; i >= 0; i--){
 		let p = project[i];	
 		console.log(i);
 		addElementsToDisplayArea(row, p );		

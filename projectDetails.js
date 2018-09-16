@@ -46,5 +46,11 @@ let project =[
 		"details":"This Project is about accessing imdb api with use of AJAX Jquery call  .",
 		"technologies": "Techonologies - HTML, CSS, Bootstrap, Jquery ",
 		"fileSrc":"Project2Assignment6/index.html"	
+	},
+	{
+		"heading" :"Game of Thrones",
+		"details":"This Project is about accessing Ice & Fire api using Angular.",
+		"technologies": "Techonologies - HTML, CSS, Bootstrap, Angular ",
+		"fileSrc":"iceNfire/index.html"	
 	}
 ];
