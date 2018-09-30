@@ -260,7 +260,7 @@ var ImdbHttpService = /** @class */ (function () {
     function ImdbHttpService(_http) {
         this._http = _http;
         this.searchTitle = 'girl';
-        this.baseUrl = 'http://www.omdbapi.com';
+        this.baseUrl = 'https://www.omdbapi.com';
         this.authToken = "499e294";
         console.log("imdb http service called");
     }
