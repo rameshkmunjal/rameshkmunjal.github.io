@@ -52,5 +52,11 @@ let project =[
 		"details":"This Project is about accessing Ice & Fire api using Angular.",
 		"technologies": "Techonologies - HTML, CSS, Bootstrap, Angular ",
 		"fileSrc":"iceNfire/index.html"	
+	},	
+	{
+		"heading" :"IMDB-Angular",
+		"details":"This Project is about accessing imdb api with use of Angular  .",
+		"technologies": "Techonologies - HTML, CSS, Bootstrap, Angular ",
+		"fileSrc":"imdb/index.html"	
 	}
 ];
