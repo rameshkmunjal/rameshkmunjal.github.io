@@ -68,5 +68,19 @@ let project =[
 		"details":"This Project is about accessing imdb api with use of Angular  .",
 		"technologies": "Techonologies - HTML, CSS, Bootstrap, Angular ",
 		"fileSrc":"imdb/index.html"	
+	},
+	{
+		"type":"vanila",
+		"heading" :"Calendar",
+		"details":"This Project creates current month's calendar dynamically .",
+		"technologies": "Techonologies - HTML, CSS, Bootstrap",
+		"fileSrc":"calendar/index.html"	
+	},
+	{
+		"type":"vanila",
+		"heading" :"FD Interest Table",
+		"details":"This Project creates maturity values of Bank FD at quarterly frequencies at different rates. ",
+		"technologies": "Techonologies - HTML, CSS, Bootstrap",
+		"fileSrc":"fd_int_tbl/index.html"	
 	}
 ];
