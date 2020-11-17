@@ -8,10 +8,13 @@ body{
 table, td, th{
     border:1px solid #333;
     border-collapse: collapse; 
-    margin:50px auto; 
+    margin:10px auto; 
     background:antiquewhite;  
 }
 td, th{
     padding : 1vh 1vw;
     text-align: center;
+}
+#container{
+    margin-top:20px;
 }

@@ -82,5 +82,12 @@ let project =[
 		"details":"This Project creates maturity values of Bank FD at quarterly frequencies at different rates. ",
 		"technologies": "Techonologies - HTML, CSS, Bootstrap",
 		"fileSrc":"fd_int_tbl/index.html"	
+	},
+	{
+		"type":"react",
+		"heading" :"IMDB",
+		"details":"This Project mimicks IMDB app of movies. ",
+		"technologies": "Techonologies - HTML, CSS, React",
+		"fileSrc":"imdb/public/index.html"	
 	}
 ];

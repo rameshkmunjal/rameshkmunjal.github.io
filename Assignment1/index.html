@@ -5,24 +5,34 @@
 </head>
 <body>
 <header>
-	<div id="theForm"> <!---this div holder of input element  --->	
-		<input type="text" id="pokemonName"   required>	
-	</div>
-	
-	<p style="text-align:center; color:white; font-weight:bold; padding-bottom:10px;">( Input pokemon name/next evolution name/weakness and click relevant button )    </p>
-	
-	<!--nav holds buttons - on click of which we get output --->
-	<nav>
-		<h3>Pokemon</h3>
-		<button class="submitButton" id="submit">Show As Per Name</button>
-		<button class="submitButton"  id="nxtEvo">Show As Per  Next Evolution</button>
-		<button class="submitButton"  id="vknessBtn">Show As Per Weakness</button>
-	</nav>
-	
+	<h1 style="text-align:center; color:white;">Pokemon Game</h1>
 </header>
 
 <!---container div will hold output data --->
-<div id="container"></div>	
+<div id="main">
+	<div id="sidebar">
+		<form> <!---- div holder of input element  --->
+			<h3>Show As Per Name</h3>	
+			<input type="text" id="pokemonName"  required>		
+			<button class="submitButton" id="submit-1">Submit</button>			
+		</form>
+
+		<form> <!---- div holder of input element  --->
+			<h3>Show As Per  Next Evolution</h3>	
+			<input type="text" id="nxtEvo"  required>				
+			<button class="submitButton"  id="submit-2">Submit</button>			
+		</form>
+
+		<form> <!---- div holder of input element  --->	
+			<h3>Show As Per Weakness</h3>
+			<input type="text" id="weakness"   required>				
+			<button class="submitButton"  id="submit-3">Submit</button>
+		</form>
+	</div>
+	<div id="container">
+		<p>container div</p>
+	</div>
+</div>	
 
 <!--embedding JSON data file   --->
 <script src="jsonData.js"></script>

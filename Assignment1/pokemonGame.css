@@ -2,6 +2,7 @@
 *{
 	margin:0;
 	padding:0;
+	box-sizing: border-box;
 }
 
 body{ 
@@ -21,36 +22,46 @@ header{
 	z-index:99;
 }
 
-nav{
-	width:100%;
-	height:40px;
-	background:#eee;	
-}
-
-#container{
-	margin-top:160px; /* leaving space for fixed header */
+#main{	
 	width:100%;
 	height:auto; /* set to make height flexible as per size of content */
-	margin-top:200px;
+	margin-top:180px;
 	margin-bottom:50px;
+	display:flex;
+	flex-direction:row;
 }
-/* h3 float left so that nav  is adjusted right side   */
-h3{
-	float:left;
-	margin-left:50px; 
-	margin-top:0px;
-	font-style:italic;
-	font-size:200%;
-	color:brown;
+#sidebar{
+	width:20%;
+	height:auto;
+	background:lightgoldenrodyellow;
+	border-right:1px solid #ccc;
 }
+#container{
+	width:80%;
+	height:auto;
+	background:white;
+	display:flex;
+	flex-wrap: wrap;
+}
+
 /* to hold input element inside it */
-#theForm{
-	height:50px;
-	width:400px;
-	margin:0 auto;
+form{
+	height:auto;
+	width:100%;	
 	border:1px solid #eee;
 	background:white;
 	margin-bottom:50px; /* to keep some gap while it is scrolled down */
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items: center;
+	border-bottom: 1px solid #aaa;
+	padding-bottom: 10px;
+}
+form>input{
+	margin-bottom:10px;
+	width:80%;
+	margin-left:10%;
 }
 /* input element  styling*/
 #pokemonName{
@@ -59,17 +70,18 @@ h3{
 	border:0px;
 	padding:4px 10px;
 }
+h3{
+	text-align:center;
+	margin-bottom:10px;
+}
 /*buttons styled and set float right  */
 .submitButton{
-	height:40px; 
-	width:auto;
-	background:rgb(100, 0 , 0 );
+	background:blue;
 	color:white;
 	font-weight:bold;
 	border:2px solid rgb(100, 0 , 0 );	
-	margin-right:50px;
-	padding:10px 30px;
-	float:right;
+	padding:2px 6px;
+	
 }
 /*while button is hovered - styling   */
 .submitButton:hover{	
@@ -115,4 +127,20 @@ hr{
 	text-align:center;
 	margin-bottom:20px;
 
+}
+.box{
+	display:flex;
+	flex-direction: row;
+	
+	border-bottom:1px solid #ccc;
+	padding:10px;
+}
+.imgBox{
+	width:50%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.contentBox{
+	
 }
