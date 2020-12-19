@@ -88,6 +88,6 @@ let project =[
 		"heading" :"IMDB",
 		"details":"This Project mimicks IMDB app of movies. ",
 		"technologies": "Techonologies - HTML, CSS, React",
-		"fileSrc":"imdb/public/index.html"	
+		"fileSrc":"https://github.com/rameshkmunjal/imdb"	
 	}
 ];
