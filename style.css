@@ -54,14 +54,25 @@ footer {
 }
 
 .box {
-	width: 20rem;
-	height: 20rem;
+	width: 10rem;
+	height: 10rem;
 	text-align: center;
+	background-color: aqua;
+	border: 1px solid #ddd;
+	margin: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box button {
+	text-align: center;
+	padding: 0.5rem 1rem;
+	border: none;
+	background: blue;
+	border-radius: 10px;
 }
 .box button a {
 	text-decoration: none;
-	font-size: 24px;
-	color: blue;
-	text-align: center;
-	padding: 1rem;
+	font-size: 18px;
+	color: white;
 }
