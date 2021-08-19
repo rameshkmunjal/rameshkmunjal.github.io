@@ -73,6 +73,7 @@ button {
 	height: 50px;
 	border-radius: 5px;
 	background: #325288;
+	box-shadow: 2px 1px 1px #7086ac;
 	text-align: center;
 	font-weight: bold;
 }
@@ -81,6 +82,7 @@ button {
 	height: 50px;
 	text-align: center;
 	background: #325288;
+	box-shadow: 2px 1px 1px #7086ac;
 }
 
 /*-----------styling alphanumeric buttons--------------------*/

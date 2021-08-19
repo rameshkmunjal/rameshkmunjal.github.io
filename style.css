@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
-
+/* global styling */
 * {
 	margin: 0;
 	padding: 0;
@@ -11,17 +11,30 @@
 	--clr-2: #9ddfd3;
 	--clr-3: #dbf6e9;
 }
+/* id  - this div will host DOM manipulation*/
 
+#content-div {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* classes */
+
+/* this div will act as wrapper of page */
 .container {
 	width: 100vw;
 	height: auto;
 	background: var(--clr-2);
 	padding: 0rem 6rem;
 }
-#content-div {
-	display: flex;
-	flex-wrap: wrap;
+
+@media screen and (max-width: 500px) {
+	.container {
+		padding: 0;
+	}
 }
+
+/* nav section */
 .nav {
 	width: 100%;
 	height: auto;
@@ -55,17 +68,20 @@
 	text-decoration: none;
 	color: var(--clr-3);
 }
-footer p {
-	text-align: center;
-}
 
-footer {
-	height: 30px;
-	width: 100%;
-	background: var(--clr-1);
-	color: var(--clr-3);
-	padding-top: 0.35rem;
+@media screen and (max-width: 500px) {
+	.profile-img-box img {
+		width: 50px;
+		height: 50px;
+	}
+	.nav ul {
+		padding: 2rem 2rem 0 0;
+	}
+	.nav ul li {
+		margin-left: 2rem;
+	}
 }
+/* content-div and its inside elements classes */
 
 .card {
 	width: 300px;
@@ -114,4 +130,36 @@ footer {
 }
 .view-btn a:hover {
 	color: var(--clr-1);
+}
+
+@media screen and (max-width: 500px) {
+	#content-div {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.card {
+		width: 250px;
+		height: 250px;
+	}
+	.img-box {
+		height: 150px;
+		width: 250px;
+	}
+	.content-box {
+		width: 250px;
+	}
+}
+
+/* footer section */
+footer p {
+	text-align: center;
+}
+
+footer {
+	height: 30px;
+	width: 100%;
+	background: var(--clr-1);
+	color: var(--clr-3);
+	padding-top: 0.35rem;
 }
