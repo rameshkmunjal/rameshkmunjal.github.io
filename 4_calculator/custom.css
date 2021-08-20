@@ -84,6 +84,15 @@ button {
 	background: #325288;
 	box-shadow: 2px 1px 1px #7086ac;
 }
+.ac-btn {
+	background-color: #ff6347;
+	box-shadow: 2px 1px 1px #993b2b;
+}
+.btn:hover,
+.btn-large:hover,
+.ac-btn :hover {
+	transform: scale(1.1);
+}
 
 /*-----------styling alphanumeric buttons--------------------*/
 
