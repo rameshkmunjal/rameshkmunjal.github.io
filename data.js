@@ -30,5 +30,13 @@ let projects = [
         "created_on":"2021-08-19",
         "url": "./4_calculator/index.html",
         "tech":"HTML CSS"
+    },
+    {
+        "id": "5",
+        "category": "web-design",
+        "name": "app logo",
+        "created_on":"2021-08-20",
+        "url": "./5_app_logo/index.html",
+        "tech":"HTML CSS"
     }
 ]
