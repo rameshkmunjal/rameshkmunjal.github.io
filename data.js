@@ -38,5 +38,21 @@ let projects = [
         "created_on":"2021-08-20",
         "url": "./5_app_logo/index.html",
         "tech":"HTML CSS"
+    },
+    {
+        "id": "6",
+        "category": "web-design",
+        "name": "checkout",
+        "created_on":"2021-08-17",
+        "url": "./2_checkout/index.html",
+        "tech":"HTML CSS"
+    },
+    {
+        "id": "7",
+        "category": "web-design",
+        "name": "user profile",
+        "created_on":"2021-08-23",
+        "url": "./6_user_profile/index.html",
+        "tech":"HTML CSS"
     }
 ]
