@@ -63,6 +63,12 @@
 .nav ul li {
 	margin-left: 3rem;
 	display: inline;
+	padding: 0.5rem 2rem;
+	border-radius: 5px;
+}
+.active {
+	background-color: var(--clr-2);
+	color: var(--clr-1);
 }
 .nav ul li a {
 	text-decoration: none;
@@ -88,9 +94,14 @@
 	height: 300px;
 	margin: 20px;
 	border-radius: 5px;
+	position: relative;
 }
-.card h2 {
+.img-box-heading {
 	text-transform: capitalize;
+	position: absolute;
+	left: 1rem;
+	top: 2rem;
+	z-index: 2;
 }
 .img-box {
 	width: 300px;
@@ -99,9 +110,22 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: var(--clr-3);
-	display: flex;
-	justify-content: center;
-	align-items: center;
+}
+.overlay {
+	width: 200px;
+	height: 200px;
+	background: #9899b7;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-bottom-right-radius: 200px;
+	z-index: 1;
+}
+.img-box p {
+	font-size: 0.75rem;
+	position: absolute;
+	bottom: 110px;
+	right: 10px;
 }
 .content-box {
 	width: 300px;
@@ -134,20 +158,8 @@
 
 @media screen and (max-width: 500px) {
 	#content-div {
-		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-	}
-	.card {
-		width: 250px;
-		height: 250px;
-	}
-	.img-box {
-		height: 150px;
-		width: 250px;
-	}
-	.content-box {
-		width: 250px;
 	}
 }
 

@@ -5,8 +5,20 @@ let getProjectDisplayCard = (project) =>{
     imgBox.setAttribute("class", "img-box");
     
     let h2 = document.createElement("h2");
+    h2.setAttribute("class", "img-box-heading");
     let h2txt = document.createTextNode(project.name);
     h2.appendChild(h2txt);
+
+    let overlay = document.createElement("div");
+    overlay.setAttribute("class", "overlay");
+
+    let techPara = document.createElement('p');
+    techPara.setAttribute('class', "tech");
+    let techTxt = document.createTextNode(project.category);
+    techPara.appendChild(techTxt);
+    imgBox.appendChild(techPara);
+
+    imgBox.appendChild(overlay);
     imgBox.appendChild(h2);
 
     let contentBox = document.createElement("div");

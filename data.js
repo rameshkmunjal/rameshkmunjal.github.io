@@ -54,5 +54,13 @@ let projects = [
         "created_on":"2021-08-23",
         "url": "./6_user_profile/index.html",
         "tech":"HTML CSS"
+    },
+    {
+        "id": "7",
+        "category": "web-design",
+        "name": "settings",
+        "created_on":"2021-08-24",
+        "url": "./7_settings/index.html",
+        "tech":"HTML CSS"
     }
 ]

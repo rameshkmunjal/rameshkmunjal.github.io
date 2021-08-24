@@ -78,7 +78,6 @@ body {
 .content-box {
 	width: 100%;
 	height: auto;
-
 	background-color: #fff;
 	display: flex;
 	flex-direction: column;
@@ -137,23 +136,23 @@ body {
 	height: 2rem;
 	margin: 1rem 0;
 	padding-left: 2rem;
-	border: 1px solid #eee;
+	border: 1px solid #ccc;
 	border-radius: 25px;
 	box-shadow: 2px 1px 1px #aaa;
 }
 .blog-box {
 	padding: 0.5rem 0;
 	background-color: #fff;
-	border: 1px solid #eee;
+	border: 1px solid #ccc;
 	box-shadow: 2px 1px 1px #aaa;
 	margin-bottom: 0.5rem;
 	padding: 0.5rem;
 	border-radius: 5px;
-	color: var(--clr-1);
+	color: var(--clr-5);
 }
 .blog-box p {
 	font-size: 0.75rem;
-	color: var(--clr-1);
+	color: var(--clr-5);
 }
 .blog-box h5 {
 	font-size: 0.8rem;
@@ -162,10 +161,14 @@ body {
 }
 
 @media screen and (max-width: 900px) {
+	body {
+		height: auto;
+	}
 	.container {
 		width: 100vw;
+		padding-top: 2rem;
 		flex-direction: column;
-		display: flex;
+
 		justify-content: center;
 		align-items: center;
 	}
@@ -178,10 +181,13 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+	body {
+		height: auto;
+	}
 	.container {
 		width: 100vw;
+		padding-top: 2rem;
 		flex-direction: column;
-		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
