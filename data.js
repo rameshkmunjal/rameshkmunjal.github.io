@@ -62,5 +62,13 @@ let projects = [
         "created_on":"2021-08-24",
         "url": "./7_settings/index.html",
         "tech":"HTML CSS"
+    },
+    {
+        "id": "8",
+        "category": "web-design",
+        "name": "error-page-404",
+        "created_on":"2021-08-25",
+        "url": "./8_error_404_page/index.html",
+        "tech":"HTML CSS"
     }
 ]
