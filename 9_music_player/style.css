@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+	font-size: 0.75rem;
+}
+:root {
+	--clr-1: #0a1931;
+	--clr-2: #ffc947;
+	--clr-4: #fff;
+}
+body {
+	background-color: var(--clr-2);
+}
+ul {
+	list-style-type: none;
+}
+
+/* classes */
+/* container */
+.container {
+	width: 50vw;
+	height: 84vh;
+	background: var(--clr-1);
+	border-radius: 5px 5px 0 0;
+	margin: 8vh 25vw;
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+}
+
+/* search div and child elements - styling */
+.search-div {
+	width: 100%;
+	height: 8vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.search-bar {
+	width: 70%;
+	height: 6vh;
+	border-radius: 50px;
+	border: none;
+}
+
+/* main div and child elements */
+.main {
+	height: 72vh;
+	width: 100%;
+	display: flex;
+}
+
+/* main - sidebar and child elements */
+.sidebar {
+	width: 25%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.library-div,
+.discover-div {
+	margin: 2rem 0;
+	height: 100%;
+	width: 100%;
+	padding-left: 1rem;
+	color: var(--clr-4);
+}
+
+.library-heading,
+.discover-heading {
+	padding-bottom: 1rem;
+	text-transform: uppercase;
+}
+
+.library-ul li,
+.discover-ul li {
+	line-height: 3;
+}
+.icon i {
+	color: var(--clr-4);
+	margin-right: 0.75rem;
+}
+.li-item {
+	display: flex;
+}
+/*--------------------------------------------*/
+/*-------------content-box-----------------*/
+.content-box {
+	width: 70%;
+	height: 100%;
+	padding-left: 5%;
+}
+.info-box {
+	height: 3.5rem;
+	width: 100%;
+	display: flex;
+	padding: 1rem;
+}
+
+.selected-item {
+	color: red;
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+.span-angle-right + span {
+	font-size: 1.1rem;
+}
+.selected-sub-item {
+	color: var(--clr-4);
+}
+.span-angle-right {
+	padding: 0 1rem;
+}
+.span-angle-right i {
+	color: var(--clr-4);
+	font-size: 1.5rem;
+}
+
+.selected-sub-item i,
+.selected-sub-item p {
+	color: red;
+}
+/*---------display box-----------*/
+.display-box {
+	height: 40%;
+	width: 100%;
+	padding-top: 1rem;
+}
+.poster {
+	border-radius: 20px;
+	width: 300px;
+	height: 150px;
+	max-width: 100%;
+}
+
+/*-------------progress bar styling------------*/
+.progress-bar {
+	width: 80%;
+	height: 4vh;
+	margin-right: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.progress-bar div i {
+	font-size: 1.5rem;
+	color: var(--clr-4);
+	margin-right: 0.5rem;
+}
+.progress-line {
+	width: 120px;
+	height: 2px;
+	background: var(--clr-4);
+}
+.progress-line-2 {
+	width: 120px;
+	height: 2px;
+	background: rgba(0, 0, 0, 0.3);
+}
+.progress-line-dot {
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background-color: var(--clr-4);
+}
+.volume {
+	color: var(--clr-4);
+	margin-left: 0.5rem;
+}
+
+/*---------coming songs box----------------------*/
+.coming-songs-box {
+	width: 90%;
+	height: 50%;
+	padding: 1.25rem 1rem 0 0;
+}
+.coming-songs-ul {
+	color: var(--clr-4);
+	padding-left: 0.5rem;
+	list-style-type: none;
+}
+.coming-songs-li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	line-height: 3rem;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	font-size: 1rem;
+}
+.coming-songs-div i {
+	margin-right: 1rem;
+}
+
+.coming-songs-duration {
+	margin-right: 1rem;
+}
+.add-icon {
+	margin-right: 1rem;
+}
+
+/*-------------------------------*/

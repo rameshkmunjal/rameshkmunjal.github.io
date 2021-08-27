@@ -7,9 +7,9 @@
 	font-family: 'Lato', sans-serif;
 }
 :root {
-	--clr-1: navy;
-	--clr-2: yellow;
-	--clr-3: burlywood;
+	--clr-1: #bf1363;
+	--clr-2: #deeeea;
+	--clr-3: #39a6a3;
 }
 /* id  - this div will host DOM manipulation*/
 
@@ -25,7 +25,7 @@
 	width: 100vw;
 	height: auto;
 	min-height: 100vh;
-	background-color: burlywood;
+	background-color: var(--clr-3);
 	padding: 0rem 3rem;
 }
 
@@ -127,16 +127,16 @@
 .project-name {
 	font-size: 1.5rem;
 	font-weight: bold;
-	color: yellow;
+	color: var(--clr-2);
 }
 .tech {
 	font-size: 0.65rem;
-	color: silver;
+	color: var(--clr-2);
 	text-align: right;
 }
 
 .btn {
-	background-color: yellow;
+	background-color: var(--clr-2);
 	padding: 0.25rem 1rem;
 	text-align: center;
 	font-size: 0.75rem;
@@ -154,11 +154,11 @@
 	text-transform: capitalize;
 }
 .btn:hover {
-	background-color: var(--clr-2);
+	background-color: var(--clr-3);
 	transform: scale(1.2);
 }
 .btn a:hover {
-	color: var(--clr-1);
+	color: var(--clr-2);
 }
 
 @media screen and (max-width: 500px) {

@@ -70,5 +70,13 @@ let projects = [
         "created_on":"2021-08-25",
         "url": "./8_error_404_page/index.html",
         "tech":"HTML CSS"
-    }
+    },
+    {
+        "id": "9",
+        "category": "web-design",
+        "name": "music player",
+        "created_on":"2021-08-27",
+        "url": "./9_music_player/index.html",
+        "tech":"HTML CSS"
+    },
 ]
