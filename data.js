@@ -79,4 +79,12 @@ let projects = [
         "url": "./9_music_player/index.html",
         "tech":"HTML CSS"
     },
+    {
+        "id": "10",
+        "category": "web-design",
+        "name": "social share",
+        "created_on":"2021-08-30",
+        "url": "./10_social_share/index.html",
+        "tech":"HTML CSS"
+    },
 ]
