@@ -87,4 +87,13 @@ let projects = [
         "url": "./10_social_share/index.html",
         "tech":"HTML CSS"
     },
+    
+    {
+        "id": "11",
+        "category": "web-design",
+        "name": "flash message",
+        "created_on":"2021-08-31",
+        "url": "./11_flash_message/index.html",
+        "tech":"HTML CSS"
+    },
 ]

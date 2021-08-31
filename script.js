@@ -54,7 +54,7 @@ let getProjectDisplayCard = (project) =>{
 
 let init = () =>{    
     let container = document.getElementById("container");
-
+    console.log(projects);
     for (let i = 0; i < projects.length; i++){
         let card = getProjectDisplayCard(projects[i]);
         card.setAttribute("class", "card");        
