@@ -9,7 +9,7 @@
 :root {
 	--clr-1: brown;
 	--clr-2: burlywood;
-	--clr-3: white;
+	--clr-3: lightgoldenrodyellow;
 }
 /* id  - this div will host DOM manipulation*/
 
@@ -20,7 +20,7 @@
 	width: 100vw;
 	height: auto;
 
-	background-color: lightgoldenrodyellow;
+	background-color: var(--clr-3);
 	padding: 2rem;
 	display: flex;
 	flex-wrap: wrap;
@@ -103,8 +103,8 @@
 
 .card {
 	display: flex;
-	width: 300px;
-	height: 200px;
+	width: 270px;
+	height: 180px;
 	margin-bottom: 2rem;
 }
 .card:hover {
@@ -114,7 +114,7 @@
 .left-box {
 	width: 25%;
 	height: 100%;
-	background: brown;
+	background: var(--clr-1);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -135,8 +135,17 @@
 	align-items: center;
 	font-size: 1.2rem;
 	letter-spacing: 0.25rem;
-	color: brown;
+	color: var(--clr-1);
 }
 .right-box p {
 	text-transform: capitalize;
+}
+footer {
+	background-color: var(--clr-1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--clr-3);
+	font-size: 0.75rem;
+	height: 50px;
 }
