@@ -121,10 +121,10 @@
 }
 .left-box p {
 	color: white;
-	writing-mode: vertical-rl;
-	text-orientation: upright;
 	font-size: 0.75rem;
 	text-transform: uppercase;
+	writing-mode: vertical-rl;
+	text-orientation: upright;
 }
 .right-box {
 	width: 75%;

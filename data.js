@@ -96,4 +96,12 @@ let projects = [
         "url": "./11_flash_message/index.html",
         "tech":"HTML CSS"
     },
+    {
+        "id": "12",
+        "category": "web-design",
+        "name": "e-com shop",
+        "created_on":"2021-08-02",
+        "url": "./12_e_commerce_shop/index.html",
+        "tech":"HTML CSS"
+    },
 ]

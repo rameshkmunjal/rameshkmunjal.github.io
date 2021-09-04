@@ -1,17 +1,17 @@
 //adding click event to each card having class card
-let addClickEventToCard = () =>{
-    document.querySelectorAll('.card').forEach((item, index) =>
-    {
+let addClickEventToCard = (projectsArr) =>{
+   
+    document.querySelectorAll('.card').forEach((item, index) =>{
         item.addEventListener('click', function ()
         {
-            window.location.href = projects[index].url;
+            window.location.href = projectsArr[index].url;
         })
     })
 }
 //left side box of card
 let getLeftBox = (project) =>{
-    let div = cre_ele("div");
-    div.setAttribute("class", "left-box");
+    let div = cre_ele("div");    
+    setClass(div, "left-box");
     let p = cre_ele("p");
     
     let type = cre_txt(project.category);
@@ -23,10 +23,10 @@ let getLeftBox = (project) =>{
 }
 //right side box of card
 let getRightBox = (project) =>{
-    let div = cre_ele("div");
-    div.setAttribute("class", "right-box");
-    let p = cre_ele("p");
-    p.setAttribute("class", "project-name");
+    let div = cre_ele("div");    
+    setClass(div, "right-box");
+    let p = cre_ele("p");   
+    setClass(p, "project-name");
     let ptxt = cre_txt(project.name);
     p.appendChild(ptxt);    
 
@@ -41,7 +41,6 @@ let getProjectDisplayCard = (project) =>{
     let div = cre_ele("div");
     let leftBox = getLeftBox(project);
     let rightBox = getRightBox(project);
-    
 
     div.appendChild(leftBox);
     div.appendChild(rightBox);
@@ -53,15 +52,18 @@ let getProjectDisplayCard = (project) =>{
 //controller function to run entire page
 
 let init = () =>{    
-    let container = document.getElementById("container");
-    console.log(projects);
-    for (let i = 0; i < projects.length; i++){
-        let card = getProjectDisplayCard(projects[i]);
-        card.setAttribute("class", "card");        
+    let container = $id("container");
+    const projectsArr= projects.reverse();
+    console.log(projectsArr);
+    for (let i = 0; i < projectsArr.length; i++){
+        console.log
+        let card = getProjectDisplayCard(projectsArr[i]);
+        
+        setClass(card, "card");
         container.appendChild(card);   
     }
     
-    addClickEventToCard();
+    addClickEventToCard(projectsArr);
 }
 
 //window onload event listener
