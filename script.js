@@ -10,9 +10,9 @@ let addClickEventToCard = (projectsArr) =>{
 }
 //left side box of card
 let getLeftBox = (project) =>{
-    let div = cre_ele("div");    
-    setClass(div, "left-box");
-    let p = cre_ele("p");
+    let div = document.createElement("div");    
+    div.setAttribute("class", "left-box");
+    let p = document.createElement("p");
     
     let type = cre_txt(project.category);
     
@@ -23,10 +23,10 @@ let getLeftBox = (project) =>{
 }
 //right side box of card
 let getRightBox = (project) =>{
-    let div = cre_ele("div");    
-    setClass(div, "right-box");
-    let p = cre_ele("p");   
-    setClass(p, "project-name");
+    let div = document.createElement("div");    
+    div.setAttribute("class", "right-box");
+    let p = document.createElement("p");   
+    p.setAttribute("class", "project-name");
     let ptxt = cre_txt(project.name);
     p.appendChild(ptxt);    
 
@@ -38,7 +38,7 @@ let getRightBox = (project) =>{
 
 let getProjectDisplayCard = (project) =>{   
     
-    let div = cre_ele("div");
+    let div = document.createElement("div");
     let leftBox = getLeftBox(project);
     let rightBox = getRightBox(project);
 
@@ -52,14 +52,14 @@ let getProjectDisplayCard = (project) =>{
 //controller function to run entire page
 
 let init = () =>{    
-    let container = $id("container");
+    let container = document.getElementById("container");
     const projectsArr= projects.reverse();
     console.log(projectsArr);
     for (let i = 0; i < projectsArr.length; i++){
         console.log
         let card = getProjectDisplayCard(projectsArr[i]);
         
-        setClass(card, "card");
+        card.setAttribute("class", "card");
         container.appendChild(card);   
     }
     
