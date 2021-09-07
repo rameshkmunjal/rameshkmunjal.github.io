@@ -104,4 +104,38 @@ let projects = [
         "url": "./12_e_commerce_shop/index.html",
         "tech":"HTML CSS"
     },
+    
+    {
+        "id": "13",
+        "category": "web-design",
+        "name": "direct msg app",
+        "created_on":"2021-08-05",
+        "url": "./13_direct_msg_app/index.html",
+        "tech":"HTML CSS"
+    },
+    
+    {
+        "id": "14",
+        "category": "web-design",
+        "name": "countdown timer",
+        "created_on":"2021-08-06",
+        "url": "./14_countdown_timer/index.html",
+        "tech":"HTML CSS"
+    },
+    {
+        "id": "15",
+        "category": "web-design",
+        "name": "on off switch",
+        "created_on":"2021-09-07",
+        "url": "./15_on_off_switch/index.html",
+        "tech":"HTML CSS"
+    },
+    {
+        "id": "14",
+        "category": "web-design",
+        "name": "pop up",
+        "created_on":"2021-09-07",
+        "url": "./16_pop_up/index.html",
+        "tech":"HTML CSS"
+    },
 ]
