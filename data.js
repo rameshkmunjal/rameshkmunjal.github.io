@@ -131,11 +131,19 @@ let projects = [
         "tech":"HTML CSS"
     },
     {
-        "id": "14",
+        "id": "16",
         "category": "web-design",
         "name": "pop up",
         "created_on":"2021-09-07",
         "url": "./16_pop_up/index.html",
+        "tech":"HTML CSS"
+    },
+    {
+        "id": "17",
+        "category": "web-design",
+        "name": "e-mail receipt",
+        "created_on":"2021-09-08",
+        "url": "./17_email_receipt/index.html",
         "tech":"HTML CSS"
     },
 ]
