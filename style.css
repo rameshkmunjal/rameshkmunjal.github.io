@@ -19,12 +19,10 @@
 .container {
 	width: 100vw;
 	height: auto;
-
 	background-color: var(--clr-3);
 	padding: 2rem;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
 }
 
 /* nav section */
@@ -105,7 +103,8 @@
 	display: flex;
 	width: 270px;
 	height: 180px;
-	margin-bottom: 2rem;
+	margin-right: 1.5rem;
+	margin-bottom: 1.5rem;
 }
 .card:hover {
 	cursor: pointer;

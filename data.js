@@ -100,7 +100,7 @@ let projects = [
         "id": "12",
         "category": "web-design",
         "name": "e-com shop",
-        "created_on":"2021-08-02",
+        "created_on":"2021-09-02",
         "url": "./12_e_commerce_shop/index.html",
         "tech":"HTML CSS"
     },
@@ -109,7 +109,7 @@ let projects = [
         "id": "13",
         "category": "web-design",
         "name": "direct msg app",
-        "created_on":"2021-08-05",
+        "created_on":"2021-09-05",
         "url": "./13_direct_msg_app/index.html",
         "tech":"HTML CSS"
     },
@@ -118,7 +118,7 @@ let projects = [
         "id": "14",
         "category": "web-design",
         "name": "countdown timer",
-        "created_on":"2021-08-06",
+        "created_on":"2021-09-06",
         "url": "./14_countdown_timer/index.html",
         "tech":"HTML CSS"
     },
@@ -144,6 +144,22 @@ let projects = [
         "name": "e-mail receipt",
         "created_on":"2021-09-08",
         "url": "./17_email_receipt/index.html",
+        "tech":"HTML CSS"
+    },
+    {
+        "id": "19",
+        "category": "web-design",
+        "name": "leaderboard",
+        "created_on":"2021-09-17",
+        "url": "./19_leaderboard/index.html",
+        "tech":"HTML CSS"
+    },
+    {
+        "id": "20",
+        "category": "web-design",
+        "name": "location tracker",
+        "created_on":"2021-09-18",
+        "url": "./20_location_tracker/index.html",
         "tech":"HTML CSS"
     },
 ]
