@@ -1,0 +1,140 @@
+/*-------------------utility styling----------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+.flex-center-center{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.p-2{
+    padding:2rem;
+}
+.p-1-2{
+    padding:1rem 2rem;
+}
+.p-05-1{
+    padding:0.5rem 1rem;
+}
+.mb-1{
+    margin-bottom: 1rem;
+}
+.mb-50{
+    margin-bottom: 0.5rem;
+}
+.mt-1{
+    margin-top:1rem;
+}
+.br-15{
+    border-radius:15px;
+}
+.br-10{
+    border-radius:10px;
+}
+.tc{
+    text-align: center;
+}
+.fs-36{
+    font-size:30px;
+}
+.fs-24{
+    font-size:15px;
+}
+.fb{
+    font-weight:bold;
+}
+.bg-1{
+    background-color:#007786;
+}
+.clr-w{
+    color:white;
+}
+.clr-b{
+    color:#232323;
+}
+/*-------------------project specific styling----------------------------*/
+body{
+    width:100vw;
+    height:100vh;
+    background-color:#48cae4;
+}
+
+.container{
+    width:27vw;
+    height:95vh;
+    background-color:aliceblue;
+}
+p{
+    margin-bottom:0.25rem;
+}
+.schedule{
+    background-color: #7209b7;
+}
+.property{
+    background-color: #b5179e;
+}
+.price{
+    background-color: #4361ee;
+}
+.input-div{
+    display:flex;
+}
+.input-div span{
+    position:relative;
+}
+.input-div span i{
+    font-size:1.25rem;
+    position:absolute;
+    left:-40px;
+    top:12px;
+    color:#023e8a;
+}
+input , button{
+    display:block;
+    width:90%;
+    height:2rem;
+    margin:0.25rem auto;    
+    border-radius:10px;
+    border:none;
+}
+input{
+    background-color: #caf0f8;
+    padding-left:1rem;
+}
+button{
+    text-align:center;
+    background-color: #023e8a;
+    color:white;
+    font-weight:bold;
+}
+.contact{    
+    padding:0 2rem;
+}
+.contact i{
+    font-size:1.5rem;
+    color:#023e8a;
+    margin-right:1rem;
+}
+.contact span{
+    color:#232323;
+    font-weight:bold;
+    text-align:center;
+    padding-bottom:0.75rem;
+}
+.mobile{
+    color:#232323;
+    font-size:0.75rem;
+    font-weight:bold;
+}
+.mobile i{
+    font-size:18px;
+    color: #023e8a;
+    margin-right:1rem;
+}
+.mobile span{
+    padding-bottom:0.75rem;
+}

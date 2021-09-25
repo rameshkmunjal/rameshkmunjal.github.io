@@ -162,4 +162,52 @@ let projects = [
         "url": "./20_location_tracker/index.html",
         "tech":"HTML CSS"
     },
+    {
+        "id": "22",
+        "category": "web-design",
+        "name": "search",
+        "created_on":"2021-09-21",
+        "url": "./22_search/index.html",
+        "tech":"HTML CSS"
+    },
+    {
+        "id": "23",
+        "category": "web-design",
+        "name": "onboarding",
+        "created_on":"2021-09-22",
+        "url": "./23_onboarding/index.html",
+        "tech":"HTML CSS"
+    },
+    {
+        "id": "24",
+        "category": "web-design",
+        "name": "boarding pass",
+        "created_on":"2021-09-23",
+        "url": "./24_boarding_pass/index.html",
+        "tech":"HTML CSS"
+    },
+    {
+        "id": "25",
+        "category": "web-design",
+        "name": "tv app",
+        "created_on":"2021-09-24",
+        "url": "./25_tv_app/index.html",
+        "tech":"HTML CSS"
+    },
+    {
+        "id": "26",
+        "category": "web-design",
+        "name": "subscribe",
+        "created_on":"2021-09-25",
+        "url": "./26_subscribe/index.html",
+        "tech":"HTML CSS"
+    },
+    {
+        "id": "28",
+        "category": "web-design",
+        "name": "contact us",
+        "created_on":"2021-09-24",
+        "url": "./28_contact_us/index.html",
+        "tech":"HTML CSS"
+    },
 ]
