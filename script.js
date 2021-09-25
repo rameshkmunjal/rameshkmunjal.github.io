@@ -1,3 +1,5 @@
+//https://hashnode.com/bootcamp/rkm
+
 //adding click event to each card having class card
 let addClickEventToCard = (projectsArr) =>{   
     document.querySelectorAll('.card').forEach((item, index) =>{
@@ -7,26 +9,27 @@ let addClickEventToCard = (projectsArr) =>{
         })
     })
 }
-//left side box of card
-let getLeftBox = (project) =>{
+//upper side box of card
+let getUpperBox = (project) =>{
     let div = document.createElement("div");    
-    div.setAttribute("class", "left-box");
+    div.setAttribute("class","upper-box");
     let p = document.createElement("p");    
-    let type = cre_txt(project.category);    
-    p.appendChild(type);
+    let name = cre_txt(project.name);    
+    p.appendChild(name);
     div.appendChild(p);
     
     return div;
 }
-//right side box of card
-let getRightBox = (project) =>{
+//bottom side box of card
+let getBottomBox = (project) =>{
     let div = document.createElement("div");    
-    div.setAttribute("class", "right-box");
-    let p = document.createElement("p");   
-    p.setAttribute("class", "project-name");
-    let ptxt = cre_txt(project.name);
-    p.appendChild(ptxt); 
-    div.appendChild(p);    
+    div.setAttribute("class", "bottom-box");
+    let btn = document.createElement("button");   
+    btn.setAttribute("class", "view-btn");
+    let btnText=document.createTextNode("view");
+    btn.appendChild(btnText);
+     
+    div.appendChild(btn);    
     return div;
 }
 
@@ -34,10 +37,10 @@ let getRightBox = (project) =>{
 
 let getProjectDisplayCard = (project) =>{     
     let div = document.createElement("div");
-    let leftBox = getLeftBox(project);
-    let rightBox = getRightBox(project);
-    div.appendChild(leftBox);
-    div.appendChild(rightBox); 
+    let upperBox = getUpperBox(project);
+    let bottomBox = getBottomBox(project);
+    div.appendChild(upperBox);
+    div.appendChild(bottomBox); 
 
     return div;    
 }
@@ -54,7 +57,7 @@ let addMonthAndYearOfCreation = (arr) =>{
     }
     return arr;
 }
-
+/*
 let getCurrentMonthProjects = (arr) =>{
     let new_arr=arr.filter((item) =>{
         let today = new Date();
@@ -64,7 +67,7 @@ let getCurrentMonthProjects = (arr) =>{
     })
     return new_arr;
 }
-
+*/
 let getCardAppendedToContainer = (container, newArr) =>{    
     for (let i = 0; i < newArr.length; i++){
         console.log
@@ -80,10 +83,10 @@ let init = () =>{
     let container = document.getElementById("container");
     projects = addMonthAndYearOfCreation(projects);
     console.log(projects);
-    let newArr = getCurrentMonthProjects(projects);
-    console.log(newArr);
-    container = getCardAppendedToContainer(container, newArr);   
-    addClickEventToCard(newArr);
+    projects=projects.reverse();
+    
+    container = getCardAppendedToContainer(container, projects);   
+    addClickEventToCard(projects);
 }
 
 //window onload event listener
