@@ -9,17 +9,35 @@
     font-size:0.85rem;
     font-family: 'Lato', sans-serif;
 }
-body{
+.container{
     background-color: #b9d481;
-    width:100vw;
-    height:100vh;
+    width:1300px;
+    height:580px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
 }
-
+@media screen and (max-width:500px) {
+    .container{
+        width:100vw;
+        height:1700px;
+        display:flex;
+        flex-direction: column;
+    }
+    
+}
+/*---------------------------------------------*/
 .box{
     width:270px;
     height:500px;
     background-color:#ebf2fa;
     margin:20px;
+}
+@media screen and (max-width:500px){
+    .box{
+        width:300px;
+        margin:20px 0;
+    }
 }
 .top-box{
     width:100%;
@@ -44,6 +62,9 @@ body{
     height:200px;
     width:100%;
     color:#679436;
+}
+.content-box p{
+    padding:1.5rem;
 }
 .sbtn{
     background:#679436;

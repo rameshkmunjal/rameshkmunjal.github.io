@@ -56,18 +56,26 @@
 .clr-b{
     color:#232323;
 }
-/*-------------------project specific styling----------------------------*/
+/*---------project specific styling--------*/
 body{
     width:100vw;
     height:100vh;
     background-color:#48cae4;
 }
-
+/*---------------------------------------*/
 .container{
     width:27vw;
     height:95vh;
     background-color:aliceblue;
 }
+
+@media screen and (max-width : 500px) {
+    .container{
+        width:95vw;
+    }
+}
+
+/*---------------------------------------*/
 p{
     margin-bottom:0.25rem;
 }
