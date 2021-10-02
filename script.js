@@ -86,12 +86,13 @@ let displayProjects=(projects)=>{
 
 let findProjectType=(txt)=>{
     console.log(txt);
-    if(txt==='HTML/CSS'){
-        displayProjects(cssData);
+    if(txt==='WebDev'){
+        displayProjects(webdevData);
         console.log("if block reached", txt);
     } else if(txt==='VanillaJs'){
-        displayProjects(jsData);
-        console.log("if block reached", txt);
+        displayProjects(jsData);        
+    }else if(txt==='CSS'){
+        displayProjects(cssData);        
     } else if(txt==='Websites'){
         displayProjects(websiteData);
         console.log("if block reached", txt);

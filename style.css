@@ -35,7 +35,7 @@ body{
 	justify-content:space-between;
 	align-items:center;
 	background-color: var(--clr-1);
-	padding:2rem 0;
+	padding:1rem 0;
 	color:var(--clr-4);
 }
 .profile-img-box{
@@ -93,6 +93,9 @@ body{
 }
 
 @media screen and (max-width: 500px) {
+	.header-heading h2{
+		font-size:18px;
+	}
 	.nav {
 		display: flex;
 		flex-direction: column;
@@ -102,17 +105,19 @@ body{
 		height: 50px;
 	}
 	.nav ul {
-		padding: 2rem 2rem 0 0;
+		padding: 1rem 2rem 0 0;
 	}
 	.nav ul li {
-		margin-left: 2rem;
+		padding:0.5rem 1rem;
+		margin-left: 0.25rem;
+		font-size:0.75rem;
 	}
 }
 /* content-div and its inside elements classes */
 
 @media screen and (max-width: 500px) {
 	.container {
-		padding: 2rem 0;
+		padding: 1rem 0;
 		flex-direction: column;
 		flex-wrap: nowrap;
 		justify-content: center;
