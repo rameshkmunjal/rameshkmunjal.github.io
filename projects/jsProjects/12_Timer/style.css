@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+.flex-around{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+body{
+    background-color:aliceblue;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background: rgb(2, 24, 48);
+    width:320px;
+    height:500px;
+    padding-top:0.5rem;
+    color:aliceblue;
+    border-radius:20px;
+}
+
+/* styling of display section */
+#display-section{
+    height:440px;
+    width:100%;
+}
+
+/* common classes for all pages */
+.page-heading{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:40px;
+    font-size:1rem;
+    letter-spacing: 0.2rem;
+}
+.bottom-div{
+    height:60px;
+    padding-bottom:10px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.text-btn{
+    padding:0.25rem 0.5rem;
+    text-transform: capitalize;
+    font-size:0.85rem;
+}
+.play-btn{
+    font-size:0.75rem;
+    width:40px;
+    height:40px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    border:2px solid white;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-left:30px;
+}
+
+/* alarm page styling */
+.content-div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    height:340px;
+}
+.icon-div{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    border:4px solid #ddd;
+    font-size:24px;
+    color:#ddd;
+    font-weight: bold;
+    font-size:27px;
+    text-align:center;
+    padding-top:10px;
+}
+.icon-div-heading{
+    color:#ddd;
+    text-align:center;
+    padding-top:1rem;
+    letter-spacing: 0.2rem;
+    font-size:1rem;
+}
+.add-btn{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    border:2px solid #ddd;
+    color:#ddd;
+    font-weight: bold;
+    font-size:27px;
+    text-align:center;
+    margin:0 auto;
+}
+.add-btn:hover{
+    color:blue;
+}
+
+/* clock page styling */
+.timeDiv{
+    font-size:48px;
+    text-align: center;
+    font-weight: bold;
+    padding-top:2rem;
+    padding-bottom:0.75rem;
+    height:100px;
+    letter-spacing: 0.4rem;
+    color:blueviolet;
+}
+.dayDateDiv{
+    font-size:18px;
+    text-align:center;
+    height:100px;
+    margin-bottom:120px;
+}
+
+/* timer page styling */
+.circle-div{
+    width:160px;
+    height:160px;
+    border-radius: 50%;
+    border:5px solid #eee; 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.time-span{
+    font-size:48px;
+    font-weight: bold;
+    color:blueviolet;
+    padding:1rem 0;
+    letter-spacing: 0.2rem;
+}
+.reset-span, .label-span{
+    font-size:0.75rem;
+}
+
+.big-digit{
+    font-size:48px;
+    letter-spacing: 0.2rem;
+    color:blueviolet;
+    font-weight: bold;
+}
+.digit{
+    font-size:24px;
+    letter-spacing: 0.2rem;
+    color:blueviolet;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/* styling of footer */
+.icon-links-footer, .text-links-footer{
+    height:30px;
+    width:100%;    
+    color:aliceblue;
+    font-size:0.85rem;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon-links-footer{
+    padding-right:0.5rem;
+}
+.text-links-footer{
+    padding-right:1rem;
+}
+.icon-link{
+    width:30px;
+    height:100%; 
+    text-align: center;   
+}
+.footer i {
+    margin-bottom: 0.5rem;    
+    text-align:center;
+}
+.text-link{
+    width:30px;
+    height:100%;
+    text-align:left; 
+    font-size:0.65rem; 
+    font-weight: bold;  
+}
+.text-link:hover{
+    transform:scale(1.1);
+    color:#fff;
+    font-weight:bold;
+    cursor:pointer;
+    background:rgb(17, 55, 88);
+}
