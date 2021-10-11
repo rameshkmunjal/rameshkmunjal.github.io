@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
+
 .flex-around{
     display:flex;
     justify-content: space-around;
@@ -57,6 +58,18 @@ body{
     font-size:0.85rem;
 }
 .play-btn{
+    font-size:0.75rem;
+    width:40px;
+    height:40px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    border:2px solid white;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-left:30px;
+}
+.pause-btn{
     font-size:0.75rem;
     width:40px;
     height:40px;
@@ -152,13 +165,13 @@ body{
     font-size:0.75rem;
 }
 
-.big-digit{
+#second{
     font-size:48px;
     letter-spacing: 0.2rem;
     color:blueviolet;
     font-weight: bold;
 }
-.digit{
+#decimal-seconds{
     font-size:24px;
     letter-spacing: 0.2rem;
     color:blueviolet;

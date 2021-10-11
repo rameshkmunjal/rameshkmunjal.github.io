@@ -4,7 +4,7 @@ let jsData = [
         "category": "vanillajs",
         "name": "to-do-list",
         "created_on":"2021-09-30",
-        "url": "./projects/jsProjects/5-todolist/index.html",
+        "url": "./projects/jsProjects/1-todolist/index.html",
         "tech":"HTML CSS"
     },
     {
@@ -12,7 +12,7 @@ let jsData = [
         "category": "vanillajs",
         "name": "clock",
         "created_on":"2021-10-07",
-        "url": "./projects/jsProjects/12_Timer/index.html",
+        "url": "./projects/jsProjects/2_clock/index.html",
         "tech":"HTML CSS"
     },
     
