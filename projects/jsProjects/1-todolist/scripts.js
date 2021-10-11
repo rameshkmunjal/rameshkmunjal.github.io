@@ -101,22 +101,29 @@ function appendTableData(table){
         let tr=$CE('tr');
         tr=appendDataInRow(tr, task, index, allTasks);
         //console.log(tr);
+        if(task.status==="Complete"){
+            console.log("task status is complete");
+            console.log(tr);
+            tr.setAttribute('class', 'complete-row');
+                
+        }
         table.appendChild(tr);    
-    });
-    
+    });    
     return table;
 }
 
 function appendDataInRow(tr, task, index){
     console.log(task);
+    let status=task.status==="Complete" ? "complete-btn" : "status-btn";
     tr.setAttribute("id", task.id);
+    
          let td1=$CE('td');
          td1.innerHTML=index+1;
          let td2=$CE('td');
          td2.innerHTML=task.taskName;
          let td3=$CE('td');        
          td3.innerHTML= `<input type="button" 
-                                class="status-btn"
+                                class=${status}
                                 value = "${task.status}" 
                                 onClick="Javacsript:changeStatus(${task.id})">`;
          let td4=$CE('td');
@@ -124,6 +131,7 @@ function appendDataInRow(tr, task, index){
                                 class="delete-btn" 
                                 value = "Delete" 
                                 onClick="Javacsript:deleteRow(${task.id})">`;
+        
          tr=$APCN(tr, td1, td2, td3, td4); 
          //console.log(tr);       
          return tr;
