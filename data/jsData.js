@@ -20,7 +20,7 @@ let jsData = [
         "category": "vanillajs",
         "name": "tic-tac-toe",
         "created_on":"2021-10-11",
-        "url": "./projects/jsProjects/6_tic-tac-toe/index.html",
+        "url": "./projects/jsProjects/6_Tic-Tac-Toe/index.html",
         "tech":"HTML CSS"
     },
     

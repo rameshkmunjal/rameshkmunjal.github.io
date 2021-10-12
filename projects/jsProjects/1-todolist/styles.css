@@ -4,10 +4,16 @@
 	padding: 0;
 	font-size:0.75rem;
 }
+:root{
+	--clr-1:#03038a;
+	--clr-2:#5269fa;
+	--clr-3:#c2e1ff;
+}
 
 body {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	font-size: 18px;
+	background-color: #A2D6F9;
 }
 
 .container {
@@ -20,10 +26,11 @@ body {
 	border-radius:10px;
 	margin-bottom:10px;
 	position:relative;
+	background-color: white;
 }
 h1 {
 	text-align: center;
-	color:navy;
+	color:var(--clr-1);
 	padding-bottom:1rem;
 	font-size:3rem;
 }
@@ -39,7 +46,7 @@ h1 {
 	border-bottom: 1px solid #ddd;
 }
 table{
-	border:1px solid navy;
+	border:1px solid #ddd;
 	border-collapse: collapse;
 	margin:10px auto;
 	width:90%;
@@ -47,13 +54,13 @@ table{
 	
 }
 th, td{
-	border:1px solid navy;
+	border:1px solid #ddd;
 	border-collapse: collapse;
 	text-align:center;
 	padding:0.5rem 1rem;
 }
 th{
-	background-color:navy;
+	background-color:var(--clr-1);
 	color:white;
 }
 
@@ -87,7 +94,7 @@ th{
 }
 .buttonBar .btn{
 	padding:0.5rem 2rem;
-	background-color:navy;
+	background-color:var(--clr-1);
 	color:white;
 	font-weight:bold;
 	border:none;
@@ -95,7 +102,7 @@ th{
 	cursor:pointer;
 }
 .buttonBar .btn:hover{
-	background:#fdc500;
+	background:var(--clr-2);
 	color:white;
 }
 
@@ -136,7 +143,7 @@ th{
 	text-align: center;
 	font-weight:bold;
 	color:white;
-	background-color: navy;
+	background-color: var(--clr-1);
 	border-radius: 0.5rem;
 	font-size:1rem;
 	
@@ -148,7 +155,7 @@ th{
 		max-width:360px;
 		margin:0 auto;
 		width:90%;
-		border:1px solid #333;
+		border:1px solid #ddd;
 	}
 	#create-form input{
 		height:40px;
@@ -164,7 +171,7 @@ th{
 }
 /*---------------------------------------------------*/
 .delete-btn{
-	background-color: rgb(185, 7, 7);
+	background-color:#d00000;
 	color:white;
 	font-weight:bold;
 	border:none;
@@ -173,9 +180,12 @@ th{
 }
 .delete-btn:hover{
 	transform:scale(1.1);
+	cursor: pointer;
+	background-color:brown;
+	color:white;
 }
 .status-btn{
-	background-color: #03038a;
+	background-color: var(--clr-1);
 	color:white;
 	font-weight:bold;
 	border:none;
@@ -184,9 +194,12 @@ th{
 }
 .status-btn:hover{
 	transform:scale(1.1);
+	background-color: var(--clr-3);
+	color:var(--clr-1);
+	cursor:pointer;
 }
 .complete-btn{
-	background-color:#080;
+	background-color:var(--clr-2);
 	color:white;
 	font-weight:bold;
 	border:none;
@@ -194,7 +207,7 @@ th{
 	border-radius: 5px;
 }
 .complete-row{
-	background-color: #ddd;
+	background-color: var(--clr-3);
 }
 @media screen and (max-width:500px){
 	.delete-btn, .status-btn{
