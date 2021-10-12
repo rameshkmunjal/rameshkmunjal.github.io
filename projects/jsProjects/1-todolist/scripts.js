@@ -104,8 +104,7 @@ function appendTableData(table){
         if(task.status==="Complete"){
             console.log("task status is complete");
             console.log(tr);
-            tr.setAttribute('class', 'complete-row');
-                
+            tr.setAttribute('class', 'complete-row');                
         }
         table.appendChild(tr);    
     });    

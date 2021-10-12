@@ -15,5 +15,13 @@ let jsData = [
         "url": "./projects/jsProjects/2_clock/index.html",
         "tech":"HTML CSS"
     },
+    {
+        "id": "6",
+        "category": "vanillajs",
+        "name": "tic-tac-toe",
+        "created_on":"2021-10-11",
+        "url": "./projects/jsProjects/6_tic-tac-toe/index.html",
+        "tech":"HTML CSS"
+    },
     
 ];
