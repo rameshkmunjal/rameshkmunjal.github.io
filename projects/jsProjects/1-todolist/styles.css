@@ -27,6 +27,7 @@ body {
 	margin-bottom:10px;
 	position:relative;
 	background-color: white;
+	box-shadow: -2px 2px 2px 2px navy;
 }
 h1 {
 	text-align: center;
@@ -62,6 +63,7 @@ th, td{
 th{
 	background-color:var(--clr-1);
 	color:white;
+	padding:1rem;
 }
 
 @media screen and (max-width:500px){

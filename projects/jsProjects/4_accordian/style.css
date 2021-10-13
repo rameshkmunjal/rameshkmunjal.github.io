@@ -9,7 +9,7 @@ body{
 }
 .wrapper{
     width:50vw;
-    height:80vh;
+    height:auto;
     background-color: white;
     border-radius:20px;
     padding:1.5rem;
@@ -62,4 +62,37 @@ body{
 .container.active .label::before{
     content:'-';
     font-size:1.25rem;
+}
+
+@media screen and (max-width:500px){
+    .wrapper{
+        width:98vw; 
+        min-height:80vh;       
+        padding:1rem;
+        margin:1vw 1vh;
+        padding:10px;
+    }   
+    .container{
+        width:90%;
+    }
+    .label{        
+        font-size:1rem;    
+    }
+    .label::before{ 
+        position:absolute;       
+        top:50%; 
+        right:10px;       
+    }
+    .content{        
+        width:80%;
+        letter-spacing: 0.05rem;
+    }
+    .container.active .content{
+        height:200px;
+    }
+    .container.active .label::before{
+        content:'-';
+        font-size:1.25rem;
+    }
+    
 }

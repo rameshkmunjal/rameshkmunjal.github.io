@@ -18,10 +18,8 @@ function closeOtherActiveContainer(){
     })
 }
 
-function closeActiveContainer(container){
-    console.log(container);
-    container.classList.remove('active');
-    
+function closeActiveContainer(container){    
+    container.classList.remove('active');    
 }
 
 function openContainer(container){
