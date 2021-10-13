@@ -1,6 +1,6 @@
 let jsData = [
     {
-        "id": "5",
+        "id": "1",
         "category": "vanillajs",
         "name": "to-do-list",
         "created_on":"2021-09-30",
@@ -8,11 +8,19 @@ let jsData = [
         "tech":"HTML CSS"
     },
     {
-        "id": "12",
+        "id": "2",
         "category": "vanillajs",
         "name": "clock",
         "created_on":"2021-10-07",
         "url": "./projects/jsProjects/2_clock/index.html",
+        "tech":"HTML CSS"
+    },
+    {
+        "id": "4",
+        "category": "vanillajs",
+        "name": "accordian",
+        "created_on":"2021-10-12",
+        "url": "./projects/jsProjects/4_accordian/index.html",
         "tech":"HTML CSS"
     },
     {
