@@ -2,11 +2,13 @@ import {$GID, $CE, $CTN, $APC, setClass, setId} from './util.js';
 var stopwatchRunning=false;
 var seconds=0;
 var cemiSeconds=0;
+var count=0;
 
 
 export const addPageHeading=(page, pageHeading)=>{
     let h2=$CE("h2");
-    setClass(h2, 'page-heading');        
+    setClass(h2, 'page-heading');
+    setId(h2, 'pageHeading');        
     h2.innerText=pageHeading;
     $APC(page, h2);
     return page;
@@ -15,6 +17,7 @@ export const addPageHeading=(page, pageHeading)=>{
 export const  addBottomDiv=()=>{
     let bottomDiv=$CE('div');
     setClass(bottomDiv, 'bottom-div');
+    setId(bottomDiv, "bottomDiv");
     return bottomDiv;
 }
 
@@ -102,9 +105,13 @@ export const addPlayBtn=(bottomDiv)=>{
 let startStopWatch=(e)=>{
     e.preventDefault();
     let displaySection=$GID('display-section');
-    displaySection.innerHTML="";
+    while (displaySection.firstChild) {
+        displaySection.removeChild(displaySection.lastChild);
+      } 
     let page=createPlayingSWPage();
     $APC(displaySection, page);
+    
+    stopwatchRunning=true;
     runStopwatch();
 }
 
@@ -114,6 +121,7 @@ let createPlayingSWPage=()=>{
 
     let contentDiv=$CE('div');        
     setClass(contentDiv, 'content-div');
+    setId(contentDiv, "contentDiv");
     let circleDiv=addSWTimeDisplay();        
     $APC(contentDiv, circleDiv);
     $APC(stopwatchPage, contentDiv);
@@ -136,50 +144,86 @@ let addSWTimeDisplay=()=>{
 
 let addPauseBtn=(bottomDiv)=>{
     let pauseBtn=$CE('div');
+    setId(pauseBtn, 'pauseBtn');
     pauseBtn.innerHTML='<i class="fas fa-pause"></i>';
     setClass(pauseBtn, 'pause-btn');      
-    pauseBtn.addEventListener('click',pauseStopWatch);       
+    pauseBtn.addEventListener('click', pauseStopWatch); 
+    //console.log(pauseBtn);     
     pauseBtn.style.margin="0 auto";          
       
     $APC(bottomDiv, pauseBtn);
+    //console.log(bottomDiv);
     return bottomDiv;
 }
 
-let runStopwatch=()=>{   
+let runStopwatch=()=>{ 
     let decimalSecondsSpan=document.getElementById("decimal-seconds");
-    let secondsSpan=document.getElementById("second");    
-    stopwatchRunning=true;
-    let count=0;   
-    setInterval(function(){             
-        if(stopwatchRunning){                
-            let secondsDigit=0;
-                
-            count++;                
-            if(count < 100){
-                    cemiSeconds=count; 
-                    seconds=0; 
-            } else {
-                secondsDigit=seconds; 
-                seconds=Math.floor(count/100);
-                cemiSeconds=count%100;
-                if(seconds !== secondsDigit){
-                    secondsDigit=seconds;
-                }
-            }                                            
-            secondsSpan.innerText="";
-            decimalSecondsSpan.innerText="";
-            secondsSpan.innerText=secondsDigit;
-            decimalSecondsSpan.innerText=cemiSeconds;
-        }        
-    }, 10); 
-    /* */
+    let secondsSpan=document.getElementById("second"); 
+
+    if(stopwatchRunning){                
+        let secondsDigit=0;
+            
+        count++; 
+        console.log(count);               
+        if(count < 100){
+                cemiSeconds=count; 
+                seconds=0; 
+        } else {
+            secondsDigit=seconds; 
+            seconds=Math.floor(count/100);
+            cemiSeconds=count%100;
+            if(seconds !== secondsDigit){
+                secondsDigit=seconds;
+            }
+        }                                            
+        secondsSpan.innerText="";
+        decimalSecondsSpan.innerText="";
+        secondsSpan.innerText=secondsDigit;
+        decimalSecondsSpan.innerText=cemiSeconds; 
+        setTimeout(runWatch, 10);
+    }
 }
 
+function runWatch(){
+    let decimalSecondsSpan=document.getElementById("decimal-seconds");
+    let secondsSpan=document.getElementById("second"); 
+
+    if(stopwatchRunning){                
+        let secondsDigit=0;
+            
+        count++; 
+        console.log(count);                 
+        if(count < 100){
+                cemiSeconds=count; 
+                seconds=0; 
+        } else {
+            secondsDigit=seconds; 
+            seconds=Math.floor(count/100);
+            cemiSeconds=count%100;
+            if(seconds !== secondsDigit){
+                secondsDigit=seconds;
+            }
+        }                                            
+        secondsSpan.innerText="";
+        decimalSecondsSpan.innerText="";
+        secondsSpan.innerText=secondsDigit;
+        decimalSecondsSpan.innerText=cemiSeconds;
+        setTimeout(runStopwatch, 10);
+    }
+    
+}
+
+
 //------------------------------paused stopwatch---------------------------
-let pauseStopWatch=(e)=>{
+
+function pauseStopWatch(e){
     e.preventDefault();
+    stopwatchRunning=false;
     let displaySection=$GID('display-section');
-    displaySection.innerHTML="";
+    while (displaySection.firstChild) {
+        displaySection.removeChild(displaySection.lastChild);
+      }    
+   
     let page=createPausedSWPage();
     $APC(displaySection, page);
 }
@@ -190,6 +234,7 @@ let createPausedSWPage=()=>{
 
     let contentDiv=$CE('div');        
     setClass(contentDiv, 'content-div');
+    setId(contentDiv, "contentDiv");
     let circleDiv=addPausedTimeDisplay();        
     $APC(contentDiv, circleDiv);
     $APC(stopwatchPage, contentDiv);
@@ -200,6 +245,7 @@ let createPausedSWPage=()=>{
     
     return stopwatchPage;
 }
+
 let addPausedTimeDisplay=()=>{
     let div=$CE("div");
     setClass(div, "circle-div"); 
@@ -208,3 +254,10 @@ let addPausedTimeDisplay=()=>{
     $APC(div, p);
     return div;
 }
+
+/*
+Next Challenges - in stopwatch
+    1. return cemiseconds in two digit places even when they are below ten.
+    2. when play button is clicked and stop watch runs - a reset button should also appear
+    3. reset btn would reset stopwatch time at 0
+*/
