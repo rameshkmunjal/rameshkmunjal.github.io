@@ -16,6 +16,14 @@ let jsData = [
         "tech":"HTML CSS"
     },
     {
+        "id": "3",
+        "category": "vanillajs",
+        "name": "portfolio",
+        "created_on":"2021-10-18",
+        "url": "./projects/jsProjects/3_portfolio/index.html",
+        "tech":"HTML CSS"
+    },
+    {
         "id": "4",
         "category": "vanillajs",
         "name": "accordian",
