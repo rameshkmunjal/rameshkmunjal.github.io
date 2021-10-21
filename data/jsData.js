@@ -32,6 +32,14 @@ let jsData = [
         "tech":"HTML CSS"
     },
     {
+        "id": "5",
+        "category": "vanillajs",
+        "name": "calendar",
+        "created_on":"2021-10-22",
+        "url": "./projects/jsProjects/5_calendar/index.html",
+        "tech":"HTML CSS"
+    },
+    {
         "id": "6",
         "category": "vanillajs",
         "name": "tic-tac-toe",
