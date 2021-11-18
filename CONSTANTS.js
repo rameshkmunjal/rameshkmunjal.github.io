@@ -1,4 +1,4 @@
-export const projectTypes=["VanillaJs", "Web Design", "Websites",  "CSS Battles", "Jquery", "Games"];
+export const projectTypes=["VanillaJs", "Web Design", "Websites",  "CSS Battles", "Jquery", "React"];
 export const skillsTypes=[
     {
         name:"Javascript", 
@@ -41,7 +41,7 @@ export const jsData = [
         "category": "vanillajs",
         "name": "clock",
         "created_on":"2021-10-07",
-        "imgsrc":"./images/clock2.jpg",
+        "imgsrc":"./images/clock.jpg",
         "url": "./projects/jsProjects/2_clock/index.html",
         "tech":"HTML CSS"
     },
@@ -59,11 +59,29 @@ export const jsData = [
 export const  wsData=[
     {
         "id": "3",
-        "category": "web-design",
+        "category": "website",
         "name": "landing page",
         "created_on":"2021-08-18",
         "imgsrc":"./images/landing_page.jpg",
         "url": "./projects/websiteProjects/3_landing_page/index.html",
+        "tech":"HTML CSS"
+    },
+    {
+        "id": "1",
+        "category": "website",
+        "name": "khana peena",
+        "created_on":"2021-11-08",
+        "imgsrc":"./images/khana-peena.jpg",
+        "url": "./projects/websiteProjects/1_khana_peena/index.html",
+        "tech":"HTML CSS"
+    },
+    {
+        "id": "8",
+        "category": "website",
+        "name": "course landing page",
+        "created_on":"2021-11-18",
+        "imgsrc":"./images/udemy.jpg",
+        "url": "./projects/websiteProjects/8_course_landing_page/index.html",
         "tech":"HTML CSS"
     },
     
@@ -292,14 +310,17 @@ export const wdData = [
         "url": "./projects/webdevProjects/19_leaderboard/index.html",
         "tech":"HTML CSS"
     },
+    */
     {
         "id": "20",
         "category": "web-design",
         "name": "location tracker",
         "created_on":"2021-09-18",
+        "imgsrc":"./images/location_tracker.jpg",
         "url": "./projects/webdevProjects/20_location_tracker/index.html",
         "tech":"HTML CSS"
     },
+    /*
     {
         "id": "22",
         "category": "web-design",
@@ -361,4 +382,4 @@ export const wdData = [
 ];
 
 export const jqData=[];
-export const gamesData=[];
+export const reactData=[];

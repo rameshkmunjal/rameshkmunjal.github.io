@@ -1,0 +1,161 @@
+/*-------global css styles--------*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 1rem;
+	color: #d3d3d3;
+}
+body {
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	background-color: #f4eee8;
+}
+
+button {
+	border: none;
+	border-radius: 10px;
+}
+/*---style rules of classes----*/
+.container {
+	width: 300px;
+	height: 475px;
+	background-color: #99a9c4;
+	border-radius: 10px;
+	box-shadow: 5px 2px 2px #7086ac;
+	display: grid;
+	grid-template-columns: 75px 75px 75px 75px;
+	grid-template-rows: 100px 75px;
+
+	grid-template-areas:
+		'panel panel panel panel'
+		'btn-1 btn-2 btn-3 btn-4'
+		'btn-5 btn-6 btn-7 btn-8'
+		'btn-9 btn-10 btn-11 btn-12'
+		'btn-13 btn-14 btn-15 btn-16'
+		'btn-17 btn-17 btn-18 btn-19';
+}
+
+.panel {
+	grid-area: panel;
+	background: #325288;
+	display: grid;
+	place-items: center;
+	border-radius: 10px 10px 0 0;
+}
+.screen {
+	width: 260px;
+	height: 60px;
+	background-color: #ebeef3;
+}
+.screen p {
+	font-size: 48px;
+	text-align: right;
+	color: #325288;
+	padding-right: 20px;
+}
+.cen {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.fl {
+	font-size: 1.5rem;
+}
+.btn span {
+	border: 1px solid #ebeef3;
+	padding: 5px;
+}
+.btn {
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	background: #325288;
+	box-shadow: 2px 1px 1px #7086ac;
+	text-align: center;
+	font-weight: bold;
+}
+.btn-large {
+	width: 125px;
+	height: 50px;
+	text-align: center;
+	background: #325288;
+	box-shadow: 2px 1px 1px #7086ac;
+}
+.ac-btn {
+	background-color: #ff6347;
+	box-shadow: 2px 1px 1px #993b2b;
+}
+.btn:hover,
+.btn-large:hover,
+.ac-btn :hover {
+	transform: scale(1.1);
+}
+
+/*-----------styling alphanumeric buttons--------------------*/
+
+.btn-1 {
+	grid-area: btn-1;
+}
+.btn-2 {
+	grid-area: btn-2;
+}
+.btn-3 {
+	grid-area: btn-3;
+}
+.btn-4 {
+	grid-area: btn-4;
+}
+.btn-5 {
+	grid-area: btn-5;
+}
+.btn-6 {
+	grid-area: btn-6;
+}
+.btn-7 {
+	grid-area: btn-7;
+}
+.btn-8 {
+	grid-area: btn-8;
+}
+.btn-9 {
+	grid-area: btn-9;
+}
+.btn-10 {
+	grid-area: btn-10;
+}
+.btn-11 {
+	grid-area: btn-11;
+}
+.btn-12 {
+	grid-area: btn-12;
+}
+.btn-13 {
+	grid-area: btn-13;
+}
+.btn-14 {
+	grid-area: btn-14;
+}
+.btn-15 {
+	grid-area: btn-15;
+}
+.btn-16 {
+	grid-area: btn-16;
+}
+
+.btn-17 {
+	grid-area: btn-17;
+	display: flex;
+	justify-content: center;
+}
+.btn-18 {
+	grid-area: btn-18;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.btn-19 {
+	grid-area: btn-19;
+	margin-left: 15px;
+}

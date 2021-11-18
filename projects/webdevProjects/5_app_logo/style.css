@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+
+/* global styling */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Allison', cursive;
+}
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #ffbbcc;
+}
+
+/* design for - desktop screen */
+.container {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background-color: #ffc93c;
+	position: relative;
+	padding: 20px;
+}
+
+.bullet-top {
+	border-radius: 100% 0 0 100%;
+	position: absolute;
+	top: 130px;
+	left: 25px;
+	width: 100px;
+	height: 40px;
+}
+.bullet-body {
+	position: absolute;
+	top: 120px;
+	left: 105px;
+	width: 150px;
+	height: 60px;
+	border-radius: 60px 0 0 60px;
+	text-align: left;
+}
+.bullet-end {
+	width: 20px;
+	height: 70px;
+	border-radius: 20px;
+	position: absolute;
+	top: 115px;
+	left: 245px;
+}
+.bullet-body p {
+	padding-top: 12px;
+	padding-left: 0px;
+	font-size: 30px;
+	font-weight: bold;
+	color: #ffddcc;
+}
+.cmn {
+	background-color: #99154c;
+}
+
+/* design for - mobile screen */
+@media screen and (max-width: 500px) {
+	.container {
+		width: 280px;
+		height: 280px;
+		padding: 0;
+	}
+	.bullet-top {
+		left: 15px;
+	}
+	.bullet-body {
+		left: 95px;
+	}
+	.bullet-end {
+		left: 235px;
+	}
+}

@@ -13,7 +13,7 @@ import {
     wsData,
     cbData,
     jqData, 
-    gamesData
+    reactData
 } from './CONSTANTS.js';
 
 
@@ -125,8 +125,8 @@ function displayProjects(catchWord){
             createProjectLinks(jqData);
             break;
         }
-        case "games":{
-            createProjectLinks(gamesData);
+        case "react":{
+            createProjectLinks(reactData);
             break;
         }
         default:
@@ -192,4 +192,9 @@ function createProjectLinks(arr){
 
 function goBackToHome(){
     loadHomePage();
+}
+
+function displayPage(project){
+    console.log(project);
+    location.href=project.url;
 }

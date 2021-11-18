@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+}
+:root {
+	--clr-1: #f8f1f1;
+	--clr-2: #11698e;
+	--clr-3: #19456b;
+	--clr-4: #16c79a;
+	--clr-5: #f05454;
+	--clr-6: #f5a25d;
+}
+body {
+	background-color: var(--clr-1);
+}
+@media screen and (max-width: 500px) {
+	body {
+		background-color: var(--clr-6);
+	}
+}
+/*common classes */
+.centered {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* classes */
+.container {
+	width: 50vw;
+	height: 80vh;
+	background-color: var(--clr-6);
+	margin: 10vh auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+	.container {
+		width: 90vw;
+		height: auto;
+		justify-content: center;
+		flex-direction: column;
+		margin: 2rem auto;
+	}
+}
+/* success-box and failure-box */
+.success-box,
+.failure-box {
+	width: 33%;
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+}
+@media screen and (max-width: 500px) {
+	.success-box,
+	.failure-box {
+		width: 100%;
+		height: 450px;
+		margin: 2rem 0;
+	}
+}
+/* img-box styling */
+.img-box {
+	height: 50%;
+	width: 100%;
+	color: var(--clr-1);
+}
+.img-box i {
+	font-size: 48px;
+}
+.success-box .img-box {
+	background-color: var(--clr-3);
+}
+.failure-box .img-box {
+	background-color: var(--clr-5);
+}
+
+/* content-box styling */
+.content-box {
+	background-color: var(--clr-1);
+	height: 50%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.success-box .content-box {
+	color: var(--clr-3);
+}
+.failure-box .content-box {
+	color: var(--clr-5);
+}
+.contents {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.note {
+	font-size: 0.75rem;
+	padding-top: 1rem;
+}
