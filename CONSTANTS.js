@@ -95,14 +95,18 @@ export const cbData= [
         "created_on":"2021-09-02",
         "url": "./projects/cssProjects/30_switches/index.html",
         "tech":"HTML CSS"
-    },{
+    },
+    */
+    {
         "id": "31",
         "category": "web-design",
         "name": "transition",
         "created_on":"2021-09-01",
+        "imgsrc":"./images/transition.jpg",
         "url": "./projects/cssProjects/31_transition/index.html",
         "tech":"HTML CSS"
     },
+    /*
     {
         "id": "32",
         "category": "web-design",
@@ -126,14 +130,16 @@ export const cbData= [
         "created_on":"2021-09-04",
         "url": "./projects/cssProjects/34_windmill/index.html",
         "tech":"HTML CSS"
-    },{
+    }, */
+    {
         "id": "35",
         "category": "web-design",
         "name": "diamond-cut",
         "created_on":"2021-09-30",
+        "imgsrc":"./images/diamond_cut.jpg",
         "url": "./projects/cssProjects/35_diamond-cut/index.html",
         "tech":"HTML CSS"
-    }, */
+    },
     {
         "id": "36",
         "category": "web-design",
@@ -179,14 +185,17 @@ export const wdData = [
         "url": "./projects/webdevProjects/3_landing_page/index.html",
         "tech":"HTML CSS"
     },
+    */
     {
         "id": "4",
         "category": "web-design",
         "name": "calculator",
         "created_on":"2021-08-19",
+        "imgsrc":"./images/calculator.jpg",
         "url": "./projects/webdevProjects/4_calculator/index.html",
         "tech":"HTML CSS"
     },
+    /*
     {
         "id": "5",
         "category": "web-design",
@@ -235,15 +244,17 @@ export const wdData = [
         "url": "./projects/webdevProjects/9_music_player/index.html",
         "tech":"HTML CSS"
     },
+    */
     {
         "id": "10",
         "category": "web-design",
         "name": "social share",
         "created_on":"2021-08-30",
+        "imgsrc":"./images/social_share.jpg",
         "url": "./projects/webdevProjects/10_social_share/index.html",
         "tech":"HTML CSS"
     },
-    
+    /*
     {
         "id": "11",
         "category": "web-design",
@@ -294,14 +305,17 @@ export const wdData = [
         "url": "./projects/webdevProjects/16_pop_up/index.html",
         "tech":"HTML CSS"
     },
+    */
     {
         "id": "17",
         "category": "web-design",
         "name": "e-mail receipt",
         "created_on":"2021-09-08",
+        "imgsrc":"./images/email_receipt.jpg",
         "url": "./projects/webdevProjects/17_email_receipt/index.html",
         "tech":"HTML CSS"
     },
+    /*
     {
         "id": "19",
         "category": "web-design",
