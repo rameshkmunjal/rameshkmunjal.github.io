@@ -76,6 +76,15 @@ export const  wsData=[
         "tech":"HTML CSS"
     },
     {
+        "id": "2",
+        "category": "website",
+        "name": "utube clone",
+        "created_on":"2021-11-24",
+        "imgsrc":"./images/youtube.png",
+        "url": "./projects/websiteProjects/2_utube_clone/index.html",
+        "tech":"HTML CSS"
+    },
+    {
         "id": "8",
         "category": "website",
         "name": "course landing page",
