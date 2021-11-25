@@ -13,10 +13,71 @@ function createHomePage(){
 }
 
 function createNavSection(){
-    let nav=document.createElement('nav');
-    nav.setAttribute('class', 'nav');
-    nav.innerText="This is nav";
+    let nav=document.createElement('section');
+    nav.setAttribute('class', 'nav-section');
+
+    let logoDiv=createLogoDiv();    
+    nav.appendChild(logoDiv);
+    let searchDiv=createSearchDiv();
+    nav.appendChild(searchDiv); 
+    let rightNav=createRightNav();
+    nav.appendChild(rightNav); 
+
     return nav;
+}
+
+function createLogoDiv(){
+    let logoDiv=document.createElement('div');
+    logoDiv.setAttribute('class', 'logo-div');
+
+    let logo=document.createElement('img');
+    logo.setAttribute('src', "./images/youtube.png");
+    logo.setAttribute('class', 'logo');
+
+    logoDiv.appendChild(logo);
+    return logoDiv;
+}
+
+function createSearchDiv(){
+    let searchDiv=document.createElement('div');
+    searchDiv.setAttribute('class', 'search-div');
+    let searchInputBox=document.createElement('input');
+    searchInputBox.setAttribute('class', 'search-input-box');
+    let searchBtn=document.createElement('span');
+    searchBtn.setAttribute('class', 'search-btn');
+    searchBtn.innerHTML='<i class="fas fa-search"></i>';
+
+    searchDiv.appendChild(searchInputBox);
+    searchDiv.appendChild(searchBtn);
+
+    return searchDiv;
+}
+
+function createRightNav(){
+    let rightNav=document.createElement('div');
+    rightNav.setAttribute('class', 'right-nav');
+
+    let videoSpan=document.createElement('span');
+    videoSpan.setAttribute('class', 'video-span');
+    videoSpan.innerHTML='<i class="fas fa-video"></i>';
+    rightNav.appendChild(videoSpan);
+
+    let appsIcon=document.createElement('span');
+    appsIcon.setAttribute('class', 'apps-span');
+    appsIcon.innerHTML='<i class="fab fa-app-store"></i>';
+    rightNav.appendChild(appsIcon);
+
+    let bellBtn=document.createElement('span');
+    bellBtn.setAttribute('class', 'bell-btn');
+    bellBtn.innerHTML='<i class="fas fa-bell"></i>';
+    rightNav.appendChild(bellBtn);
+
+    let img=document.createElement('img');
+    img.setAttribute('src', './images/rkm.jpg');
+    img.setAttribute('class', 'user-image');
+    rightNav.appendChild(img);
+
+    return rightNav;
 }
 
 function createTagsSection(){
@@ -79,10 +140,14 @@ function appendContent(card, item){
     title.setAttribute('class', 'title');
     title.innerText=item.title;
     contentDiv.appendChild(title);
-    let producer=document.createElement('p');
+    let producer=document.createElement('span');
     producer.setAttribute('class', 'producer');
     producer.innerText=item.producer;
+    let tickSpan=document.createElement('span');
+    tickSpan.setAttribute('class', 'tick-span');
+    tickSpan.innerHTML='<i class="fas fa-check-circle"></i>';
     contentDiv.appendChild(producer);
+    contentDiv.appendChild(tickSpan);
 
     let viewDiv=document.createElement('div');
     let viewSpan=document.createElement('span');
@@ -98,3 +163,27 @@ function appendContent(card, item){
     card.appendChild(contentDiv);
     return card;
 }
+
+/*
+<section class="nav-section" id="nav-section">
+            <nav>
+                <img src="./images/udemy-logo.png" alt="udemy logo" height="80" width="160" />
+                <ul class="nav-ul-left">                    
+                    <li>Categories</li>
+                    <li><input type="text" id="search-bar" name="search" placeholder="search" /></li>                    
+                </ul>
+                <ul class="nav-ul-right">                    
+                    <li>Udemy Business</li>
+                    <li>Teach On Udemy</li>
+                    <li>My Learning</li>
+                    <li><i class="far fa-heart"></i></li>
+                    <li><i class="fas fa-shopping-cart"></i></li>
+                    <li><i class="far fa-bell"></i></li>
+                    <li><div class="circle">RM</div></li>
+                </ul>
+            </nav>
+        </section>
+
+
+
+*/
