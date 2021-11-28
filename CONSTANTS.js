@@ -405,4 +405,23 @@ export const wdData = [
 ];
 
 export const jqData=[];
-export const reactData=[];
+export const reactData=[
+    {
+        "id": "1",
+        "category": "reactjs",
+        "name": "soccer",
+        "created_on":"2021-11-23",
+        "imgsrc":"./images/soccer-match.jpg",
+        "url": "https://rameshkmunjal.github.io/soccer/",
+        "tech":"React"
+    },
+    {
+        "id": "2",
+        "category": "reactjs",
+        "name": "imdb",
+        "created_on":"2021-11-24",
+        "imgsrc":'./images/bahubali.jpg',
+        "url": "https://rameshkmunjal.github.io/movies/",
+        "tech":"React"
+    },
+];
