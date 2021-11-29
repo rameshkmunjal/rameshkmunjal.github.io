@@ -2,91 +2,144 @@ const webData=[
     {
         "title":"Create A HTML file",
         "description":"This is description of the post",
-        "producer":"XYZ Ltd.",
+        "producer":"Coding Guru",
         "views":397593,
         "post_dt":"12/10/2021",
         "poster":"./images/html.jpg",
-        "tags":["html", "web development"]
+        "tags":["html"]
     }, 
     {
         "title":"How to build a clock",
         "description":"This is description of the post",
-        "producer":"XYZ Ltd.",
+        "producer":"Coding Guru",
         "views":397593,
         "post_dt":"12/10/2021",
         "poster":"./images/clock.jpg",
-        "tags":["clock", "web development"]
+        "tags":["clock"]
     }, 
     {
         "title":"Udemy online course",
         "description":"This is description of the post",
-        "producer":"XYZ Ltd.",
+        "producer":"Coding Guru",
         "views":397593,
         "post_dt":"12/10/2021",
         "poster":"./images/udemy.jpg",
-        "tags":["udemy", "web development"]
+        "tags":["udemy"]
     }, 
     {
         "title":"Jquery Project",
         "description":"This is description of the post",
-        "producer":"XYZ Ltd.",
+        "producer":"Coding Guru",
         "views":397593,
         "post_dt":"12/10/2021",
         "poster":"./images/jquery.jpg",
-        "tags":["jquery", "web development"]
+        "tags":["jquery"]
     }, 
     {
         "title":"How to handle an api request",
         "description":"This is description of the post",
-        "producer":"XYZ Ltd.",
+        "producer":"Coding Guru",
         "views":397593,
         "post_dt":"12/10/2021",
         "poster":"./images/nodejs.jpg",
-        "tags":["nodejs", "web development"]
+        "tags":["nodejs"]
     },
     {
-        "title":"HTML Project",
-        "description":"This is description of the post",
-        "producer":"XYZ Ltd.",
-        "views":397593,
+        "title":"2 States",
+        "description":"A love story ",
+        "producer":"Shemrao",
+        "views":97593,
         "post_dt":"12/10/2021",
-        "poster":"./images/html.jpg",
-        "tags":["html", "web development"]
+        "poster":"./images/two-states.jpg",
+        "tags":["movie", "hindi movie"]
     }, 
     {
-        "title":"How to build a stopwatch",
-        "description":"This is description of the post",
-        "producer":"XYZ Ltd.",
-        "views":397593,
+        "title":"Rang De Basanti",
+        "description":"Movie on Patriotism",
+        "producer":"Shemrao",
+        "views":887593,
         "post_dt":"12/10/2021",
-        "poster":"./images/clock.jpg",
-        "tags":["clock", "web development"]
+        "poster":"./images/rang.jpg",
+        "tags":["hindi movie"]
     }, 
     {
-        "title":"Udemy course on Web Development",
-        "description":"This is description of the post",
-        "producer":"XYZ Ltd.",
-        "views":397593,
+        "title":"Bahubali",
+        "description":"Historical film",
+        "producer":"Shemrao",
+        "views":2397593,
         "post_dt":"12/10/2021",
-        "poster":"./images/udemy.jpg",
-        "tags":["udemy", "web development"]
+        "poster":"./images/bahubali.jpg",
+        "tags":["hindi movie"]
     }, 
     {
-        "title":"How to animate using jquery",
-        "description":"This is description of the post",
-        "producer":"XYZ Ltd.",
-        "views":397593,
+        "title":"Deewaar",
+        "description":"A tale of two brothers with different destiny",
+        "producer":"Shemrao",
+        "views":103970008,
         "post_dt":"12/10/2021",
-        "poster":"./images/jquery.jpg",
-        "tags":["jquery", "web development"]
+        "poster":"./images/deewaar.jpg",
+        "tags":["hindi movie"]
     }, 
     {
-        "title":"How to create user login in nodejs",
-        "description":"This is description of the post",
-        "producer":"XYZ Ltd.",
-        "views":397593,
+        "title":"Rustom",
+        "description":"Love and Deciet",
+        "producer":"Shemrao",
+        "views":29759,
         "post_dt":"12/10/2021",
-        "poster":"./images/nodejs.jpg",
-        "tags":["nodejs", "web development"]
+        "poster":"./images/rustom.jpg",
+        "tags":["hindi movie"]
+    }, {
+        "title":"India-Pakistan Cricket Match",
+        "description":"India-Pakistan Cricket Match",
+        "producer":"ESPN Cricket",
+        "views":2397593,
+        "post_dt":"12/10/2021",
+        "poster":"./images/ind-pak-match.jpg",
+        "tags":["cricket"]
     }, 
+    {
+        "title":"India Australia Cricket Match",
+        "description":"India Australia Cricket Match",
+        "producer":"ESPN Cricket",
+        "views":103970008,
+        "post_dt":"12/10/2021",
+        "poster":"./images/ind-aus-match.jpg",
+        "tags":["cricket"]
+    }, 
+    {
+        "title":"Australia South-Africa Cricket Match",
+        "description":"Australia South-Africa Cricket Match",
+        "producer":"ESPN Cricket",
+        "views":29759,
+        "post_dt":"12/10/2021",
+        "poster":"./images/aus-sa-match.jpg",
+        "tags":["cricket"]
+    }, 
+    {
+        "title":"News Ki Paathshala",
+        "description":"News Ki Pathshala by Sushant Sinha",
+        "producer":"Sushant Sinha",
+        "views":103970008,
+        "post_dt":"12/10/2021",
+        "poster":"./images/News_Ki_Pathshala.jpg",
+        "tags":["politics"]
+    }, 
+    {
+        "title":"Kya Haal Hai UP Ka",
+        "description":"The Lallantop",
+        "producer":"The Lallantop",
+        "views":29759,
+        "post_dt":"12/10/2021",
+        "poster":"./images/lallantop.jpg",
+        "tags":["politics"]
+    }, 
+    {
+        "title":"Ajeet Bharti - Kisan Andolan",
+        "description":"Do Politics",
+        "producer":"Do Politics",
+        "views":29759,
+        "post_dt":"12/10/2021",
+        "poster":"./images/do-politics.jpg",
+        "tags":["politics"]
+    },
 ]

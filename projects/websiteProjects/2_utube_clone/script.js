@@ -114,7 +114,8 @@ function findUniqTags(){
 function createMainSection(){
     let div=document.createElement('div');
     div.setAttribute('class', 'main');
-    webData.map(item=>{
+    let arr=shuffle(webData);
+    arr.map(item=>{
         //console.log(item.title);
         let card=document.createElement('div');
         card.setAttribute('class', 'card');
@@ -157,33 +158,23 @@ function appendContent(card, item){
     viewDiv.appendChild(viewSpan);
     let timeSpan=document.createElement('span');
     timeSpan.setAttribute('class', 'time-span');
-    timeSpan.innerText="3 days ago";
+    let randomNumber=Math.floor(Math.random()*365);
+    timeSpan.innerText=`${randomNumber} days ago`;
     viewDiv.appendChild(timeSpan);
     contentDiv.appendChild(viewDiv);
     card.appendChild(contentDiv);
     return card;
 }
 
-/*
-<section class="nav-section" id="nav-section">
-            <nav>
-                <img src="./images/udemy-logo.png" alt="udemy logo" height="80" width="160" />
-                <ul class="nav-ul-left">                    
-                    <li>Categories</li>
-                    <li><input type="text" id="search-bar" name="search" placeholder="search" /></li>                    
-                </ul>
-                <ul class="nav-ul-right">                    
-                    <li>Udemy Business</li>
-                    <li>Teach On Udemy</li>
-                    <li>My Learning</li>
-                    <li><i class="far fa-heart"></i></li>
-                    <li><i class="fas fa-shopping-cart"></i></li>
-                    <li><i class="far fa-bell"></i></li>
-                    <li><div class="circle">RM</div></li>
-                </ul>
-            </nav>
-        </section>
-
-
-
+ /**
+* Shuffles array in place. ES6 version
+* @param {Array} a items An array containing the items.
 */
+function shuffle(a) {
+   for (let i = a.length - 1; i > 0; i--) {
+       const j = Math.floor(Math.random() * (i + 1));
+       [a[i], a[j]] = [a[j], a[i]];
+   }
+   return a;
+}
+
