@@ -210,7 +210,7 @@ input:hover {
 .img-box img {
 	width: 100px;
 	height: 100px;
-	max-width: 100%;
+	object-fit: cover;
 }
 .details-box {
 	padding-left: 2rem;
@@ -285,9 +285,9 @@ a {
 		padding-bottom: 0.25rem;
 	}
 	.img-box img {
-		width: 80px;
+		width: 100%;
 		height: 80px;
-		max-width: 100%;
+		object-fit: cover;
 	}
 }
 

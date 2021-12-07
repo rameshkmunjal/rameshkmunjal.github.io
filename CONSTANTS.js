@@ -57,15 +57,7 @@ export const jsData = [
 ];
 
 export const  wsData=[
-    {
-        "id": "3",
-        "category": "website",
-        "name": "landing page",
-        "created_on":"2021-08-18",
-        "imgsrc":"./images/landing_page.jpg",
-        "url": "./projects/websiteProjects/3_landing_page/index.html",
-        "tech":"HTML CSS"
-    },
+    
     {
         "id": "1",
         "category": "website",
@@ -82,6 +74,24 @@ export const  wsData=[
         "created_on":"2021-11-24",
         "imgsrc":"./images/youtube.png",
         "url": "./projects/websiteProjects/2_utube_clone/index.html",
+        "tech":"HTML CSS"
+    },
+    {
+        "id": "4",
+        "category": "website",
+        "name": "travel site",
+        "created_on":"2021-12-07",
+        "imgsrc":"./images/hotel.png",
+        "url": "./projects/websiteProjects/4_travel_site/index.html",
+        "tech":"HTML CSS"
+    },
+    {
+        "id": "3",
+        "category": "website",
+        "name": "landing page",
+        "created_on":"2021-08-18",
+        "imgsrc":"./images/react.png",
+        "url": "./projects/websiteProjects/3_landing_page/index.html",
         "tech":"HTML CSS"
     },
     {
