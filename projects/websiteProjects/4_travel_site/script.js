@@ -1,4 +1,6 @@
+//importing utility functions
 import { $APC, $CE, $GID, $SET_CLASS } from "./util.js";
+//importing helper functions
 import {
     createAndAppendLinks,
     createAndAppendLogoDiv,
@@ -9,12 +11,19 @@ import {
     createAndAppendSidebar,
     createAndAppendContentsDiv
 } from './helper.js';
+//importing data 
 import {headerLinks, footerLinks, addressObj} from './data.js';
 
 
-
+//by default - home page will load
 loadHomePage();
 
+/****************************************************************************
+    home page will have four components-
+        container element grabbed by id
+        header , main , bottom-section , footer
+        functions to create and append these components with container called 
+*****************************************************************************/
 function loadHomePage(){
     let container=$GID('container');
     container=createAndAppendHeader(container);    
@@ -23,6 +32,7 @@ function loadHomePage(){
     container=createAndAppendFooter(container);    
 }
 
+/* function defined to create and append header */
 function createAndAppendHeader(container){
     console.log(container)
     let header=$CE('header');
@@ -34,20 +44,20 @@ function createAndAppendHeader(container){
     return container;
 }
 
-
+/* function defined to create and append main */
 function createAndAppendMain(container){
     let main=$CE('main');
     $SET_CLASS(main, 'main');
-    main=createAndAppendSidebar(main);
-    
+    main=createAndAppendSidebar(main);    
     main=createAndAppendContentsDiv(main);
     $APC(container, main);
     return container;
 }
+
+/* function defined to create and append bottom-section */
 function createAndAppendBottomSection(container){
     let bottomSection=$CE('section');
     $SET_CLASS(bottomSection, 'bottom-side-links-section');
-
     bottomSection=createAndAppendAddress(bottomSection, addressObj);
     bottomSection=createAndAppendCCLinks(bottomSection);
     bottomSection=createAndAppendPartnerLinks(bottomSection);
@@ -56,6 +66,8 @@ function createAndAppendBottomSection(container){
     $APC(container, bottomSection);
     return container;
 }
+
+/* function defined to create and append footer */
 function createAndAppendFooter(container){
     let footer=$CE('footer');
     $SET_CLASS(footer, 'footer');

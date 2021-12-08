@@ -15,12 +15,18 @@
     align-items: center;
     flex-direction: column;    
 }
-/* header - styling */
+/*************************
+    header - styling
+    header has two parts.
+    1. logo-div - containing logo and helpline
+    2. header-links - containing links
+*************************/
 .header{
     height:20vh;
     width:100%;
     background-color: #00509D;
 }
+/* header - logoDiv : styling */
 .logo-div{
     display:flex;
     justify-content: space-between;
@@ -53,6 +59,7 @@
 .helpline span{
     color:lightblue;
 }
+/* header - header-links : styling */
 .header-links{
     display:flex;
     justify-content: space-evenly;
@@ -61,14 +68,25 @@
     margin-left:10vw;
     height:10vh;
     color:white;
+    
 }
-.link{
+.header-links .link{
     text-transform: capitalize;
     font-size:0.75rem;
     color:lightblue;
     font-weight: bold;
+    
 }
-/* main styling */
+.header-links .link:hover{
+    cursor:pointer;
+    font-size:1rem;
+}
+/*************************
+    main - styling
+    main has two components 
+    1. sidebar
+    2. contents-div
+*************************/
 .main{
     min-height:100vh;
     width:80vw;
@@ -78,10 +96,148 @@
 }
 .sidebar{
     width:30%;
-    height:100vh;
     background:white;
     border-right:1px solid #eee;
+    padding-top:25px;
+    margin-bottom:20px;
 }
+/* request form div - styling */
+.request-form-div{
+    min-height:280px;
+    border:1px solid #eee;
+    margin-right:20px; 
+    padding-bottom:20px; 
+    background-color: #efefef; 
+    font-size:0.75rem;    
+}
+.request-form-heading{
+    height:60px;
+    background-color: #00509D;
+    color:white;
+    text-align:center;
+    padding-top:20px;
+    margin-bottom:10px;
+    font-size:18px;
+}
+.input-div{
+    padding-left:20px;
+    padding-top:20px;
+    color:#777;
+}
+.input-div label{
+    display:block;
+    padding-bottom: 5px;
+}
+.input{
+    border:1px solid #ddd;
+}
+.date-input-div{
+    min-height:80px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:20px;
+    color:#777;
+}
+.date-input-sub-div{
+    width:50%;
+}
+.date-input-sub-div label{
+    display:block;
+    padding-bottom: 5px;
+}
+.date-icon{
+    padding-left:50px;
+}
+.date-input-sub-div-input{
+    width:80%;
+    border:1px solid #ddd;
+}
+.from-date-span{
+    padding-left:30px;
+}
+.room-input-div{
+    display:flex; 
+    padding-left:20px;
+    color:#777;   
+}
+.room-input-div div{
+    width:50%;
+    padding:10px;
+}
+.room-input-div label{
+    display:block;
+    font-size:0.75rem;
+    padding-bottom:5px;
+}
+.room-input-div button{
+    font-size:0.5rem;
+    padding:5px;
+    background:#00509D;
+    color:white;
+    border:none;
+}
+.div-3{
+    width:50%;
+}
+.div-4, .div-5{
+    width:25%;
+}
+.div-4 input, .div-5 input{
+    width:40px;
+    border:none;
+}
+.request-form-submit-button{
+    height:30px;
+    width:80%;
+    margin-left:10%;
+    margin-top:10px;
+    border:none;
+    text-align:center;
+    background-color: #00509D;
+    color:white;
+    font-size: 0.8rem;
+    font-weight:bold;
+}
+/* filter-div styling */
+.filter-div{
+    border:1px solid #eee;
+    margin-top:10px;
+    text-transform: capitalize;
+    padding:20px 20px 0px 40px;
+    color:#777;
+    margin-right:20px;
+    background-color: #efefef;
+    font-size:0.8rem;
+}
+.filter-div-heading{
+    padding-bottom:20px;
+}
+.filter-sub-div{
+    padding-bottom:20px;
+}
+.filter-heading{
+    padding-bottom:5px;
+    border-bottom: 1px solid #777;
+    margin-bottom:10px;
+}
+
+.filter-ul{
+    list-style-type: none;
+}
+.filter-ul li{
+    line-height:30px;
+    text-transform: capitalize;
+}
+.checkbox{
+    transform:scale(1.5);
+    margin-right:20px;    
+}
+/*
+    *contents-div styling
+    *
+    *
+*/
 .contents-div{
     width:70%;
     min-height:100vh;
@@ -161,7 +317,14 @@
     height:120px;    
     background:#efefef;
 }
-/* bottom-side-links section - styling */
+/**************************************** 
+    bottom-side-links section - styling
+    bottom-side-links-section has four parts.
+    1. address-box
+    2. cc-links : customer care links 
+    3. partner-links 
+    4. social-media-links section
+****************************************/
 .bottom-side-links-section{
     height:40vh;
     width:100vw;
@@ -171,6 +334,7 @@
     display:flex;
     background-color: #444;
 }
+/* address-box styling */
 .address-box{
     width:30%;
     height:100%;
@@ -184,7 +348,7 @@
 .address-box p{    
     padding-bottom:0.25rem;
 }
-
+/* partner-links and cc-links : common styling */
 .partner-links-nav,
 .cc-links-nav{
     width:20%;
@@ -205,13 +369,12 @@
     padding-left: 1rem;
     text-transform: capitalize;
 }
-
+/* subscribe-box styling */
 .subscribe-box{
     width:30%;
     height:100%;
     color:#ddd;
 }
-
 .input-div{
     padding-top:0.75rem;
 }
@@ -259,10 +422,13 @@
 }
 .sm-span{
     margin:0.5rem;
-    font-size:2rem;
+    font-size:1.5rem;
     cursor: pointer;
 }
-/* footer - styling */
+/*******************************
+    footer - styling
+    footer has footer-links 
+*******************************/
 .footer{
     height:8vh;
     width:100vw;    
@@ -284,4 +450,5 @@
 }
 .footer-links .link{
     color:#aaa;
+    text-transform: capitalize;
 }

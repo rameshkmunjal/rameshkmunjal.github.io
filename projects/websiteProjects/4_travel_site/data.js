@@ -1,29 +1,18 @@
+/****************************************
+ * data to create header-links
+ *****************************************/
 export const  headerLinks=["home", "hotels", "holidays", "flights", "cars", "cruise", "hot deal", "blog", "contact", "search"];
 
-export const footerLinks=["about us", "team", "typography", "contact"];
+/***********************************
+    * data to create sidebar
+ ***********************************/
+export const categories=["honeymoon", "adventure", "lifestyle", "historical tour", "trekking"];
+export const rating=[1, 2, 3, 4, 5];
+export const facilities=["wi fi", "parking", "airport shuttle", "restaurant", "family rooms"];
 
-export const addressObj={
-    "title":"TNT Company", 
-    "address":["26, Golf Course Road", "Gurgaon - 122001 India"]
-}
-
-export const ccLinksData={
-    "title":"Customer Care",
-    "linksArray":["FAQ", "Payment Options", "booking tips", "information", "hotel awards", "press room"]
-}
-
-export const partnerLinksData={
-    "title":"Our Partners",
-    "linksArray":["rooms", "easy booking", "trip advisor", "group hotels", "travel"]
-}
-
-export const socialLinks=[
-    '<i class="fab fa-facebook"></i>',
-    '<i class="fab fa-twitter"></i>',
-    '<i class="fab fa-google"></i>', 
-    '<i class="fab fa-instagram"></i>', 
-    '<i class="fab fa-youtube"></i>',
-]
+/**************************************
+ * data to create card showing hotels
+ **************************************/
 
 export const hotelsArray=[
     {
@@ -110,4 +99,31 @@ export const hotelsArray=[
     }, 
 ]
     
+/********************************************
+    data used to create bottom-section
+*********************************************/
+export const addressObj={
+    "title":"TNT Company", 
+    "address":["26, Golf Course Road", "Gurgaon - 122001 India"]
+}
 
+export const ccLinksData={
+    "title":"Customer Care",
+    "linksArray":["FAQ", "Payment Options", "booking tips", "information", "hotel awards", "press room"]
+}
+
+export const partnerLinksData={
+    "title":"Our Partners",
+    "linksArray":["rooms", "easy booking", "trip advisor", "group hotels", "travel"]
+}
+
+export const socialLinks=[
+    '<i class="fab fa-facebook"></i>',
+    '<i class="fab fa-twitter"></i>',
+    '<i class="fab fa-google"></i>', 
+    '<i class="fab fa-instagram"></i>', 
+    '<i class="fab fa-youtube"></i>',
+]
+
+/* data to create footer-links */
+export const footerLinks=["about us", "team", "typography", "contact"];
