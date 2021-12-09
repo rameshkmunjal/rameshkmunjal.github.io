@@ -90,7 +90,7 @@ function createAndAppendRequestForm(sidebar){
     let sd1=$CE('div');
     $SET_CLASS(sd1, "date-input-sub-div");
     let sd1Label=$CE('label');
-    sd1Label.innerHTML='<span>From</span><span class="date-icon"><i class="fas fa-calendar-alt"></i></span>';
+    sd1Label.innerHTML='<span>Check In</span><span class="date-icon"><i class="fas fa-calendar-alt"></i></span>';
     let sd1Input=$CE('input');
     sd1Input.setAttribute('type', 'text');
     
@@ -103,7 +103,7 @@ function createAndAppendRequestForm(sidebar){
     let sd2=$CE('div');
     $SET_CLASS(sd2, "date-input-sub-div");
     let sd2Label=$CE('label');
-    sd2Label.innerHTML='<span>To</span><span class="date-icon"><i class="fas fa-calendar-alt"></i></span>';
+    sd2Label.innerHTML='<span>Check Out</span><span class="date-icon"><i class="fas fa-calendar-alt"></i></span>';
     let sd2Input=$CE('input');
     
     sd2Input.setAttribute('type', 'text');
@@ -133,6 +133,7 @@ function createAndAppendRequestForm(sidebar){
     let sd4Label=$CE('label');
     sd4Label.innerText="Adults";
     let sd4Input=$CE('input');
+    sd4Input.setAttribute('placeholder', '2');
     $APC(div4, sd4Label);
     $APC(div4, sd4Input);
     $APC(roomInputDiv, div4);
@@ -141,6 +142,7 @@ function createAndAppendRequestForm(sidebar){
     let sd5Label=$CE('label');
     sd5Label.innerText="Child";
     let sd5Input=$CE('input');
+    sd5Input.setAttribute('placeholder', '2');
     $APC(div5, sd5Label);
     $APC(div5, sd5Input);       
     $APC(roomInputDiv, div5);

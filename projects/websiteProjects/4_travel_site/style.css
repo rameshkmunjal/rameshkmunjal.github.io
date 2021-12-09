@@ -127,9 +127,11 @@
 .input-div label{
     display:block;
     padding-bottom: 5px;
+    padding-left:5px ;
 }
 .input{
     border:1px solid #ddd;
+    height:25px;
 }
 .date-input-div{
     min-height:80px;
@@ -145,13 +147,15 @@
 .date-input-sub-div label{
     display:block;
     padding-bottom: 5px;
+    padding-left: 5px;
 }
 .date-icon{
-    padding-left:50px;
+    padding-left:30px;
 }
 .date-input-sub-div-input{
     width:80%;
     border:1px solid #ddd;
+    height:25px;
 }
 .from-date-span{
     padding-left:30px;
@@ -169,6 +173,13 @@
     display:block;
     font-size:0.75rem;
     padding-bottom:5px;
+}
+.room-input-div input{
+    text-align:center;
+    height:20px;
+}
+.room-input-div input::placeholder{
+    color:#aaa;
 }
 .room-input-div button{
     font-size:0.5rem;
@@ -226,7 +237,7 @@
     list-style-type: none;
 }
 .filter-ul li{
-    line-height:30px;
+    line-height:25px;
     text-transform: capitalize;
 }
 .checkbox{
@@ -297,12 +308,18 @@
     width:50%;
     padding-left:10px;    
     text-align:center;
-    padding-right:30px;
+    padding-right:50px;
 }
 .details-span{
     font-weight: bold;
-    padding-left:30px;
+    margin-left:10px;
 }
+.details-span:hover{
+    font-size: 15px;
+    cursor:pointer;
+    color:darkblue;
+}
+
 .img-box{
     height:180px;
     width:200px;
