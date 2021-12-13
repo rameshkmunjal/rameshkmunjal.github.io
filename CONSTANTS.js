@@ -103,6 +103,15 @@ export const  wsData=[
         "url": "./projects/websiteProjects/8_course_landing_page/index.html",
         "tech":"HTML CSS"
     },
+    {
+        "id": "4",
+        "category": "website",
+        "name": "indra vilas furniture",
+        "created_on":"2021-12-12",
+        "imgsrc":"./images/sofa.jpg",
+        "url": "./projects/websiteProjects/5_furniture_shop/index.html",
+        "tech":"HTML CSS"
+    },
     
 ]
 

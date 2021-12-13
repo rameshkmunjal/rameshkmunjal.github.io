@@ -1,0 +1,38 @@
+//Client ID 91e4dc18201e4093b99d08b5e1865218
+
+
+//-----------------------------------------------------------------
+/*
+New Releases :
+curl --request GET \
+  --url https://api.spotify.com/v1/browse/new-releases \
+  --header 'Authorization: ' \
+  --header 'Content-Type: application/json'
+
+country
+string
+A country: an ISO 3166-1 alpha-2 country code. Provide this parameter if you want the list of 
+returned items to be relevant to a particular country. If omitted, the returned items will be 
+relevant to all countries.
+
+Example value:"SE";
+*/
+/*
+  Response:
+  {
+  "albums": {
+    "href": "https://api.spotify.com/v1/me/shows?offset=0&limit=20\n",
+    "items": [
+      {}
+    ],
+    "limit": 20,
+    "next": "https://api.spotify.com/v1/me/shows?offset=1&limit=1",
+    "offset": 0,
+    "previous": "https://api.spotify.com/v1/me/shows?offset=1&limit=1",
+    "total": 4
+  }
+}
+
+*/
+ // ----------------------------------------------------------------
+
