@@ -1,5 +1,6 @@
 import { $APC,  $CESC } from "./util.js";
 import { itemsArray } from "./data.js";
+import { createAndAppendSidebar } from "./sidebar.js";
 
 
 
@@ -14,14 +15,7 @@ export const createAndAppendMain=(container)=>{
     return container;
 }
 
-export const createAndAppendSidebar=(main)=>{   
-    let sidebar=$CESC('aside', 'sidebar'); 
-    let p=$CESC('p', 'sidebar-p');
-    p.innerText="This is sidebar";
-    $APC(sidebar, p);   
-    $APC(main, sidebar);
-    return main;
-}
+
 
 export const createAndAppendContentsDiv=(main)=>{
     let contentsDiv=$CESC('div', 'contents-div');

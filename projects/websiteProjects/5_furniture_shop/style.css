@@ -228,10 +228,49 @@ a{
 .sidebar{
     width:30vw;
     min-height:70vh;
-    background:white;
+    background:#efefef;
     border-right:1px solid #eee;
     padding-top:25px;
     margin-bottom:20px;
+    padding-left:5vw;
+}
+/* filter-div styling */
+.filter-div{
+    border:1px solid #eee;
+    margin-top:10px;
+    text-transform: capitalize;
+    color:#777;
+    margin-right:20px;
+    background-color:white;
+    font-size:0.8rem;
+    
+}
+.filter-div-heading{
+    padding:15px;
+    padding-left:30px;
+    background-color: #000;
+    color:white;    
+    text-transform:uppercase;
+    letter-spacing: 0.1rem;
+}
+.filter-sub-div{
+    padding:20px 30px;
+}
+.filter-heading{
+    padding-bottom:5px;    
+    margin-bottom:10px;    
+}
+
+.filter-ul{
+    list-style-type: none;
+}
+.filter-ul li{
+    line-height:25px;
+    text-transform: capitalize;
+}
+.checkbox{
+    transform:scale(1.5);
+    margin-right:25px;    
 }
 
 /*

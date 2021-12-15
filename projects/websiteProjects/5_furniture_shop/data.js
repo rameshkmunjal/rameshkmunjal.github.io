@@ -2,11 +2,16 @@
  * data to create header-links
  *****************************************/
  export const  navLinks=["living room", "bedroom", "dining", "accessories", "blogs", "contact us", "hot deals"];
- export const rating=[1, 2, 3, 4, 5];
+ /***********************************
+    * data to create sidebar
+ ***********************************/
+export const categories=["sofa set", "double bed", "chairs", "accessories", "tables"];
+export const rating=[1, 2, 3, 4, 5];
+export const brands=["godrej", "ikea", "natraj", "vipul", "neel kamal"];
  
 
  /**************************************
- * data to create card showing hotels
+ * data to create card showing furniture items
  **************************************/
 
 export const itemsArray=[
