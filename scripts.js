@@ -12,7 +12,7 @@ import {
     wdData,
     wsData,
     cbData,
-    jqData, 
+    chData, 
     reactData
 } from './CONSTANTS.js';
 
@@ -121,8 +121,8 @@ function displayProjects(catchWord){
             createProjectLinks(cbData);
             break;
         }
-        case "jquery":{
-            createProjectLinks(jqData);
+        case "challenges":{
+            createProjectLinks(chData);
             break;
         }
         case "react":{

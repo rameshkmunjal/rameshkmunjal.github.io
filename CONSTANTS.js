@@ -1,4 +1,4 @@
-export const projectTypes=["VanillaJs", "Web Design", "Websites",  "CSS Battles", "Jquery", "React"];
+export const projectTypes=["VanillaJs", "Web Design", "Websites",  "CSS Battles", "Challenges", "React"];
 export const skillsTypes=[
     {
         name:"Javascript", 
@@ -423,7 +423,17 @@ export const wdData = [
     },
 ];
 
-export const jqData=[];
+export const chData=[
+    {
+        "id": "1",
+        "category": "challenges",
+        "name": "card",
+        "created_on":"2021-03-15",
+        "imgsrc":"./images/challenges.png",
+        "url":  "./projects/chProjects/profile/index.html",
+        "tech":"HTML CSS"
+    },
+];
 export const reactData=[
     {
         "id": "1",

@@ -1,8 +1,6 @@
+
 import { $APC,  $CE, $CESC, $CREATE_NAV,  $SET_CLASS } from "./util.js";
-import {
-    servicesLinksData,
-    extrasLinksData,
-    myaccountLinksData,
+import {    
     socialLinks
 } from './data.js';
 import { addressObj } from "./data.js";
