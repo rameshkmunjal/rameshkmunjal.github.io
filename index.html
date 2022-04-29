@@ -4,37 +4,158 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="data/webdevData.js"></script> 
-    <script src="data/jsData.js"></script> 
-    <script src="data/cssData.js"></script> 
-    <script src="data/websiteData.js"></script>    
-    <script src="script.js"></script>    
-    <title>rameshkmunjal.github.io</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
 </head>
 <body>
-    <section class="header">
-        <div class="profile-img-box">
-            <img src="rkm.jpg" alt="profile image">            
-        </div>
-        <div class="header-heading"><h2>Project Gallery</h2></div>
-    </section>
-    <section class="nav">        
-        <ul>                    
-            <li class="li-item active">WebDev</li>
-            <li class="li-item ">VanillaJs</li>
-            <li class="li-item">CSS</li>                        
-            <li class="li-item">Websites</li>                    
-        </ul>
-    </section>
-    <section id="container" class="container"> 
-                         
-    </section>
-    <footer>
-        <p>Ramesh Kumar Munjal</p>
-    </footer> 
-    
+    <div class="page-container">
+        <section class="nav-section">
+            <nav class="navbar">
+                <div class="logo-div">RKM</div>
+                <ul class="nav">
+                    <li><a href="#intro">Intro</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>                
+            </nav>
+        </section>
+        
+        <section class="hamburger-section">
+            <nav class="ham-navbar">
+                <div class="ham-logo-div">RKM</div>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="hamburger-ul">
+                    <li><a href="#intro">Intro</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>                
+            </nav>
+        </section> 
+
+        <section class="intro-section" id="intro">
+            <div class="intro-text intro-div">
+                <h2>Introduction</h2>
+                <p>
+                    In 2015, i started learning web development and took it up as hobby / passtime.
+                    Tried my hand on various technologies and built scores of projects to satisfy my creative 
+                    urge.
+                </p><br>
+                <p> 
+                    Some selective Projects out of them have been showcased by me in Projects Section.  
+                </p>
+            </div>
+            <div class="profile-img-div intro-div">
+                <img src="images/rkm.jpg" alt="profile image" class="profile-img">
+            </div>
+        </section>
+
+
+        <!--Projects Section-->
+        <section class="display-section project-section">
+            <h2>Projects</h2>
+            <div class="display-div projects-div" id="projects">
+                <div class="card">
+                    <h3>HTML / CSS</h3>
+                    <p>
+                        Projects to showcase designing skills using HTML, CSS and a litte JS.
+                    </p>
+                    <div class="btn-div"> 
+                        <button>View</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>VanillaJS</h3>
+                    <p>
+                       Some projects to showcase VanillaJS skills.
+                    </p>
+                    <div class="btn-div"> 
+                        <button>View</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>ReactJS</h3>
+                    <p>
+                        Some Website Projects to showcase  ReactJS Skills and using public APIs.
+                    </p>
+                    <div class="btn-div"> 
+                        <button>View</button>
+                    </div>
+                </div>
+            </div>    
+        </section>
+        
+        <!--Skills Section-->
+        <section class="display-section skills-section" id="skills">
+            <h2>Skills</h2>
+            <div class="display-div skills-div">
+            <div class="card">
+                <h3>Frontend</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>ReactJS</li>
+                    <li>Angular</li>
+                    
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Backend</h3>
+                <ul>
+                    <li>PHP</li>
+                    <li>NodeJs</li>                    
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Others</h3>
+                <ul>
+                    <li>MongoDB</li>
+                    <li>MySqli</li>
+                    <li>Github</li>
+                    <li>Linux</li>
+                </ul>
+            </div>
+
+            </div>
+        </section>
+        
+        <section class="contacts-section" id="contact">
+            <div class="contacts-card page-links">
+                <h3>Page Links</h3>
+                <ul>
+                    <li><a href="#intro">Intro</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="contacts-card contacts-details">
+                <h3>Contact Me : </h3>
+                <p>
+                    Email-address: rameshkmunjal@gmail.com
+                </p>
+            </div>
+            <div class="contacts-card social-media-links">
+                <h3>Social Media Links</h3>
+                <ul>
+                    <li><a href="#">facebook</a></li>
+                    <li><a href="#">linkdin</a></li>
+                    <li><a href="#">github</a></li>
+                    <li><a href="#">twitter</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="footer-section">
+            <p>&copy; Ramesh Kumar Munjal</p>
+        </section>
+       
+    </div>
 </body>
 </html>
-
-
