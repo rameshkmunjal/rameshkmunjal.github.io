@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    min-height:100vh; 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+/*************************
+    header - styling
+    header has two parts.
+    1. logo-div - containing logo and helpline
+    2. header-links - containing links
+*************************/
+.header{
+    height:20vh;
+    width:100%;
+    background-color: #00509D;
+}
+/* header - logoDiv : styling */
+.logo-div{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    width:80vw;
+    margin-left:10vw;
+    height:10vh;
+    color:white;
+    padding-right:4rem;
+    padding-left:4rem;
+    padding-top:1.8rem;    
+}
+.logo{
+    height:50px;
+    width:50px; 
+    background:transparent; 
+    border:2px solid #fff; 
+    font-weight:bold; 
+    border-radius:50%;
+    padding-top:15px;
+    padding-left:8px;
+    box-shadow: 2px 2px 5px #efefef;
+}
+.helpline{
+    color:#fff;
+}
+.helpline i{
+    margin-right:10px;
+}
+.helpline span{
+    color:lightblue;
+}
+/* header - header-links : styling */
+.header-links{
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+    width:80vw;
+    margin-left:10vw;
+    height:10vh;
+    color:white;
+    
+}
+.header-links .link{
+    text-transform: capitalize;
+    font-size:0.75rem;
+    color:lightblue;
+    font-weight: bold;
+    
+}
+.header-links .link:hover{
+    cursor:pointer;
+    font-size:1rem;
+}
+/*************************
+    main - styling
+    main has two components 
+    1. sidebar
+    2. contents-div
+*************************/
+.main{
+    min-height:100vh;
+    width:80vw;
+    margin-left:10vw;
+    margin-right:10vw;
+    display:flex;
+}
+.sidebar{
+    width:30%;
+    background:white;
+    border-right:1px solid #eee;
+    padding-top:25px;
+    margin-bottom:20px;
+}
+/* request form div - styling */
+.request-form-div{
+    min-height:280px;
+    border:1px solid #eee;
+    margin-right:20px; 
+    padding-bottom:20px; 
+    background-color: #efefef; 
+    font-size:0.75rem;    
+}
+.request-form-heading{
+    height:60px;
+    background-color: #00509D;
+    color:white;
+    text-align:center;
+    padding-top:20px;
+    margin-bottom:10px;
+    font-size:18px;
+}
+.input-div{
+    padding-left:20px;
+    padding-top:20px;
+    color:#777;
+}
+.input-div label{
+    display:block;
+    padding-bottom: 5px;
+    padding-left:5px ;
+}
+.input{
+    border:1px solid #ddd;
+    height:25px;
+}
+.date-input-div{
+    min-height:80px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:20px;
+    color:#777;
+}
+.date-input-sub-div{
+    width:50%;
+}
+.date-input-sub-div label{
+    display:block;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+.date-icon{
+    padding-left:30px;
+}
+.date-input-sub-div-input{
+    width:80%;
+    border:1px solid #ddd;
+    height:25px;
+}
+.from-date-span{
+    padding-left:30px;
+}
+.room-input-div{
+    display:flex; 
+    padding-left:20px;
+    color:#777;   
+}
+.room-input-div div{
+    width:50%;
+    padding:10px;
+}
+.room-input-div label{
+    display:block;
+    font-size:0.75rem;
+    padding-bottom:5px;
+}
+.room-input-div input{
+    text-align:center;
+    height:20px;
+}
+.room-input-div input::placeholder{
+    color:#aaa;
+}
+.room-input-div button{
+    font-size:0.5rem;
+    padding:5px;
+    background:#00509D;
+    color:white;
+    border:none;
+}
+.div-3{
+    width:50%;
+}
+.div-4, .div-5{
+    width:25%;
+}
+.div-4 input, .div-5 input{
+    width:40px;
+    border:none;
+}
+.request-form-submit-button{
+    height:30px;
+    width:80%;
+    margin-left:10%;
+    margin-top:10px;
+    border:none;
+    text-align:center;
+    background-color: #00509D;
+    color:white;
+    font-size: 0.8rem;
+    font-weight:bold;
+}
+/* filter-div styling */
+.filter-div{
+    border:1px solid #eee;
+    margin-top:10px;
+    text-transform: capitalize;
+    padding:20px 20px 0px 40px;
+    color:#777;
+    margin-right:20px;
+    background-color: #efefef;
+    font-size:0.8rem;
+}
+.filter-div-heading{
+    padding-bottom:20px;
+}
+.filter-sub-div{
+    padding-bottom:20px;
+}
+.filter-heading{
+    padding-bottom:5px;
+    border-bottom: 1px solid #777;
+    margin-bottom:10px;
+}
+
+.filter-ul{
+    list-style-type: none;
+}
+.filter-ul li{
+    line-height:25px;
+    text-transform: capitalize;
+}
+.checkbox{
+    transform:scale(1.5);
+    margin-right:20px;    
+}
+/*
+    *contents-div styling
+    *
+    *
+*/
+.contents-div{
+    width:70%;
+    min-height:100vh;
+    background:white;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom:2rem;
+    padding-top:20px;
+}
+.card{
+    height:300px;
+    width:200px;
+    border-radius:10px;
+    margin:10px;
+    color:#777;
+    box-shadow: 2px 2px 5px #333;
+}
+.hotel-name{
+    font-weight:bold;
+    padding-bottom:0.25rem;
+    color:#333;
+    font-size: 0.9rem;
+    padding-left:10px;
+    padding-top:10px;
+}
+.city{
+    text-transform:capitalize;
+    padding-right:10px;
+    padding-left:10px;
+    font-size:0.75rem;
+}
+.country{
+    text-transform: capitalize;
+    font-size:0.75rem;
+}
+.rating{
+    padding-left:10px;
+}
+.rating i{
+    color:yellow;
+    margin-top:0.5rem;
+    letter-spacing:0.10rem;
+    font-size:0.75rem;
+}
+.btn-div{
+    height:30px;
+    width:100%;
+    margin-top:10px;
+    border-top:1px solid #aaa;
+    padding-top:0.5rem;
+    font-size:0.8rem;
+}
+.price-span{
+    font-weight:bold;
+    width:50%;
+    padding-left:10px;    
+    text-align:center;
+    padding-right:50px;
+}
+.details-span{
+    font-weight: bold;
+    margin-left:10px;
+}
+.details-span:hover{
+    font-size: 15px;
+    cursor:pointer;
+    color:darkblue;
+}
+
+.img-box{
+    height:180px;
+    width:200px;
+}
+.img-box img{
+    height:180px;
+    width:100%;
+    object-fit: cover;
+}
+
+.content-box{
+    height:120px;    
+    background:#efefef;
+}
+/**************************************** 
+    bottom-side-links section - styling
+    bottom-side-links-section has four parts.
+    1. address-box
+    2. cc-links : customer care links 
+    3. partner-links 
+    4. social-media-links section
+****************************************/
+.bottom-side-links-section{
+    height:40vh;
+    width:100vw;
+    padding-left:10vw;
+    padding-right:10vw;
+    color:white;
+    display:flex;
+    background-color: #444;
+}
+/* address-box styling */
+.address-box{
+    width:30%;
+    height:100%;
+    color:#aaa;
+    padding:1.25rem 1rem;
+    font-size: 00.75rem;
+}
+.address-box h3{
+    padding-bottom:0.75rem;
+}
+.address-box p{    
+    padding-bottom:0.25rem;
+}
+/* partner-links and cc-links : common styling */
+.partner-links-nav,
+.cc-links-nav{
+    width:20%;
+    height:100%; 
+    display: flex;
+    flex-direction: column;
+    color:#aaa;
+}
+.cc-links-nav h4,
+.partner-links-nav h4{
+    padding:1.25rem 0.75rem;
+}
+.cc-links-nav a,
+.partner-links-nav a{
+    display: block;
+    font-size:0.75rem;
+    line-height: 20px;
+    padding-left: 1rem;
+    text-transform: capitalize;
+}
+/* subscribe-box styling */
+.subscribe-box{
+    width:30%;
+    height:100%;
+    color:#ddd;
+}
+.input-div{
+    padding-top:0.75rem;
+}
+.input-div-title{
+    padding:0.75rem 0;
+    text-transform: uppercase;
+    font-size:0.75rem;
+    letter-spacing: 0.05rem;
+}
+.input-box{
+    width:90%;
+    margin-bottom:20px;
+}
+.input-box input{
+    width:80%;
+    height:35px;
+    border:none;
+    padding-left:30px;
+}
+.input-box input::placeholder{
+    color:#aaa;
+}
+.input-box button{
+    width:20%;
+    height:35px;
+    text-align:center;
+    background:#1D32f2;
+    color:white;
+    border:none;
+    font-weight:bold;
+    letter-spacing: 0.05rem;
+}
+
+.social-media-div{
+    padding-top:0.5rem;
+    border-top:1px solid #aaa;
+    
+}
+.social-media-div-title{
+    padding-bottom:1rem;
+    padding-top:0.5rem;
+    text-transform: uppercase;
+    font-size:0.75rem;
+    letter-spacing: 0.05rem
+}
+.sm-span{
+    margin:0.5rem;
+    font-size:1.5rem;
+    cursor: pointer;
+}
+/*******************************
+    footer - styling
+    footer has footer-links 
+*******************************/
+.footer{
+    height:8vh;
+    width:100vw;    
+    background:#333;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    
+}
+.footer-links{
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+    width:40vw;
+    margin-left:30vw;
+    margin-right:30vw;
+    height:10vh;
+    color:#aaa;
+}
+.footer-links .link{
+    color:#aaa;
+    text-transform: capitalize;
+}
