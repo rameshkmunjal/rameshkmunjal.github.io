@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->  
+</head>
+<body>
+<!--wrapper contains whole page-->
+<div class="wrapper">
+  <!--Desktop nav starts here-->
+    <nav class="desktop-nav">
+      <!--left side nav starts-->
+      <div class="left-nav">
+        <a class="logo" href="#">snap</a>
+        <ul>
+          <li class=" link inactive-link">
+            <a href="#">Features</a>
+            <i class="fas fa-angle-down"></i>
+            <ul class="sub-ul">
+              <li>Todo List</li>
+              <li>Calendar</li>
+              <li>Reminders</li>
+              <li>Planning</li>
+            </ul>
+          </li>
+          <li class=" link inactive-link">
+            <a href="#">Company</a>
+            <i class="fas fa-angle-down"></i>
+            <ul class="sub-ul">
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+          </li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+      <!--left side nav ends-->
+
+      <!--right side nav starts-->
+      <div class="right-nav">
+        <ul>
+          <li><a href="#">Login</a></li>
+          <li ><a class="register-btn" href="#">Register</a></li>
+        </ul>
+      </div>
+      <!--right side nav ends-->
+    </nav>    
+<!--desktop nav ends here-->
+
+<!--mobile nav starts here-->
+    <!--mobile nav top contains logo and hamburger-->
+      <div class="mobile-nav-top">
+          <a class="mobile-nav-logo" href="#">snap</a>
+          <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+      </div>
+    <!--by default slider nav is hidden-->  
+      <div class="mobile-nav-div hide-nav">
+        <div class="close-btn-div">
+          <button class="close-btn">X</button>
+        </div>
+      <!--two nav lists in one div -->
+      <!--mobile top ul starts-->
+        <ul class="mobile-top-ul">
+          <li class="link collapse-link">
+              <a href="#">Features</a>
+              <i class="fas fa-angle-down"></i>
+              <ul class="child-ul">
+                <li>Todo List</li>
+                <li>Calendar</li>
+                <li>Reminders</li>
+                <li>Planning</li>
+              </ul>
+          </li>
+
+          <li class=" link collapse-link">
+            <a href="#">Company</a>
+            <i class="fas fa-angle-down"></i>
+            <ul class="child-ul">
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+          </li>
+
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+    <!--mobile top ul ends-->
+    <!--mobile bottom ul starts-->
+        <ul class="mobile-bottom-ul">
+          <li><a href="#">Login</a></li>
+          <li ><a class="register-btn" href="#">Register</a></li>
+        </ul>
+      <!--mobile bottom ul ends-->
+    </div>
+<!--mobile nav ends here-->
+<!--main starts-->
+    <main>
+      <!--hero div contains details and image-->
+      <!--hero details on left in desktop and bottom in mobile-->
+      <div class="hero-details-div">
+        <h1><span>Make</span><span>remote work </span> </h1>
+          <p>
+            <span>Get your team in sync, no matter your location.</span>
+            <span>Streamline processes, create team rituals, and</span>
+            <span>watch productivity soar. </span>           
+          </p>
+          <button>Learn more</button>
+          <ul class="icon-ul">
+            <li>
+              <img src="./images/client-databiz.svg" alt="databiz-svg">
+            </li>
+            <li>
+              <img src="./images/client-audiophile.svg" alt="client-audiophile-svg">
+            </li>
+            <li>
+              <img src="./images/client-meet.svg" alt="client-meet-svg">
+            </li>
+            <li>
+              <img src="./images/client-maker.svg" alt="client-maker-svg">
+            </li>
+          </ul>
+      </div>
+      <!--hero image on right in desktop and top in mobile-->
+      <div class="hero-image-div"></div>
+    </main>
+
+</div>
+<!--project attribution details-->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ramesh Kumar Munjal</a>.
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

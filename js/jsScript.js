@@ -13,9 +13,10 @@ jsData.map(project=>{
     let img=document.createElement('img');
     img.setAttribute('src', project.imgsrc);
     img.classList.add('project-image');
-    let title=document.createElement('h3');
+    let title=document.createElement('a');
+    title.setAttribute('href', project.url);
     title.innerText=project.name;
     card.appendChild(img);
     card.appendChild(title);
-    displaySection.appendChild(card);
+    displaySection.appendChild(card);    
 })

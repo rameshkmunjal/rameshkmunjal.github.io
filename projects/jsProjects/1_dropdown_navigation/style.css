@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+/* General styling */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color:#333;
+}
+ul{
+    list-style-type: none;
+}
+
+/* Desktop Devices - styling */
+@media screen and
+     (min-device-width : 376px) and 
+     (max-device-width : 1440px){
+    .wrapper{
+        width:100%;
+        height:100vh;
+        background-color: hsl(0, 0%, 98%);
+    }
+    .desktop-nav{
+        height:80px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .desktop-nav .logo{
+        font-weight: bold;
+        font-size:2rem;
+        margin-right: 2rem;
+    }
+    .desktop-nav .left-nav{
+        height:inherit;
+        display:flex; 
+        align-items: center;   
+    }
+    .desktop-nav .left-nav{
+        margin-left:20px;    
+    }
+    .desktop-nav .right-nav{
+        margin-right:50px;
+    }
+
+    .desktop-nav ul{
+        height:inherit;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .desktop-nav ul li{
+        width:100px;
+        text-align:center; 
+        position:relative;   
+    }
+
+    .desktop-nav ul li a{
+        font-size:0.75rem;
+    }
+    .desktop-nav ul li i{
+        margin-left:0.5rem;
+        font-size:0.75rem;
+    }
+    .desktop-nav .sub-ul{
+        list-style-type: none;    
+    }
+    .desktop-nav .inactive-link{
+        padding-top:30px;
+    }
+
+    .desktop-nav .inactive-link .sub-ul{
+        visibility: hidden;
+        opacity: 0;
+    }
+    .active-link{
+        padding-top:80px;
+    }
+    .active-link .sub-ul{
+        visibility: visible;
+        opacity: 1;   
+        display:flex;
+        flex-direction: column; 
+        position:relative;
+        top:10px;
+        left:0;
+        transition:2s;
+    }
+    .desktop-nav .active-link .sub-ul>li{
+        display:block;    
+        text-align:left;
+        color: hsl(0, 0%, 41%);
+        line-height:20px;
+        padding-left:15px;
+        font-size:0.75rem;
+        z-index:1;
+    }
+    .desktop-nav .register-btn{
+        padding:5px 10px;
+        border:1px solid #333;
+        border-radius: 10px;
+    }
+
+/* mobile -styling */   
+    .mobile-nav-top{
+        display:none;
+    }
+    .mobile-nav-div{
+        display:none;
+    }
+
+/* main  styling */
+    main{
+        height:500px;
+        display:flex;
+        width:80%;
+        margin:0 auto;    
+    }
+    .hero-details-div{
+        width:55%;
+        height:inherit;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .hero-image-div{
+        height:inherit;
+        width:45%;
+        background-image:url(./images/image-hero-desktop.png);
+        background-size:cover;
+    }
+    .hero-details-div h1{
+        font-size:60px;
+        font-weight:700;
+        color:hsl(0, 0%, 8%);
+    }
+    .hero-details-div h1 span{
+        display:block;
+    }
+    .hero-details-div p{
+        font-size:18px;
+        color:hsl(0, 0%, 41%);
+        margin-top:2rem;
+        margin-bottom: 2rem;
+        font-size: 00.95rem;
+        letter-spacing: 0.05rem;
+        line-height: 1.25rem;
+    }
+    .hero-details-div p span{
+        display:block;
+    }
+    .hero-details-div button{
+        width:100px;
+        height:35px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(0, 0%, 8%);
+        color:hsl(0, 0%, 98%);
+        border-radius:10px;
+        font-size: 0.75rem;
+        border:none;
+    }
+    .icon-ul{
+        height:50px;
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top:5rem;
+    }
+    .icon-ul img{
+        width:60%;    
+    }
+}
+/*-------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------*/
+/* Mobile Devices - styling */
+/* nav styling */
+@media only screen and 
+ (min-device-width : 0px) and 
+ (max-device-width : 375px){
+    .wrapper{
+        width:375px;
+        background-color:hsl(0, 0%, 98%);
+        padding-top: 1rem;
+        position:relative;
+        overflow:hidden;
+    }
+    .desktop-nav{
+        display:none;
+    }
+    /* mobile device styling */
+    
+    .mobile-nav-top{
+        height:60px;
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+    .mobile-nav-logo{
+        font-weight: 700;
+        font-size:2rem;
+        margin-left: 2rem;
+        color:hsl(0, 0%, 8%);
+    }
+    .hamburger{
+        width:40px;
+        height:50px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right:2rem;
+    }
+    .bar{
+        height:2px;
+        width:1.5rem;
+        margin-bottom:5px;
+        background-color:hsl(0, 0%, 8%);
+    }
+    .mobile-nav-div{
+        min-height:100px;
+        display:flex;
+        flex-direction: column;
+        width:200px;        
+        background-color:aliceblue;
+        color:#333;        
+        padding-bottom:2rem; 
+              
+    }    
+    .hide-nav{
+        position:absolute;
+        top:0;
+        right:-201px; 
+        transition:2s;
+        z-index:99;
+    }
+    .show-nav{
+        position:absolute;
+        top:0px;
+        right:1px;
+        z-index:99;
+        transition:2s;
+    }
+    
+    .close-btn-div{
+        height:50px;
+        display:flex;
+        justify-content: flex-end;
+        align-items: center;
+        border-bottom: 1px solid hsl(0, 0%, 41%);
+    }
+    .close-btn-div button{
+        font-size:1.25rem;
+        font-weight: 700;
+        margin-right:1.5rem;
+        border:none;
+    }
+    .mobile-top-ul {
+        min-height:100px;
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: flex-start;
+        margin:1rem 0;
+        padding-left:1rem;
+    }
+    .mobile-top-ul li{
+        line-height:2.5rem;        
+    }
+    .mobile-top-ul li a{
+        color:black;
+    }
+    
+    .child-ul{
+        list-style-type: none;    
+    }
+
+    .collapse-link .child-ul{
+        display: none;
+    }
+    .expand-link{
+        transition:2s;
+    }
+    
+    .expand-link .child-ul{
+        min-height:40px;
+        display:block;  
+        position:relative;
+        top:0px;
+        left:0;
+        transition:2s;
+    }
+    .expand-link .child-ul>li{
+        min-height:20px;
+        display:block;    
+        text-align:left;
+        color: hsl(0, 0%, 41%);
+        line-height:20px;
+        padding-left:15px;
+        font-size:0.75rem;
+        z-index:1000;
+    }
+
+    .mobile-bottom-ul{
+        min-height:80px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .mobile-bottom-ul li{
+        line-height:1.5rem;
+        text-align:center;
+    }
+    .mobile-bottom-ul > li > a{
+        display:block;
+        width:250px;
+        color:black;
+    }
+    .mobile-bottom-ul .register-btn{
+        width:100px;
+        height:30px;
+        border-radius:1rem;
+        border:1px solid hsl(0, 0%, 8%);
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:1rem;
+    }
+ }
+    
+/* Mobile Devices - styling */
+/* main styling */
+@media only screen and 
+ (min-device-width : 0px) and 
+ (max-device-width : 375px){
+    main{
+        min-height:600px;
+        display:flex;
+        flex-direction:column-reverse;
+    }
+    .hero-image-div{
+        width:375px;
+        height:500px;
+        max-width:100%;
+        background-image:url(./images/image-hero-desktop.png);
+        background-size:cover;
+        margin-top:1rem;
+        position:relative;
+    }
+
+    .hero-details-div{
+        width:100%;
+        padding:1rem;
+        min-height:300px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top:1rem;
+    }
+    .hero-details-div h1{
+        font-size:2rem;
+        font-weight:700;
+        color:hsl(0, 0%, 8%);
+        padding-top:1rem;
+    }
+    .hero-details-div h1 span{
+        display:inline;
+        margin-right:1rem;
+    }
+    .hero-details-div p{
+        font-size:18px;
+        color:hsl(0, 0%, 41%);
+        margin-top:2rem;
+        margin-bottom: 1rem;
+        font-size: 00.95rem;
+        letter-spacing: 0.04rem;
+        line-height: 1.25rem;
+        text-align: center;
+    }
+    .hero-details-div p span{
+        display:inline;
+    }
+    .hero-details-div button{
+        width:150px;
+        height:50px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(0, 0%, 8%);
+        color:hsl(0, 0%, 98%);
+        border-radius:10px;
+        font-size: 0.95rem;
+        font-weight: 700;
+        border:none;
+        margin:0 auto;
+        margin-top:0.75rem;
+        margin-bottom:1.25rem;
+    }
+    .icon-ul{
+        height:50px;
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top:2rem;
+        margin-bottom:3rem;
+    }
+    .icon-ul img{
+        width:60%;    
+    }    
+}
+
+/*---------------------------*/
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    padding-bottom:1rem;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
