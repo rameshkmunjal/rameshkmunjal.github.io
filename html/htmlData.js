@@ -36,12 +36,12 @@ const htmlData = [
         "tech":"html-css"
     },
     {
-        "id": "1",
+        "id": "3",
         "category": "html",
         "name": "business-website",
         "created_on":"2022-04-01",
         "imgsrc":"../images/html.png",
-        "url": "../projects/htmlProjects/business_ws_page/index.html",
+        "url": "../projects/htmlProjects/testimonials-grid/index.html",
         "tech":"html-css"
     },
     {
