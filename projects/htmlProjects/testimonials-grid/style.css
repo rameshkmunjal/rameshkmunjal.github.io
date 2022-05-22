@@ -7,7 +7,7 @@
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 /* body styling to center container */
-body{
+main{
     width:100%;
     min-height:100vh;
     display: flex;
@@ -259,6 +259,11 @@ body{
         }
 }
 
-/* attribution */
-.attribution { font-size: 11px; text-align: center; padding-bottom:1rem; }
-.attribution a { color: hsl(228, 45%, 44%); }
+
+footer{
+    height:40px;
+    padding:10px;
+    background-color: hsl(0, 0%, 81%);
+}
+    .attribution { font-size: 11px; text-align: center; padding-bottom:1rem; }
+    .attribution a { color: hsl(228, 45%, 44%); }

@@ -28,6 +28,15 @@ const htmlData = [
         "url": "../projects/htmlProjects/testimonials-grid/index.html",
         "tech":"html-css"
     },
+    {
+        "id": "4",
+        "category": "html",
+        "name": "huddle landing page",
+        "created_on":"2022-05-22",
+        "imgsrc":"../images/huddle.png",
+        "url": "../projects/htmlProjects/huddle-landing-page/index.html",
+        "tech":"html-css"
+    },
     
       
 ];
