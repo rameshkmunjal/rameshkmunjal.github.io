@@ -13,10 +13,29 @@ body{
 h1, h2, h3, h4, h5{
     font-family:'Poppins', sans-serif;
 }
+button:hover{
+    cursor:pointer;
+}
 .attribution { font-size: 11px; text-align: center; color:#ddd; }
 .attribution a { color:#ddd; text-decoration:none; }
 
-
+.btn-lg{
+    width:23%;
+    background-color: hsl(322, 100%, 66%);
+    color:white;
+    border-radius:2rem;
+    border:none;
+    text-align:center;
+    padding:1.25rem 0;
+    margin-top:2rem;
+    font-size:0.85rem;
+    letter-spacing:0.05rem;
+    font-family: 'Open Sans', sans-serif;            
+    font-weight:700;
+}
+.btn-lg:hover{
+    background-color:hsl(321, 100%, 78%);
+}
 @media screen and 
     (min-device-width:377px) and 
     (max-device-width:1440px){
@@ -26,7 +45,7 @@ h1, h2, h3, h4, h5{
             display:flex;
             justify-content: space-between;
             align-items: center;
-            padding:0 2rem;
+            padding:3rem 2rem;
         }
         header button{
             padding:0.25rem 1rem;
@@ -45,36 +64,26 @@ h1, h2, h3, h4, h5{
         }
         .intro h2{
             font-weight:700;
-            font-size:2.50rem;
+            font-size:2rem;
         }
         .intro p{
-            width:40%;
+            width:33%;
             text-align:center;    
             font-family: 'Open Sans', sans-serif;
-            font-weight:400px;
-            opacity: 0.8;
+            font-size:0.85rem;
+            color:hsl(192, 100%, 9%);
+            font-weight:600;
+            opacity:0.9;
             margin-top: 1rem;
         }
-        .intro button{
-            width:20%;
-            background-color: hsl(322, 100%, 66%);
-            color:white;
-            border-radius:2rem;
-            border:none;
-            text-align:center;
-            padding:1rem 0;
-            margin-top:2rem;
-            font-size:0.75rem;
-            letter-spacing:0.05rem;
-            font-family: 'Open Sans', sans-serif;            
-            font-weight:700;
-        }
+        
+        
     /* hero section - styling */
         .hero-section{
             min-height:300px;
             width:100%;
-            display:flex;
-            flex-direction: column;
+            display:flex;  
+            flex-direction: column;          
             justify-content: center;
             align-items: center;    
         }
@@ -153,6 +162,7 @@ h1, h2, h3, h4, h5{
             align-items: center;
         }
         .page-section-contents h2{
+            font-size:200%;
             width:75%;
             margin-right:20%;
             margin-left: 5%;
@@ -163,6 +173,9 @@ h1, h2, h3, h4, h5{
             margin-left: 5%;
             margin-top: 1rem;
             font-size: 0.75rem;
+            color:hsl(192, 100%, 9%);
+            font-weight:600;
+            opacity:0.9;
         }
         .page-section-image-div{
             width:40%;
@@ -193,7 +206,7 @@ h1, h2, h3, h4, h5{
     (max-device-width:1440px){
         /* call to action section - styling */
         .call-to-action-section{
-            min-height:200px;
+            min-height:300px;
             display:flex;
             flex-direction: column;
             justify-content: center;
@@ -201,21 +214,7 @@ h1, h2, h3, h4, h5{
         }
         .call-to-action-section h2{
             font-size: 2rem;
-        }
-        .call-to-action-section button{
-            width:20%;
-            background-color: hsl(322, 100%, 66%);
-            color:white;
-            border-radius:2rem;
-            border:none;
-            text-align:center;
-            padding:1rem 0;
-            margin-top:2rem;
-            font-size:0.75rem;
-            letter-spacing:0.05rem;
-            font-family: 'Open Sans', sans-serif;
-            font-weight:700;
-        }
+        }       
     }
 
 @media screen and 
@@ -341,6 +340,11 @@ h1, h2, h3, h4, h5{
 @media screen and 
     (min-device-width:0px ) and 
     (max-device-width:375px){
+    .btn-lg{
+        width:55%;
+        padding:0.9rem 0;
+        font-size:0.75rem;
+    }
     /* header - styling */
         header{
             height:80px;
@@ -386,24 +390,11 @@ h1, h2, h3, h4, h5{
             width:70%;
             text-align:center;    
             font-family: 'Open Sans', sans-serif;
-            font-weight:400;
+            font-size:0.8rem;
+            font-weight:600;
             opacity: 0.8;
             margin-top: 1rem;
-        }
-        .intro button{
-            width:40%;
-            background-color: hsl(322, 100%, 66%);
-            color:white;
-            border-radius:2rem;
-            border:none;
-            text-align:center;
-            padding:0.5rem 0;
-            margin-top:2rem;
-            font-size:0.5rem;
-            letter-spacing:0.05rem;
-            font-family: 'Open Sans', sans-serif;            
-            font-weight:700;
-        }
+        }        
 }
 /* hero section - styling */
 /* for mobile devices - hero section - styling */
@@ -428,6 +419,7 @@ h1, h2, h3, h4, h5{
         min-height:100px;
         width:80%;
         display:flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items:center;
     }
@@ -452,7 +444,7 @@ h1, h2, h3, h4, h5{
         display:block;
     }
     .follower-count{
-        font-size:2rem;
+        font-size:2.5rem;
         font-weight:700;
     }
     .follower-details{
@@ -488,19 +480,17 @@ h1, h2, h3, h4, h5{
         }
         .page-section-contents{
             height:inherit;
-            width:80%;    
+            width:80%;   
+            margin-top:2rem; 
             margin-left:10%;
             margin-right:10%;
             display:flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            order:2;
         }
-        .page-section-contents h2{
-            width:80%;
-            margin-right:10%;
-            margin-left: 10%;
-        }
+        
         .page-section-contents P{
             width:80%;
             margin-right:10%;
@@ -515,7 +505,8 @@ h1, h2, h3, h4, h5{
             display:flex;
             justify-content: center;
             align-items: center;  
-            position:relative;  
+            position:relative; 
+            order:1; 
         }
         .page-section-image-div img{
             max-width:100%;
@@ -549,20 +540,7 @@ h1, h2, h3, h4, h5{
             width:70%;
             text-align:center;
         }
-        .call-to-action-section button{
-            width:60%;
-            background-color: hsl(322, 100%, 66%);
-            color:white;
-            border-radius:2rem;
-            border:none;
-            text-align:center;
-            padding:1rem 0;
-            margin-top:2rem;
-            font-size:0.75rem;
-            letter-spacing:0.05rem;
-            font-family: 'Open Sans', sans-serif;
-            font-weight:700;
-        }
+        
 }
 
 /* mobile devices - footer */
@@ -586,12 +564,12 @@ h1, h2, h3, h4, h5{
             background-repeat:no-repeat;
         }
         .footer-logo{
-            width:50%;
+            width:40%;
             color:white;
             margin-top:2rem;
             margin-bottom: 1rem;
         }
-        .footer-logo img{
+        .footer-logo svg{
             max-width:100%;
         }
 
@@ -644,6 +622,7 @@ h1, h2, h3, h4, h5{
         }
         footer .footer-subscribe-div{
             width:90%;
+            padding-top:2rem;
             order:1;
         }
         .footer-subscribe-div h3{
@@ -671,10 +650,11 @@ h1, h2, h3, h4, h5{
         }
         .subscribe-btn{
             width:120px;
-            height:40px;
+            height:40px;            
             background-color: hsl(322, 100%, 66%);
             color:white;
-            margin-left:30px;
+            margin-left:40%;
+            margin-top:1rem;
             border:none;
             font-weight:600;
             font-size:0.75rem;
