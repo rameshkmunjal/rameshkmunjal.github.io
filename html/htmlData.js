@@ -37,6 +37,15 @@ const htmlData = [
         "url": "../projects/htmlProjects/huddle-landing-page/index.html",
         "tech":"html-css"
     },
+    {
+        "id": "5",
+        "category": "html",
+        "name": "sunnyside landing page",
+        "created_on":"2022-05-25",
+        "imgsrc":"../images/sunnyside.png",
+        "url": "../projects/htmlProjects/sunnyside-agency-landing-page/index.html",
+        "tech":"html-css"
+    },
     
       
 ];
