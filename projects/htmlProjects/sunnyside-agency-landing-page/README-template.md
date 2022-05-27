@@ -6,12 +6,12 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
+  
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
@@ -33,6 +33,10 @@ Users should be able to:
 - Live Site URL: https://rameshkmunjal.github.io/projects/htmlProjects/sunnyside-agency-landing-page/index.html
 
 ## My process
+  - created layout using Grid
+  - inside grid elements using flexbox
+  - used css to position background
+  - used clip path to create polygon in mobile nav
 
 ### Built with
 
@@ -44,16 +48,18 @@ Users should be able to:
 ### What I learned
 
   -learned how to position background-image
+  -learned to create polygon using clip-path css property
 
 
 
 ### Useful resources
 
 - w3schools.com - To learn how to position background image
-
+- https://bennettfeely.com/clippy/ to create polygon
+ 
 
 ## Author
-
+-Ramesh Kumar Munjal - my links given here under
 - Website - https://rameshkmunjal.github.io/projects/htmlProjects/sunnyside-agency-landing-page/index.html
 - Frontend Mentor - https://www.frontendmentor.io/profile/rameshkmunjal
 - Twitter - https://twitter.com/tech_munjal
@@ -62,3 +68,4 @@ Users should be able to:
 ## Acknowledgments
 
 - w3schools.com
+-https://bennettfeely.com/clippy/
