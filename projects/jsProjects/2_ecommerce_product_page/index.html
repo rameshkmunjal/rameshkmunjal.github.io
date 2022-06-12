@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> 
+  <link rel="stylesheet" href="style.css">
+  <script src="./script.js" defer></script>
+  <title>E-commerce product page</title>  
+</head>
+
+<body>
+  <!--page container starts-->
+  <div class="page-container">
+    <!--nav starts-->
+          <div class="desktop-nav">
+              <div class="left-div">
+                <!--to be shown in mobile device-->
+                  <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                  </div>
+                  <ul class="mobile-nav-ul mobile-nav-ul-hide">
+                    <li class="wrap-nav-btn">X</li>
+                    <li>Collections </li>
+                    <li>Men</li>
+                    <li>Women </li>
+                    <li>About </li>
+                    <li>Contact </li>
+                  </ul>
+                <!----> 
+                  <div class="logo">
+                      <img src="./images/logo.svg" alt="logo-image">
+                  </div>
+                  <ul class="desktop-nav-ul">
+                    <li>Collections </li>
+                    <li>Men</li>
+                    <li>Women </li>
+                    <li>About </li>
+                    <li>Contact </li>
+                  </ul>        
+              </div>
+                
+              <div class="right-div cart-close">
+                  <ul>
+                    <li><img class="cart-icon " src="./images/icon-cart.svg" alt="cart-image" /></li>
+                    <li><img class="profile-pic" src="./images/image-avatar.png" alt="image-avatar"></li>
+                  </ul>        
+              </div>
+          </div>
+          <!--
+          <nav class="mobile-nav">
+            
+            
+            <div class="logo">
+              <img src="./images/logo.svg" alt="logo-image">
+            </div>
+            <div class="right-div cart-close">
+              <ul>
+                <li><img class="cart-icon " src="./images/icon-cart.svg" alt="cart-image" /></li>
+                <li><img class="profile-pic" src="./images/image-avatar.png" alt="image-avatar"></li>
+              </ul>        
+            </div> 
+          </nav>
+          -----nav visible in mobile devices-->
+
+          <div id="focus-image-div">            
+            <img src="./images/image-product-1.jpg" alt="product-image" >            
+          </div>
+  
+          <div class="thumbnail-section">
+            
+              <div class="thumbnail-img-box active">
+                <img src="./images/image-product-1-thumbnail.jpg" alt="thumbnail-image" />
+              </div>
+              <div class="thumbnail-img-box">
+                <img src="./images/image-product-2-thumbnail.jpg" alt="thumbnail-image" />
+              </div>
+              <div class="thumbnail-img-box">
+                <img src="./images/image-product-3-thumbnail.jpg" alt="thumbnail-image" />
+              </div>
+              <div class="thumbnail-img-box">
+                <img src="./images/image-product-4-thumbnail.jpg" alt="thumbnail-image" />
+              </div>
+                         
+          </div>
+
+          <section class="product-details-section">
+            <div class="details-div">
+              <small class="company-name">Sneaker Company</small>
+              <h1>Fall Limited Edition Sneakers </h1>
+               <p class="description"> 
+                  These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                  durable rubber outer sole, they’ll withstand everything the weather can offer.
+               </p> 
+               <p><span class="offer-price">$125.00 </span><span class="discount">50%</span></p>
+                <p class="original-price">$250.00</p>
+                
+                
+                <div class="btn-box">
+                  <div class="quantity-box"> <span class="minus-btn"> - </span> <span class="current-quantity"></span> <span class="plus-btn"> + </span> </div>
+                  <button class="add-to-cart-btn"><img src="./images/add-to-cart-icon.svg" alt="cart-image" />Add to cart </button>
+                </div>
+            </div>
+          </section>
+            
+          <div id="mobile-image-slider">
+              <div class="mobile-img-box">
+                <img class="product-image" src="./images/image-product-1.jpg" alt="product-image" /> 
+              </div>
+              
+              <div class="left-arrow-div arrow-div">
+                <img class="left-arrow" src="./images/icon-previous.svg" alt="left-arrow" />
+              </div>
+              <div class="right-arrow-div arrow-div">
+                <img class="right-arrow" src="./images/icon-next.svg" alt="right-arrow" />    
+              </div>         
+          </div>  
+          
+          
+          <!--footer starts here-->  
+          <footer>
+            <div class="attribution">
+              Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+              Coded by <a href="#">Ramesh Kumar Munjal</a>.
+            </div>
+          </footer>
+        <!--footer ends-->
+
+
+      <!--lightbox-section starts-->
+        <section class="lightbox-section lightbox-section-hide">
+          <div class="lightbox-container">
+            <div class="close-btn-div">
+              <span class="close-span">X</span>
+            </div>
+            <div id="lightbox-image-div">
+              <img src="./images/image-product-1.jpg" alt="product-image" >          
+            </div>
+           
+              <div class="lightbox-thumbnail">
+                  <div class="thumbnail-img active">
+                    <img src="./images/image-product-1-thumbnail.jpg" alt="thumbnail-image" />
+                  </div>
+                  <div class="thumbnail-img">
+                    <img src="./images/image-product-2-thumbnail.jpg" alt="thumbnail-image" />
+                  </div>
+                  <div class="thumbnail-img">
+                    <img src="./images/image-product-3-thumbnail.jpg" alt="thumbnail-image" />
+                  </div>
+                  <div class="thumbnail-img">
+                    <img src="./images/image-product-4-thumbnail.jpg" alt="thumbnail-image" />
+                  </div>          
+              </div>
+              <div class="left-arrow-div arrow-div">
+                <img class="previous-icon" src="./images/icon-previous.svg" alt="icon-previous" />    
+              </div>
+              <div class="right-arrow-div arrow-div">
+                <img class="next-icon" src="./images/icon-next.svg" alt="icon-next" />    
+              </div>
+            </div>      
+        </section>
+            
+          
+        
+
+  </div>   
+</body>
+</html>

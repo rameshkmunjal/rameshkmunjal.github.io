@@ -176,9 +176,7 @@ a{
         padding-bottom:10px;
     }
     
-   .intro-div  {        
-        animation:visibleAnimation 2s ease-out; 
-      }      
+       
      
     .profile-img-div{
         height:250px;
@@ -191,19 +189,10 @@ a{
     .profile-img{
         width:250px;
         max-width:100%;
-        border-radius:50%;
-        animation:visibleAnimation 2s ease-out;        
+        border-radius:50%;                
     } 
    
-    @keyframes visibleAnimation {
-        from {
-          opacity:0.1;          
-        }
-      
-        to {
-          opacity:1;          
-        }
-      }    
+        
  }
 
 
