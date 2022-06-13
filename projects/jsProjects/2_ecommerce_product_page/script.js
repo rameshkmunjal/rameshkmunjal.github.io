@@ -115,10 +115,12 @@ function decreaseQuantity(){
 /*add to cart button functions */
 
 function addItemToCart(){
-    product.reqd_quantity=currentQuantity;
-    product.cart_items_value=parseInt(product.reqd_quantity) * product.offer_price;
-    cartItemsArr.push(product);
-    localStorage.setItem('cartItems',JSON.stringify(cartItemsArr));
+    if(currentQuantity > 0){
+        product.reqd_quantity=currentQuantity;
+        product.cart_items_value=parseInt(product.reqd_quantity) * product.offer_price;
+        cartItemsArr.push(product);
+        localStorage.setItem('cartItems',JSON.stringify(cartItemsArr));
+    }    
 }
 
 //-------------------cart icon click related code -------------------
@@ -161,15 +163,17 @@ function populateCart(cd){
             div=populatDiv(item, div);              
             cartItemsContainer.appendChild(div);
         })
+        cd.appendChild(cartItemsContainer);
         let checkoutBtn=document.createElement('button');
         checkoutBtn.setAttribute('class', 'checkout-btn');
         checkoutBtn.innerText="checkout";
-        cartItemsContainer.appendChild(checkoutBtn);
+        cd.appendChild(checkoutBtn);
         
     } else {
        cartItemsContainer.innerHTML="<p>There is no item in cart</p>";
+       cd.appendChild(cartItemsContainer);
     }
-    cd.appendChild(cartItemsContainer);
+    
     return cd;    
 }
 
