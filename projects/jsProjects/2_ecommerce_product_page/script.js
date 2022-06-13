@@ -29,7 +29,7 @@ cartIcon.addEventListener('click', ()=>{toggleCart()});
 // product-photo-section
 const thumbnailImgBoxes=document.querySelectorAll(".thumbnail-img-box");
 const focusImage=document.querySelector('#focus-image-div img');
-focusImage.addEventListener('click', showLightBox);
+focusImage.addEventListener('click', ()=> showLightBox());
 
 //product details section
 let addToCartBtn=document.querySelector('.add-to-cart-btn');
@@ -127,13 +127,12 @@ function toggleCart(){
     console.log("clicked");    
     if(rightDiv.classList.contains('cart-close')){
         rightDiv.classList.remove('cart-close');
-        rightDiv.classList.add('cart-open');
+        rightDiv.classList.add('cart-open');        
         createAndPopulateCart();
     } else if(rightDiv.classList.contains('cart-open')){
         rightDiv.classList.add('cart-close');
         rightDiv.classList.remove('cart-open');
-        let cartDiv=document.querySelector('.cart-items-div');
-        cartDiv.parentElement.removeChild(cartDiv);                   
+        deleteCartDiv();                          
     } else {
         return;
     }    
@@ -191,6 +190,11 @@ function populatDiv(item, div){
    return div;
 }
 
+function deleteCartDiv(){
+    let cartDiv=document.querySelector('.cart-items-div');
+    cartDiv.parentElement.removeChild(cartDiv); 
+}
+
 function deleteProduct(id){
     console.log(id);    
     let newArr=cartItemsArr.filter(i=>i.id !== id);
@@ -198,6 +202,9 @@ function deleteProduct(id){
     localStorage.setItem('cartItems',JSON.stringify(newArr));
     cartItemsArr=JSON.parse(localStorage.getItem('cartItems'));
     createAndPopulateCart(); 
+    if(cartItemsArr.length === 0){
+        deleteCartDiv();
+    }
 }
 //-------------------------------------------------------------------
 /* lightbox showing : when focus image is clicked in desktop device*/
