@@ -16,7 +16,15 @@ const jsData = [
         "imgsrc":"../images/ecom-product-page.png",
         "url": "../projects/jsProjects/2_ecommerce_product_page/index.html",
         "tech":"javascript"
-    }, 
+    }, {
+        "id": "3",
+        "category": "javascript",
+        "name": "blogr-landing-page",
+        "created_on":"2022-06-22",
+        "imgsrc":"../images/blogr.png",
+        "url": "../projects/jsProjects/3_blogr_landing_page/index.html",
+        "tech":"javascript"
+    },
      
       
 ];
