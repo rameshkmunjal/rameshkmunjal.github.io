@@ -20,6 +20,8 @@
     --clr-white:hsl(0, 0%, 100%);
 }
 body{
+    display:grid;
+    place-items: center;
     font-size:18px;
     font-family:'Barlow', sans-serif;
 }
@@ -259,6 +261,7 @@ header ul li:hover{
     (min-device-width:376px ) and 
     (max-device-width:768px){
         header{
+            width:376px;
             min-height:500px;
             display:flex;
             flex-direction: column;
@@ -365,8 +368,7 @@ main{
 }
 .brand-image-div{
     grid-column:2;
-    grid-row:1;
-   
+    grid-row:1;   
 }
 .brand-image-div img{
     max-width:100%;
@@ -444,12 +446,13 @@ main{
     (min-device-width:376px ) and 
     (max-device-width:768px){
         main{
+            width:376px;
             display:flex;
             flex-direction: column;            
         }
         
         .text-box{
-            width:50%;
+            width:376px;
             padding:3rem 0;            
         }
         .text-box h2{
@@ -491,7 +494,8 @@ main{
             max-width:768px;
             width:100%;
         }
-        .audience-text{            
+        .audience-text{ 
+            width:376px;           
             background-color: var(--clr-white);
             min-height:200px;
             display:flex;
@@ -505,11 +509,10 @@ main{
             flex-direction:column;
             justify-content: center;
             align-items: center;
-            order:5;
-            
+            order:5;            
         }
         .activity-card{
-            width:100%;
+            width:376px;
             min-height:300px;
             display:flex;
             flex-direction: column;
@@ -517,11 +520,12 @@ main{
             justify-content:center;
             padding-bottom:5rem;
         }
-        .activity-card p{
-            width:45%;
+        .activity-card p{ 
+            width:344px;           
             line-height:1.5rem;
             font-size:0.9rem;
-            text-align:center;
+            text-align:center;            
+            margin:0 1rem;
             margin-top:1rem;
             color:var(--clr-grayish-blue-1);
         }
@@ -714,6 +718,7 @@ main{
      border-radius: 50%;
  }
  .testimonials-section .card p{
+
      font-size:0.75rem;
      font-weight:normal;
      color:var(--clr-grayish-blue-2);
@@ -738,6 +743,7 @@ main{
  (min-device-width:376px ) and 
  (max-device-width:768px){
      .testimonials-section{
+         width:376px;
          grid-row:6;
          padding:4rem 0 3rem 0;
          display:flex;
@@ -747,14 +753,19 @@ main{
          order:6;
       }
      .card-container-div{
+         width:376px;
          display:flex;
          flex-direction: column;
          justify-content: center;
          align-items:center;
      }
      .card{
-         width:40%;
-     }        
+         width:376px;
+     }  
+     .card-container-div .card p{
+        margin:0  2rem;
+        font-size:0.75rem !important;
+     }      
 }
 
 /* for mobile devices */
