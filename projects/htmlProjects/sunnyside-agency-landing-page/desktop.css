@@ -75,8 +75,7 @@ main{
     min-height:200px;
     display:flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;    
 }
 .text-box{
     min-height:100px;
@@ -98,6 +97,7 @@ main{
 }
 .text-box a{
     text-transform:uppercase;
+    color:black;
     letter-spacing: 0.1rem;
     font-weight:600;
     text-decoration :none;
