@@ -36,8 +36,30 @@ button:hover{
 .btn-lg:hover{
     background-color:hsl(321, 100%, 78%);
 }
+
 @media screen and 
-    (min-device-width:377px) and 
+    (min-device-width:769px) and 
+    (max-device-width:1440px){
+        .container{
+            width:100%;
+            margin:0 auto;
+            box-shadow:0 0 5px #ddd;
+        }
+}
+
+@media screen and 
+    (min-device-width:360px) and 
+    (max-device-width:768px){
+        .container{
+            width:360px;
+            margin:0 auto;
+            box-shadow:0 0 5px #ddd;
+        }
+}
+
+
+@media screen and 
+    (min-device-width:769px) and 
     (max-device-width:1440px){
         /* header - styling */
         header{
@@ -132,7 +154,7 @@ button:hover{
 }
 
 @media screen and 
-    (min-device-width:376px ) and 
+    (min-device-width:769px ) and 
     (max-device-width:1440px){
         .blank-top{
             width:100%;
@@ -202,7 +224,7 @@ button:hover{
 }
 
 @media screen and 
-    (min-device-width:376px ) and 
+    (min-device-width:769px ) and 
     (max-device-width:1440px){
         /* call to action section - styling */
         .call-to-action-section{
@@ -218,7 +240,7 @@ button:hover{
     }
 
 @media screen and 
-    (min-device-width:376px ) and 
+    (min-device-width:769px ) and 
     (max-device-width:1440px){
         /* footer - styling */
         footer{
@@ -338,8 +360,8 @@ button:hover{
 
 /* for mobile devices - header - styling */
 @media screen and 
-    (min-device-width:0px ) and 
-    (max-device-width:375px){
+    (min-device-width:360px ) and 
+    (max-device-width:768px){
     .btn-lg{
         width:55%;
         padding:0.9rem 0;
@@ -370,8 +392,8 @@ button:hover{
 
 /* for mobile devices - intro - styling */
 @media screen and 
-    (min-device-width:0px ) and 
-    (max-device-width:375px){
+    (min-device-width:360px ) and 
+    (max-device-width:768px){
     /* header - styling */
         .intro{
             min-height:400px;    
@@ -387,7 +409,7 @@ button:hover{
             width:70%;
         }
         .intro p{
-            width:70%;
+            width:280px;
             text-align:center;    
             font-family: 'Open Sans', sans-serif;
             font-size:0.8rem;
@@ -399,8 +421,8 @@ button:hover{
 /* hero section - styling */
 /* for mobile devices - hero section - styling */
 @media screen and 
-    (min-device-width:0px ) and 
-    (max-device-width:375px){
+    (min-device-width:360px ) and 
+    (max-device-width:768px){
     .hero-section{
         min-height:300px;
         width:100%;
@@ -455,8 +477,8 @@ button:hover{
 }
 /* mobile devices - sections styling */
 @media screen and 
-    (min-device-width:0px ) and 
-    (max-device-width:376px){
+    (min-device-width:360px ) and 
+    (max-device-width:768px){
         .blank-top{
             width:100%;
             height:200px;
@@ -479,8 +501,7 @@ button:hover{
             align-items: center;
         }
         .page-section-contents{
-            height:inherit;
-            width:80%;   
+            height:inherit;   
             margin-top:2rem; 
             margin-left:10%;
             margin-right:10%;
@@ -492,11 +513,12 @@ button:hover{
         }
         
         .page-section-contents P{
-            width:80%;
+            width:280px;
             margin-right:10%;
             margin-left: 10%;
             margin-top: 1rem;
             font-size: 0.75rem;
+            text-align: center;
         }
         .page-section-image-div{
             width:80%;
@@ -525,8 +547,8 @@ button:hover{
 
 /* mobile devices - sections styling */
 @media screen and 
-    (min-device-width:0px ) and 
-    (max-device-width:376px){
+    (min-device-width:360px ) and 
+    (max-device-width:768px){        
         /* call to action section - styling */
         .call-to-action-section{
             min-height:200px;
@@ -545,9 +567,9 @@ button:hover{
 
 /* mobile devices - footer */
 @media screen and 
-    (min-device-width:0px ) and 
-    (max-device-width:376px){
-        /* footer - styling */
+    (min-device-width:360px ) and 
+    (max-device-width:768px){
+                /* footer - styling */
         footer{
             min-height:300px;
             background-color:hsl(192, 100%, 9%);

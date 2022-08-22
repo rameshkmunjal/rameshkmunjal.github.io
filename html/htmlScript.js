@@ -2,7 +2,7 @@ let projectContainer=document.querySelector('.project-container');
 let displaySection=document.createElement('section');
 displaySection.classList.add('display-section');
 let h2=document.createElement('h2');
-h2.innerText="HTML/CSS Projects";
+h2.innerText="HTML Projects";
 projectContainer.appendChild(h2);
 projectContainer.appendChild(displaySection);
 console.log(htmlData);

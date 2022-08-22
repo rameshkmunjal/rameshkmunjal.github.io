@@ -4,10 +4,11 @@ const htmlData = [
         "category": "html",
         "name": "business-website",
         "created_on":"2022-04-01",
-        "imgsrc":"../images/html.png",
+        "imgsrc":"../images/business_ws_banner.png",
         "url": "../projects/htmlProjects/business_ws_page/index.html",
         "tech":"html-css"
     },
+    /*
     {
         "id": "2",
         "category": "html",
@@ -28,6 +29,7 @@ const htmlData = [
         "url": "../projects/htmlProjects/testimonials-grid/index.html",
         "tech":"html-css"
     },
+    */
     {
         "id": "4",
         "category": "html",
@@ -42,10 +44,37 @@ const htmlData = [
         "category": "html",
         "name": "sunnyside landing page",
         "created_on":"2022-05-25",
-        "imgsrc":"../images/sunnyside.png",
+        "imgsrc":"../images/sunnyside_ws_banner.png",
         "url": "../projects/htmlProjects/sunnyside-agency-landing-page/index.html",
         "tech":"html-css"
     },
+    {
+        "id": "6",
+        "category": "html",
+        "name": "dropdown_navigation",
+        "created_on":"2022-05-18",
+        "imgsrc":"../images/screenshot-1.png",
+        "url": "../projects/htmlProjects/6_dropdown_navigation/index.html",
+        "tech":"javascript"
+    },
+    {
+        "id": "2",
+        "category": "html",
+        "name": "ecommerce-product-page",
+        "created_on":"2022-06-11",
+        "imgsrc":"../images/ecom-product-page.png",
+        "url": "../projects/htmlProjects/2_ecommerce_product_page/index.html",
+        "tech":"javascript"
+    }, 
+    {
+        "id": "3",
+        "category": "html",
+        "name": "blogr-landing-page",
+        "created_on":"2022-06-22",
+        "imgsrc":"../images/blogr.png",
+        "url": "../projects/htmlProjects/3_blogr_landing_page/index.html",
+        "tech":"javascript"
+    } 
     
       
 ];
