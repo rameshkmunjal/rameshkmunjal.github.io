@@ -89,7 +89,7 @@ button:hover{
             font-size:2rem;
         }
         .intro p{
-            width:33%;
+            width:450px;
             text-align:center;    
             font-family: 'Open Sans', sans-serif;
             font-size:0.85rem;
@@ -194,7 +194,7 @@ button:hover{
             margin-right:20%;
             margin-left: 5%;
             margin-top: 1rem;
-            font-size: 0.75rem;
+            font-size: 0.72rem;
             color:hsl(192, 100%, 9%);
             font-weight:600;
             opacity:0.9;
