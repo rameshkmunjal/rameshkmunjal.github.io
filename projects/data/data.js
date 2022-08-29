@@ -15,7 +15,7 @@ export const totalData = [
         "name": "huddle landing page",
         "created_on":"2022-05-22",
         "imgsrc":"./images/banner_huddle_ws.png",
-        "url": "./files/webpage/4_huddle-landing-page/index.html",
+        "url": "./files/webpage/7_huddle-landing-page/index.html",
         "tech":"html css javascript"
     },
     {
