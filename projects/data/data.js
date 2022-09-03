@@ -108,6 +108,15 @@ export const totalData = [
         "url": "https://rameshkmunjal.github.io/movies",
         "tech":"react"
     },
+    {
+        "id": "13",
+        "category": "webpage",
+        "name": "single-page-portfolio",
+        "created_on":"2022-09-3",
+        "imgsrc":"./images/banner_single_page_portfolio_ws.png",
+        "url": "./files/webpage/8_single_page_portfolio/index.html",
+        "tech":"html css js"
+    },
     
       
 ];

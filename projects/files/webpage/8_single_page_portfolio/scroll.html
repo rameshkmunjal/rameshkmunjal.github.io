@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="scroll.css">
+    <title>Horizontal Scroller</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="scroller">
+            <div class="item"><img src="./assets/image-slide-1.jpg" alt="slide image" /></div>
+            <div class="item"><img src="./assets/image-slide-2.jpg" alt="slide image" /></div>
+            <div class="item"><img src="./assets/image-slide-3.jpg" alt="slide image" /></div>
+            <div class="item"><img src="./assets/image-slide-4.jpg" alt="slide image" /></div>
+            <div class="item"><img src="./assets/image-slide-5.jpg" alt="slide image" /></div>
+        </div>
+        <div class="btn-div">
+            <div class="left-btn-box"><i class="icon fas fa-arrow-left" ></i></div>
+            <div class="right-btn-box"><i class="icon fas fa-arrow-right" ></i></div>
+        </div>                
+    </div>
+    <script>
+        var left=document.querySelector('.fa-arrow-left');
+        var scroller=document.querySelector('.scroller');
+        left.addEventListener('click', function(){
+            scroller.scrollBy(360, 0);
+            console.log("left button clicked");
+        })
+        var right=document.querySelector('.fa-arrow-right');
+        right.addEventListener('click', function(){
+            scroller.scrollBy(-360, 0);
+            console.log("right button clicked");
+        })
+
+    </script>
+</body>
+</html>
