@@ -1,10 +1,6 @@
-function $CE(ele){
-    return document.createElement(ele);
-}
-function $APC(parent, child){
-    parent.appendChild(child);
-}
 import {totalData} from '../data/data.js';
+import { $APC, $CE } from './util.js';
+
 const webappData=totalData.filter(item=>{
     return item.category==='webapp';
 })
@@ -27,9 +23,6 @@ function addHeading(projectContainer){
     $APC(projectContainer, h2);    
     return projectContainer;
 }
-
-
-
 
 function appendData(displaySection){
     console.log(webappData);

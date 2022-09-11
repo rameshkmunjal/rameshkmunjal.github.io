@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:0; 
+    font-family:'Poppins', sans-serif;   
+}
+html{
+    font-size:62.5%;/* means 10px */
+}
+body{
+    background-color: #ff758f;
+}
+.wrapper{    
+    background-color: aliceblue;
+    margin:0 auto;                     
+}
+/* nav : common styling */
+nav{
+    height:80px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+nav button{
+    background-color:black;
+    color:white;
+    border:none;
+    border-radius:25px;
+    font-size:1rem;
+    font-weight:bold;
+    padding:1.25rem 2rem;   
+}
+
+/* hero section : common styling */
+.hero-text-div button{
+    background-image:linear-gradient(#ff5400, #f20089);
+    color:white;
+    border:none;
+    border-radius:25px;
+    font-size:1rem;
+    font-weight:bold;
+    padding:1.25rem 2rem;
+    margin-top:4rem;
+}
+
+.hero-image-div img{
+    width:100%;
+}
+
+/* grid courses section : common styling */
+.course-label{
+    background-image:linear-gradient(#ff5400, #f20089);
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    border-radius:10px;
+}
+.course-label p{
+    width:80%;
+    font-size:2rem;
+    font-weight:bold;
+}
+.course-article{
+    padding:2rem;
+    background:ghostwhite;
+    color:#777;
+    box-shadow: 0px 0px 5px #ddd;
+}
+.course-article h3{
+    font-size:2rem;
+    font-weight: bold;
+}
+.course-article p{
+    width:90%;
+    font-size:1.25rem;
+    margin:1rem 0;        
+}
+.course-article button{
+    border:none;
+    background-color:transparent;
+    color:palevioletred;
+    font-size:1.25rem;
+    margin-top: 1rem;
+}
+.course-article button:hover{
+    border:1px solid #ddd;
+    transform:scale(1.1)
+}
+/* footer : common styling */
+footer{    
+    height:80px;    
+    display:flex;
+    justify-content: space-between;
+    align-items:center;  
+    background-color: black;            
+}
+footer button{
+    background-image:linear-gradient(#822faf, #f20089);
+    color:white;
+    border:none;
+    border-radius:25px;
+    font-size:1rem;
+    font-weight:bold;
+    padding:1.25rem 2rem;   
+}
