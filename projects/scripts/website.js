@@ -29,7 +29,7 @@ function addHeading(projectContainer){
 
 function appendData(displaySection){
     console.log(websiteData);
-    websiteData.map(project=>{
+    websiteData.reverse().map(project=>{
         console.log(project);
         let card=$CE('div');
         card.classList.add('card');

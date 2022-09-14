@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+body{
+    background-color:#aaa;    
+}
+#wrapper{
+    margin:0 auto;            
+}
+main{
+    background-color: white;
+}
+
+.hero-btn-div button{   
+    background-color:#232323;    
+    border:none;
+    text-transform:uppercase;
+    letter-spacing: 0.02rem;
+}
+.hero-btn-div button a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero-btn-div .right-angle-icon-span{       
+    color:white;
+    padding-left:15px;
+}
+
+.main-page-footer{ 
+    background-color: black;    
+}
+.footer-left-aside{
+    color:white;    
+}
+.footer-left-aside h2{
+    font-size:18px;
+    text-transform: uppercase;
+}
+.footer-right-aside{   
+    color:white;
+}
+
+.footer-sm-links a{
+    color:white;
+}
+.footer-main-contents{    
+    color:#777;
+}   
+
+

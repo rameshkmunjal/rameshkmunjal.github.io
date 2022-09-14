@@ -126,6 +126,15 @@ export const totalData = [
         "url": "./files/webpage/9_skilled_e-learning_page/index.html",
         "tech":"html css"
     },
+    {
+        "id": "15",
+        "category": "webpage",
+        "name": "art_gallery_landing_page",
+        "created_on":"2022-09-14",
+        "imgsrc":"./images/banner_art_gallery_landing_page_ws.png",
+        "url": "./files/webpage/10_art_gallery_landing_page/index.html",
+        "tech":"html css"
+    },
     
       
 ];

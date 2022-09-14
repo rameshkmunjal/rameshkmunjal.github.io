@@ -1,0 +1,298 @@
+/* common code for all screen sizes */
+#location-wrapper{     
+    margin:0 auto;    
+}
+.location-main{
+    background-size: cover;
+}
+.location-details{    
+    background-color: black;    
+}
+
+.location-details-title{
+    color:white;    
+    text-transform: uppercase;    
+}
+
+.location-details-address address{    
+    color:white;
+    display:flex;
+    flex-direction: column;
+}
+.address-highlight{    
+    color:#eeba0b;
+    font-style:normal;
+}
+.city, .city-code, .country{
+    font-style:normal;    
+    color:#777;
+}
+.address-caption{    
+    color:#777;
+}
+.location-footer{
+    background:#eeba0b;
+}
+.location-footer{
+    color:black;
+}
+.location-footer-left-aside{
+    color:black;
+}
+.location-footer-left-aside h2{    
+    text-transform:uppercase;
+}
+.location-footer-sm-links{
+    display:flex;
+}
+.location-footer-sm-links a{        
+    margin-right:10px;  
+        
+}
+.location-footer-sm-links i{    
+    color:black;
+}
+.location-footer-main-contents{   
+    color:#474747;
+}
+
+
+
+
+/* desktop devices : styling */
+@media screen and
+    (min-device-width:993px) and 
+    (max-device-width:1440px) {    
+    #location-wrapper{
+        width:clamp(992px, 90%, 1440px);
+    }
+    .location-main{    
+        background-image:url("../assets/desktop/image-map.png");
+        height:400px;
+    }
+    .location-details{
+        min-height:300px;        
+        width:100%;
+        display:flex;
+        padding:3rem 0;
+    }
+    .location-details-aside{
+        width:50%;    
+    }
+    .location-details-title{       
+        font-size:42px;
+        margin-left:3rem;        
+        width:100px;        
+    }
+    .location-details-address{
+        width:50%;    
+    }
+    .location-details-address address{
+        min-height:100px;        
+    }
+    .address-highlight{
+        margin-bottom:1.5rem;        
+        font-size:36px;        
+    }
+    .city, .city-code, .country{
+        font-style:normal;
+        line-height: 1.5rem;
+    }
+    .address-caption{        
+        line-height: 1.5rem;
+        padding:2rem 2rem 2rem 0;        
+    }
+    .location-footer{
+        background:#eeba0b;
+    }
+    .location-footer{        
+        padding:4rem 0;        
+        display:flex; 
+        color:black;
+    }
+    .location-footer-left-aside{
+        color:black;
+    }
+    .location-footer-left-aside h2{
+        font-size:24px;
+        text-transform:uppercase;
+    }
+    .location-footer-main-contents{
+        width:50%;
+        font-size:0.9rem;
+        padding:0 7rem;
+    } 
+    .location-footer-left-aside{
+        width:25%;
+        padding:0 4rem;
+    }
+
+    .location-footer-right-aside{
+        width:25%;        
+    }    
+    .location-footer-main-contents{
+        width:50%;
+        font-size:0.9rem;
+        padding:0 7rem;
+        color:#474747;font-weight: normalsAwskz,;
+    }  
+}
+
+/* tablet devices : styling */
+@media screen and 
+    (min-device-width:769px) and
+    (max-device-width:992px){
+        #location-wrapper{
+            width:clamp(769px, 90%, 992px);
+        }
+        .location-main{    
+            background-image:url("../assets/tablet/image-map.png");
+            height:400px;            
+        }
+        .location-details{
+            min-height:300px;           
+            width:100%;
+            display:flex;
+            padding:3rem 0;
+        }
+        .location-details-aside{
+            width:50%;    
+        }
+        .location-details-title{
+            font-size:42px;
+            margin-left:3rem;
+            width:100px;            
+        }
+        .location-details-address{
+            width:50%;    
+        }
+        .location-details-address address{
+            min-height:100px;            
+        }
+        .address-highlight{
+            margin-bottom:1.5rem;            
+            font-size:36px;
+        }
+        .city, .city-code, .country{            
+            line-height: 1.5rem;            
+        }
+        .address-caption{
+            line-height: 1.5rem;
+            padding:2rem 2rem 2rem 0;
+        }
+        
+        .location-footer{        
+            padding:4rem 0;        
+            display:flex; 
+        }
+        
+        .location-footer-left-aside h2{
+            font-size:18px;
+        }
+        .location-footer-main-contents{
+            width:50%;
+            font-size:0.9rem;
+            padding:0 2rem;
+        } 
+        .location-footer-left-aside{
+            width:25%;
+            padding:0 2rem;
+        }
+    
+        .location-footer-right-aside{
+            width:25%;        
+        }
+        
+        .location-footer-sm-links i{
+            font-size:24px;            
+        }
+        
+    }
+    /* mobile devices : stylingh */
+
+    @media screen and 
+    (min-device-width:375px) and
+    (max-device-width:768px){
+        #location-wrapper{
+            width:clamp(375px, 90%, 768px);
+        }
+        .location-main{    
+            background-image:url("../assets/mobile/image-map.png");
+            height:400px;
+        }        
+        .location-details{
+            min-height:300px;
+            width:100%;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding:3rem 0;
+        }
+        .location-details-aside{
+            width:100%;
+            padding-bottom:2rem;    
+        }
+        .location-details-title{
+            font-size:42px;
+            margin-left:3rem;
+            width:100%;            
+        }
+        .location-details-address{
+            width:100%;    
+        }
+        .location-details-address address{
+            min-height:100px;            
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-left:3rem;
+        }
+        .address-highlight{
+            margin-bottom:1.5rem;
+            font-size:36px;
+        }
+        .city, .city-code, .country{
+            line-height: 1.5rem;
+        }
+        .address-caption{
+            line-height: 1.5rem;
+            padding:2rem 2rem 2rem 3rem;
+        }
+        
+        .location-footer{        
+            padding:4rem 0;        
+            display:flex; 
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .location-footer-left-aside h2{
+            font-size:18px;
+            margin-top:1rem;
+        }
+        .location-footer-main-contents{
+            width:100%;
+            font-size:0.9rem;
+            padding:0 2rem;
+            margin:2rem;
+        } 
+        .location-footer-left-aside{
+            width:100%;
+            padding:0 2rem;
+        }
+    
+        .location-footer-right-aside{
+            width:100%;        
+        }
+        .location-footer-sm-links{
+            padding-left:2rem;
+        }
+        
+        .location-footer-sm-links i{
+            font-size:24px;            
+        }
+        
+    }

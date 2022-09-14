@@ -26,7 +26,7 @@ function addHeading(projectContainer){
 
 function appendData(displaySection){
     console.log(webappData);
-    webappData.map(project=>{
+    webappData.reverse().map(project=>{
         console.log(project);
         let card=$CE('div');
         card.classList.add('card');
