@@ -219,8 +219,7 @@ a{
             height:290px;   
             border-radius:5px;   
             background-color: darkblue;
-            box-shadow:0 0 5px #ddd; 
-            
+            box-shadow:0 0 5px #ddd;            
         }
         .card:hover{
             transform:scale(1.1);
@@ -234,8 +233,7 @@ a{
             width:100%;
             border-radius:5px 5px 0 0;
             display:block;
-            margin-bottom:1rem;
-            
+            margin-bottom:1rem;            
         }
         .card a{
             display:block;
@@ -307,7 +305,7 @@ a{
         }
         .card{ 
             width:360px;   
-            height:300px;
+            height:320px;
             border-radius:5px;   
             background-color: darkblue;
             box-shadow:0 0 5px #ddd; 

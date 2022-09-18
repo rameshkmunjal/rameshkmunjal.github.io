@@ -2,7 +2,7 @@
 #location-wrapper{     
     margin:0 auto;    
 }
-.location-main{
+.location-map-normal{
     background-size: cover;
 }
 .location-details{    
@@ -66,9 +66,35 @@
     #location-wrapper{
         width:clamp(992px, 90%, 1440px);
     }
-    .location-main{    
-        background-image:url("../assets/desktop/image-map.png");
+    main{
+        width:100%;
         height:400px;
+        padding-top:4rem;
+        background-color:black;        
+        position:relative;
+    }
+    .location-map-normal{    
+        background-image:url("../assets/desktop/image-map.png");
+        width:90%;
+        height:90%;
+        background-size:center center;
+        margin:0 auto;
+    }
+    .location-map-zoom{
+        display:none;
+    }
+    main:hover .location-map-normal{
+        display:none;
+    }
+    main:hover .location-map-zoom{
+        display:block;
+        width:100%;
+        height:400px;
+        background-image:url("../assets/desktop/image-map@2x.png");
+        background-size:100% 100%; 
+        position:absolute;
+        top:0;
+        left:0;       
     }
     .location-details{
         min-height:300px;        
@@ -145,7 +171,7 @@
         #location-wrapper{
             width:clamp(769px, 90%, 992px);
         }
-        .location-main{    
+        .location-map-normal{    
             background-image:url("../assets/tablet/image-map.png");
             height:400px;            
         }
@@ -216,7 +242,7 @@
         #location-wrapper{
             width:clamp(375px, 90%, 768px);
         }
-        .location-main{    
+        .location-map-normal{    
             background-image:url("../assets/mobile/image-map.png");
             height:400px;
         }        
