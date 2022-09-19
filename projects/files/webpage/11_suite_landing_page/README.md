@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-https://github.com/rameshkmunjal/rameshkmunjal.github.io/issues/1#issuecomment-1250587017
+https://user-images.githubusercontent.com/18640511/190954266-da25e2cd-7603-4dff-b36e-512a049d2bb0.png
 
 ### Links
 
