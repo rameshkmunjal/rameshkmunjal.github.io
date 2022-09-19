@@ -1,3 +1,4 @@
+/* wrapper and nav */
 @media screen and 
     (min-device-width:769px) and 
     (max-device-width:992px) {
@@ -16,19 +17,8 @@
             border-radius:25px;
             padding:1rem 2rem;
         }
-        footer{           
-            display:flex;
-            justify-content: space-between;
-            align-items: center;            
-        }
-        .copyright-info{
-            font-size:2rem;
-        }
-        .sm-links img{
-            margin-right:1.8rem;
-        }
 }
-
+/* hero section */
 @media screen and 
     (min-device-width:769px) and 
     (max-device-width:992px) {
@@ -128,8 +118,7 @@
         }        
 }
 
-
-
+/* testimonial */
 @media screen and 
     (min-device-width:769px) and 
     (max-device-width:992px) {
@@ -204,5 +193,22 @@
         }
         .testimonial-section  small{
             color:#aaa;
+        }
+}
+
+/* footer */
+@media screen and 
+    (min-device-width:769px) and 
+    (max-device-width:992px) {
+        footer{           
+            display:flex;
+            justify-content: space-between;
+            align-items: center;            
+        }
+        .copyright-info{
+            font-size:2rem;
+        }
+        .sm-links img{
+            margin-right:1.8rem;
         }
 }

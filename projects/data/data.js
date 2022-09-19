@@ -135,6 +135,15 @@ export const totalData = [
         "url": "./files/webpage/10_art_gallery_landing_page/index.html",
         "tech":"html css"
     },
+    {
+        "id": "16",
+        "category": "webpage",
+        "name": "suite_landing_page",
+        "created_on":"2022-09-19",
+        "imgsrc":"./images/banner_suite_landing_page_ws.png",
+        "url": "./files/webpage/11_suite_landing_page/index.html",
+        "tech":"html css"
+    },
     
       
 ];

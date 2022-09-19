@@ -23,6 +23,8 @@ button{
 
 
 /* common styling */
+
+/* nav */
 nav{
     min-height:60px;
     padding:10px 0;
@@ -37,6 +39,7 @@ nav{
     padding:1rem 2rem;
 }
 
+/* footer */
 footer{
     min-height:60px;
     padding:3rem 0 1rem 0;    

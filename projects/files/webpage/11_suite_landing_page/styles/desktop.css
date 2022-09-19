@@ -16,19 +16,9 @@
             border-radius:25px;
             padding:1rem 2rem;
         }
-        footer{           
-            display:flex;
-            justify-content: space-between;
-            align-items: center;            
-        }
-        .copyright-info{
-            font-size:2rem;
-        }
-        .sm-links img{
-            margin-right:1.8rem;
-        }
 }
 
+/* hero section */
 @media screen and 
     (min-device-width:993px) and 
     (max-device-width:1440px) {
@@ -83,7 +73,6 @@
             background-image:url("../assets/image-hero-portrait@2x.png");
             background-size:100% 100%;
             background-repeat: no-repeat;
-
         }
         .hero-heading{
             width:380px;
@@ -126,11 +115,10 @@
             font-size:0.75rem;
             text-transform: uppercase;
             color:#aaa;
-        }
-        
+        }        
 }
 
-
+/* testimonial section */
 @media screen and 
     (min-device-width:993px) and 
     (max-device-width:1440px) {
@@ -199,5 +187,22 @@
         }
         .testimonial-section  small{
             color:#aaa;
+        }
+}
+
+/* footer */
+@media screen and 
+    (min-device-width:993px) and 
+    (max-device-width:1440px) {        
+        footer{           
+            display:flex;
+            justify-content: space-between;
+            align-items: center;            
+        }
+        .copyright-info{
+            font-size:2rem;
+        }
+        .sm-links img{
+            margin-right:1.8rem;
         }
 }
