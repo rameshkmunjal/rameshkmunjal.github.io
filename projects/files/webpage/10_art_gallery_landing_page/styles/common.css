@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
-
+/* common styling - all device sizes */
 *{
     margin:0;
     padding:0;
@@ -32,6 +32,7 @@ main{
     padding-left:15px;
 }
 
+/* footer */
 .main-page-footer{ 
     background-color: black;    
 }
