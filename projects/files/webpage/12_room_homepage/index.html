@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="common.css">
+  <link rel="stylesheet" type="text/css" href="desktop.css">
+  <link rel="stylesheet" type="text/css" href="tab.css">   
+  <link rel="stylesheet" type="text/css" href="mobile.css">  
+  <title>Room homepage</title> 
+</head>
+
+<body>
+  <div class="wrapper"><!--wrapper holds complete page-->
+
+    <nav id="desktop-nav"><!--desktop-nav : to be shown in desktop devices-->
+      <div class="logo-div">
+        <img src="./images/logo.svg" alt="logo image">
+      </div>
+      <ul class="desktop-nav-ul">
+        <li><a href="#">home</a></li>
+        <li><a href="#">shop</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </nav>
+
+    <nav id="mobile-nav"><!--mobile-nav : to be show in mobile devices-->
+      <div id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <div class="logo-div">
+        <img src="./images/logo.svg" alt="logo image">
+      </div>
+      <ul class="mobile-nav-ul hide-ul">
+        <li><img class="close-icon" src="images/icon-close.svg"/></li>
+        <li><a href="#">home</a></li>
+        <li><a href="#">shop</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+    <div class="carousel-slide"><!--this div holds carousel slides of img and text-->
+      <!--slide-1 starts-->
+      <div class="slide">
+        <div class="hero-img-div"></div>
+        <section class="hero-description">
+            <h2>Discover innovative ways to decorate </h2>
+            <p>
+              We provide unmatched quality, comfort, and style for property owners across the country. 
+              Our experts combine form and function in bringing your vision to divfe. Create a room in your 
+              own style with our collection and make your property a reflection of you and what you love.
+            </p>
+            <div class="shop-div">
+                <a href="#">Shop now</a>
+                <div class="icon-arrow-div">
+                  <img class="icon-arrow" src="images/icon-arrow.svg" alt="icon-arrow" />
+                </div>
+            </div>
+          </section>
+      </div>
+      <!--slide-1 ends-->
+      <!--slide-2 starts-->
+      <div class="slide">
+        <div class="hero-img-div"></div>        
+        <section class="hero-description">
+          <h2>Discover innovative ways to decorate </h2>
+          <p>
+            With stores all over the world, it's easy for you to find furniture for your home or place of business. 
+            Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
+            store locator. Any questions? Don't hesitate to contact us today.
+          </p>
+          <div class="shop-div">
+              <a href="#">Shop now</a>
+              <div class="icon-arrow-div">
+                <img class="icon-arrow" src="images/icon-arrow.svg" alt="icon-arrow" />
+              </div>
+          </div>
+          </section>
+      </div>
+      <!--slide-2 ends-->
+      <!--slide-3 starts-->
+      <div class="slide">
+        <div class="hero-img-div"></div>        
+        <section class="hero-description">
+          <h2>Manufactured with the best materials</h2>
+          <p>
+            Our modern furniture store provide a high level of quadivty. Our company has invested in advanced technology 
+            to ensure that every product is made as perfect and as consistent as possible. With three decades of 
+            experience in this industry, we understand what customers want for their home and office.
+          </p>
+          <div class="shop-div">
+              <a href="#">Shop now</a>
+              <div class="icon-arrow-div">
+                <img class="icon-arrow" src="images/icon-arrow.svg" alt="icon-arrow" />
+              </div>
+          </div>
+        </section>
+      </div>
+      <!--slide-3 ends-->
+    </div><!--carousel-div ends here-->
+
+    <div class="bottom-div">        
+      <div>
+        <img src="images/image-about-dark.jpg" alt="dark image">
+      </div>
+      <div>
+        <h4>About our furniture </h4>
+        <p>Our multifunctional collection blends design and function to suit your individual taste.
+          Make each room unique, or pick a cohesive theme that best express your interests and what
+          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+          or anything in between. Product specialists are available to help you create your dream space.
+        </p>            
+      </div>
+      <div>
+        <img src="images/image-about-light.jpg" alt="light image">
+      </div>
+     <!-- -->        
+    </div>
+    <div class="arrow-div">
+      <div class="left-arrow-div" id="prevBtn">
+        <img src="images/icon-angle-left.svg" alt="left-arrow-img">
+      </div>
+      <div class="right-arrow-div" id="nextBtn">
+        <img src="images/icon-angle-right.svg" alt="right-arrow-img">
+      </div>
+    </div>
+  </main>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#"> Ramesh Kumar Munjal</a>.
+    </div>
+
+  </div><!--wrapper ends here-->
+  
+  <script src="script.js"></script>
+</body>
+</html>

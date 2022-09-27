@@ -1,0 +1,30 @@
+/* styling : for all device sizes */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:arial , sans-serif; 
+}
+body{
+    background:#e5e5e5;
+}
+
+
+
+/* attribution - styling */
+.attribution { 
+    background:#14213d  ;
+    height:30px; 
+    font-size: 11px;
+    font-weight:bold; 
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    color:#fff;
+
+}
+.attribution a { 
+    color:#fff; 
+    text-decoration:none;
+    margin-left:1rem;
+}

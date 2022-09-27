@@ -1,0 +1,195 @@
+/* styling : for tablet device sizes */
+@media screen and (min-device-width:768px) and (max-device-width:992px) {
+    .wrapper{
+        max-width:768px;
+        margin:10px auto;
+        font-size:12px;
+        position:relative;    
+        overflow: hidden;
+    }
+    #desktop-nav{
+        height:50px;
+        display:flex;
+        justify-content: flex-start;
+        align-items: center;
+        position:absolute;
+        top:10px;
+        left:50px; 
+        z-index:1000;   
+    }
+    .logo-div{
+        margin-right:2rem;
+    }
+    .desktop-nav-ul{
+        list-style:none;
+        height:inherit;
+        margin-left:2rem;
+        display:flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .desktop-nav-ul li a{
+        text-decoration:none;
+        color:white;
+        margin-right:2rem;
+        font-size:1.05rem;
+    }
+
+    #mobile-nav{
+        display:none;
+    }
+    .carousel-slide{
+        width:300%;
+        height:350px;
+        display:flex; 
+        
+    }    
+    .slide{    
+        width:100%;    
+        display:flex;
+    }
+
+         /* slides - styling */
+         .slide:nth-of-type(1) .hero-img-div{
+            background-image:url('./images/mobile-image-hero-1.jpg');
+            background-size:100% 380px;
+            background-repeat: no-repeat;
+        }
+        .slide:nth-of-type(2) .hero-img-div{
+            background-image:url('./images/mobile-image-hero-2.jpg');
+            background-size:100% 380px;
+            background-repeat: no-repeat;
+        }
+        .slide:nth-of-type(3) .hero-img-div{
+            background-image:url('./images/mobile-image-hero-3.jpg');
+            background-size:100% 380px;
+            background-repeat: no-repeat;
+        } 
+    
+    
+    .hero-img-div{
+        max-width:100%;
+        width:60%;
+        height:100%;
+    }
+    
+    
+    .hero-description{
+        width:40%;
+        padding:1.75rem;    
+        display:flex;
+        flex-direction: column;
+        justify-content: center;  
+        background-color: white;  
+    }
+    .hero-description h2{
+        font-size:1.5rem;
+        padding-bottom:0.75rem;
+        font-weight:700;
+    }
+    .hero-description p{
+        text-align:justify;
+        font-weight:500;
+        line-height:1.25rem;
+    }
+    .hero-description a{
+        display:block;
+        text-decoration:none;
+        font-size:0.8rem;
+        font-weight:600;
+        color:black;
+        text-align:left;
+        padding-top:0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+        padding-top:15px;
+    }
+    .shop-div{
+        height:50px;
+        display:flex;
+        margin-bottom:0;
+    }
+    .shop-div a:hover{
+        color:#8d99ae  ;
+    }
+    .icon-arrow-div{
+        height:30px;
+        width:70px;
+        padding-top:0.5rem;
+        margin-left:2rem;
+    }
+    .icon-arrow{
+        height:30px;
+        max-width:100%;
+    }
+    .arrow-div{
+        height:40px;
+        display:flex;
+        position:absolute;
+        right:27%;
+        top:309px;
+    }
+    .left-arrow-div{
+        height:40px;
+        width:50px;
+        background-color: black;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        border:2px solid #777;
+    }
+    .right-arrow-div{
+        height:40px;
+        width:50px;
+        background-color: black;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        border:2px solid #777;
+    }
+    .left-arrow-div:hover, .right-arrow-div:hover{
+        background-color:#8d99ae;
+    }
+    .arrow-div img{
+        width:20px;
+        height:20px;
+        max-width:100%;
+    }
+    
+    
+    .bottom-div{
+        height:200px;
+        display:flex;
+    }
+    .bottom-div div:nth-of-type(1){
+        width:350px;
+        height:200px;
+        background:beige;
+    }
+    .bottom-div div:nth-of-type(2){
+        width:400px;
+        height:200px;
+        padding:1.25rem;
+        background:white;
+    }
+    .bottom-div div:nth-of-type(3){
+        width:350px;
+        height:200px;
+    }
+    .bottom-div img{
+        max-width:100%;
+        width:350px;
+        height:100%;
+    }
+    .bottom-div h4{
+        padding-bottom: 1rem;
+        font-size: 1.25rem;
+        font-weight:600;
+    }
+    .bottom-div p{
+        line-height: 1.25rem;
+        font-weight: 500;
+        text-align: justify;
+    }
+}
+
