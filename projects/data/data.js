@@ -144,6 +144,15 @@ export const totalData = [
         "url": "./files/webpage/11_suite_landing_page/index.html",
         "tech":"html css"
     },
+    {
+        "id": "17",
+        "category": "webpage",
+        "name": "room_homepage",
+        "created_on":"2022-09-27",
+        "imgsrc":"./images/banner_room_homepage_ws.png",
+        "url": "./files/webpage/12_room_homepage/index.html",
+        "tech":"html css js"
+    },
     
       
 ];
