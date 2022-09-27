@@ -35,6 +35,13 @@
         margin-right:2rem;
         font-size:1.05rem;
     }
+    .desktop-nav-ul li a:hover{
+        text-decoration:none;
+        color:#ededed;
+        margin-right:2rem;
+        font-size:1.10rem;
+        font-weight:bold;
+    }
 
     #mobile-nav{
         display:none;
