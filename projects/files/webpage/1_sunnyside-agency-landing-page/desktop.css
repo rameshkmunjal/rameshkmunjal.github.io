@@ -112,8 +112,7 @@ main{
 }
 .brand-image-div{
     grid-column:2;
-    grid-row:1;
-   
+    grid-row:1;   
 }
 .brand-image-div img{
     max-width:100%;

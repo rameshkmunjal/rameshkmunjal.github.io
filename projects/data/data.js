@@ -153,6 +153,15 @@ export const totalData = [
         "url": "./files/webpage/12_room_homepage/index.html",
         "tech":"html css js"
     },
+    {
+        "id": "18",
+        "category": "webpage",
+        "name": "product_preview_card",
+        "created_on":"2022-10-01",
+        "imgsrc":"./images/banner_product_preview_ws.png",
+        "url": "./files/webpage/13_product_preview_card/dist/index.html",
+        "tech":"html css"
+    },
     
       
 ];
