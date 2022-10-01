@@ -32,7 +32,7 @@ Your users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/rameshkmunjal/rameshkmunjal.github.io/tree/master/projects/files/webpage/13_product_preview_card)
-- Live Site URL: [Add live site URL here](https://rameshkmunjal.github.io/projects/files/webpage/13_product_preview_card/index.html)
+- Live Site URL: [Add live site URL here](https://rameshkmunjal.github.io/projects/files/webpage/13_product_preview_card/dist/index.html)
 
 ## My process
 
