@@ -161,7 +161,15 @@ export const totalData = [
         "imgsrc":"./images/banner_product_preview_ws.png",
         "url": "./files/webpage/13_product_preview_card/dist/index.html",
         "tech":"html css"
-    },
-    
+    },  
+    {
+        "id": "19",
+        "category": "webpage",
+        "name": "space_travel_website",
+        "created_on":"2022-10-10",
+        "imgsrc":"./images/banner_space_travel_ws.png",
+        "url": "./files/webpage/14_space_tourism_website/dist/index.html",
+        "tech":"html css js"
+    }, 
       
 ];
