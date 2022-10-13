@@ -171,5 +171,14 @@ export const totalData = [
         "url": "./files/webpage/14_space_tourism_website/dist/index.html",
         "tech":"html css js"
     }, 
+    {
+        "id": "20",
+        "category": "webapp",
+        "name": "password_generator_app",
+        "created_on":"2022-10-09",
+        "imgsrc":"./images/banner_pw_generator.png",
+        "url": "./files/webapps/3_pw_generator_app/dist/index.html",
+        "tech":"html css js"
+    }, 
       
 ];

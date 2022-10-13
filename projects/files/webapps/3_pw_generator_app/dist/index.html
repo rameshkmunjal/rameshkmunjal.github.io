@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Noto+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./css/main.css">
+  
+  <script type="text/javascript" src="./js/script.js" defer></script>  
+  <title>Password generator app</title>
+</head>
+<body>
+<div class="container">
+  <h1>Password Generator</h1>
+  <div class="password-display-panel">
+    <div id="password-text"></div>
+    <img src="../assets/images/icon-copy.svg" id="copy-icon" alt="copy icon">
+  </div>
+    <form>  
+        <h2>Character Length</h2>      
+        <div class="slidecontainer">
+          <h3 id="output">6</h3>
+          <input type="range" min="6" max="15" value="6" class="slider" id="rangeSlider">
+        </div>
+        <div class="checkbox-input-div">
+          <div class="checkbox unticked" id="uppercase"></div>          
+          <span>Include Uppercase Letters</span>
+        </div>
+        <div class="checkbox-input-div">
+          <div class="checkbox unticked" id="lowercase"></div>          
+          <span>Include Lowercase Letters</span>
+        </div>
+        <div class="checkbox-input-div">
+          <div class="checkbox unticked" id="number"></div>          
+          <span>Include Numbers</span>
+        </div>
+        <div class="checkbox-input-div">
+          <div class="checkbox unticked" id="symbol"></div>          
+          <span>Include Symbols</span>
+        </div>
+        <div class="strength-display-panel">
+          <span class="strength-span">strength</span>
+          <div class="strength-div">
+            <span id="strength-level"></span>
+            <span id="strength-bar-div"></span>
+          </div>          
+        </div>
+        <button class="generate-btn">Generate</button>
+    </form>
+
+    
+</div>
+
+</body>
+</html>
