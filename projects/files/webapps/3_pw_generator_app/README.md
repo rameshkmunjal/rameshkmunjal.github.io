@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/rameshkmunjal/rameshkmunjal.github.io/tree/master/projects/files/webapps/3_password_generator_app)
+- Solution URL: [Add solution URL here](https://github.com/rameshkmunjal/rameshkmunjal.github.io/tree/master/projects/files/webapps/3_pw_generator_app)
 - Live Site URL: [Add live site URL here](https://rameshkmunjal.github.io/projects/files/webapps/3_password_generator_app/dist/index.html)
 
 ## My process
