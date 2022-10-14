@@ -1,12 +1,16 @@
-const rangeSlider=document.getElementById("rangeSlider");
-let output=document.getElementById('output');
-let strengthLevel=document.getElementById("strength-level");
-let copyIcon=document.getElementById('copy-icon');
-rangeSlider.addEventListener('input', changePasswordLength);
+/*
+    - password length is chosen by user using range slider
+    - options given by user by clicking checkboxes
+    - generate password button is clicked to get password
+    - copy icon is clicked to copy password on clipboard
+*/
 
-function changePasswordLength(){
-    output.innerHTML=rangeSlider.value;
-}
+//grabbing range slider element by id
+const rangeSlider=document.getElementById("rangeSlider");
+let output=document.getElementById('output');//grabbing output h3 element by id - to show range value
+let strengthLevel=document.getElementById("strength-level"); //grabbing strengthLevel div element
+let copyIcon=document.getElementById('copy-icon');//grabbing copy icon
+rangeSlider.addEventListener('input', changePasswordLength); //to show range value in output
 
 //grabbing button element and adding click event
 let button=document.querySelector('button');
@@ -14,18 +18,17 @@ button.addEventListener('click', generatePassword);
 
 //selecting and deselecting checkboxes
 const checkboxes=document.querySelectorAll('.checkbox');
-//console.log(checkboxes);
+//looping checkboxes and adding click to each of them
 checkboxes.forEach(cb=>{
     cb.addEventListener('click', ()=>{selectOption(cb)});
 })
-//()=>{showThumbnailImages(box, thumbnailImgBoxes, index)}
-function selectOption(cb){
-    //console.log(cb);
-    //e.preventDefault();
+
+//funtion - selecting deselecting checkboxes 
+function selectOption(cb){    
     if(cb.classList.contains('unticked')){
         cb.classList.add('ticked');
         cb.classList.remove('unticked');
-        cb.innerHTML='<img src="../../assets/images/icon-check.svg" />';
+        cb.innerHTML='<img src="../assets/images/icon-check.svg" alt="check icon"  />';
         cb.style.backgroundColor="#50ffb1";
         //console.log(cb);
     } else if(cb.classList.contains('ticked')){
@@ -38,7 +41,10 @@ function selectOption(cb){
         return;
     }
 }
-
+//function - to change password length as per range slider input
+function changePasswordLength(){
+    output.innerHTML=rangeSlider.value;
+}
 
 //main function - to create password
 function generatePassword(e){
@@ -101,22 +107,19 @@ function findPasswordStrength(num){
     }
 }
 
-
-
-//function to get ascii value of characters 
-function includeValuesAsPerOptions(terminalValue, arr){
-    //console.log(terminalValue, arr);
+//function to get ascii value of characters - one from each options chosen 
+function includeValuesAsPerOptions(terminalValue, arr){    
     let newArr=[];
     while(newArr.length < terminalValue){ 
         for(let i=0; i<arr.length; i++){
             let term=arr[i];
-            let asciiValue=getAsciiValueOfRandomCharacter(term);
-            newArr.push(String.fromCharCode(asciiValue));
+            let asciiValue=getAsciiValueOfRandomCharacter(term);//random ascii value
+            newArr.push(String.fromCharCode(asciiValue));//converting into character derived ascii values
         }        
     }
     return newArr;
 }
-
+//function - to get random ascii value of a selected type
 function getAsciiValueOfRandomCharacter(term){
     let asciiValue=undefined;
     if(term==="number"){
@@ -133,9 +136,9 @@ function getAsciiValueOfRandomCharacter(term){
     return asciiValue;
 }
 
+//---------------------helper functions---------------------------------
 //function to get ascii value of characters 
-function randomiseValuesOutOfOptions(terminalValue, arr){
-    //console.log(terminalValue, arr);
+function randomiseValuesOutOfOptions(terminalValue, arr){    
     let newArr=[];
     while(newArr.length < terminalValue){
         let term=pickRandomly(arr);
@@ -145,41 +148,49 @@ function randomiseValuesOutOfOptions(terminalValue, arr){
     return newArr;
 }
 
-function findRandomCharacter(max, min){
-    return Math.floor(Math.random()*(max-min))+min;
+//function - to pick randomly type of character - out of options
+function pickRandomly(arr){
+    let index=Math.floor(Math.random()*arr.length);
+    return arr[index];
 }
 
+//helper function - for numbers
 function findNumberValueRandomly(){
     let min=48;
     let max=57;
     let asciiValue=findRandomCharacter(max, min);
     return asciiValue;
 }
-
+//helper function - for uppercase 
 function findUppercaseValueRandomly(){
     let min=65;
     let max=90;
     let asciiValue=findRandomCharacter(max, min);
     return asciiValue;
 }
+//helper function - for lowercase 
 function findLowercaseValueRandomly(){
     let min=97;
     let max=122;
     let asciiValue=findRandomCharacter(max, min);
     return asciiValue;
 }
+//helper function - for symbols
 function findSymbolValueRandomly(){
     let min=33;
     let max=47;
     let asciiValue=findRandomCharacter(max, min);
     return asciiValue;
 }
-
-function pickRandomly(arr){
-    let index=Math.floor(Math.random()*arr.length);
-    return arr[index];
+//helper function - 2 
+function findRandomCharacter(max, min){
+    return Math.floor(Math.random()*(max-min))+min;
 }
 
+//-----------------------password strength related function ----------------------
+//function to add strength bars - 
+//on basis of type of characters opted 
+// by clicking checkboxes
 
 function addStrengthBars(num){
     let strengthBarDiv=document.getElementById('strength-bar-div');
@@ -196,12 +207,14 @@ function addStrengthBars(num){
     strengthBarDiv.appendChild(bar4);    
 }
 
+//function to create bars by styling
 function addCommonClassToBars(b1, b2, b3, b4){
     b1.classList.add('bar');
     b2.classList.add('bar');
     b3.classList.add('bar');
     b4.classList.add('bar');
 }
+//function - to add styling and showing strength of password 
 function addStrengthBarClass(num, b1, b2, b3, b4){
     if(num===1){
         b1.classList.add('very-weak-bar');
