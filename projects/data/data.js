@@ -180,5 +180,14 @@ export const totalData = [
         "url": "./files/webapps/3_pw_generator_app/dist/index.html",
         "tech":"html css js"
     }, 
+    {
+        "id": "21",
+        "category": "webpage",
+        "name": "dine_restaurant",
+        "created_on":"2022-10-21",
+        "imgsrc":"./images/banner_dine_restaurant.png",
+        "url": "./files/webpage/15_dine_restaurant/index.html",
+        "tech":"html css js"
+    }, 
       
 ];
