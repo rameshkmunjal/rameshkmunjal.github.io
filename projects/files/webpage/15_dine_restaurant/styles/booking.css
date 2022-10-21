@@ -1,0 +1,665 @@
+/* variables */
+:root{
+    --color-beover:#9e7166;
+    --color-cod-gray: #111111;
+    --color-mirage: #17192b;
+    --color-ebony-clay:#242b37;
+    --color-shuttle-gray: #5c6779;
+}
+/* all elements styling */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/************************************/
+/* Desktop Devices : styling  */
+/************************************/
+
+
+/* nav and hero div : styling */
+@media screen and 
+    (min-device-width:993px) and 
+    (max-device-width:1440px){
+    .wrapper{
+        width:100%;
+        min-height: 1000px;
+        position:relative;
+    }
+    nav{
+        position:absolute;
+        top:2rem;
+        left:2rem;
+        font-size:2.25rem;
+        color:white;
+        font-family: 'League Spartan', sans-serif;
+        letter-spacing: 0.15rem;
+        font-weight:700;
+    }
+    .hero-section-div{
+        width:100%;    
+        background-image:url(../images/booking/hero-bg-desktop.jpg);       
+        display:flex;        
+    }
+    .hero-section{
+        width:50%;
+        min-height:400px;
+        padding:9rem 3rem;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-section h1{
+        width: 380px;
+        padding:2rem 0;
+        font-size: 60px;
+        letter-spacing: -1px;
+        line-height: 60px;
+        color: #ffffff;
+        font-weight: 300;
+        font-family: "League Spartan", sans-serif;
+    }
+    .hero-section p{
+        width: 380px;                                                                                                       
+        height: 90px;
+        font-size: 20px;
+        line-height: 30px;
+        color: #ffffff;
+        font-family: "League Spartan", sans-serif;
+    }
+    .hero-form-div{
+        width:50%;
+        display:flex;
+        justify-content: center;
+        position:relative;
+    }
+    .hero-form-div form{
+        width:380px;
+        height:auto;
+        padding:1rem;
+        border:1px solid #ddd;
+        box-shadow: 0px 0px 5px #aaa;
+        position:absolute;
+        top:200px;
+        background-color: white;             
+    }
+    .hero-form-div .text-input{
+        display:block;
+        width:320px;
+        height:40px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:1rem;        
+        border:none;
+        outline:none;
+        border-bottom:1px solid rgb(181, 21, 21);
+    }
+    .hero-form-div .text-input::placeholder{
+        color:rgb(181, 21, 21);
+    }
+    .error-span{
+        color:rgb(181, 21, 21);
+        margin-left:20px;
+        font-size:0.75rem;        
+    }
+   
+    .hero-form-div .date-input-div{
+        width:320px;
+        height:40px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:1rem;
+    }
+    .hero-form-div .date-input-div label{
+        color:rgb(181, 21, 21);
+        width:80px;
+        margin-top:1rem;
+    }
+    .people-input{
+        display:block;
+        width:320px;
+        height:60px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:1rem;
+        padding-top:20px;
+        border:none;
+        outline:none;
+        border-bottom:1px solid rgb(181, 21, 21);
+        text-align:center;
+    }
+    .people-input::placeholder{
+        font-size:0.75rem;
+        color:#777;
+    }
+    .date-error-span{
+        color:rgb(181, 21, 21);
+        font-size: 0.75rem;
+        display:block;
+        width:100%;
+    }
+    .short-label{
+        color:rgb(181, 21, 21);
+    }
+    .hero-form-div .date-input{
+        width:40px;
+        height:40px;
+        margin:1rem 1rem 0rem 1rem;        
+        border:none;
+        outline:none;
+        border-bottom:1px solid rgb(181, 21, 21);
+    }
+
+    .hero-form-div button{
+        width:320px;
+        height:60px;
+        margin-left:auto;
+        margin-right:auto;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        border:1px solid black;
+        font-size:1.1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: white;
+        margin-top:2rem;
+        color:black;
+        letter-spacing: 0.05rem;
+    }
+    .hero-form-div button:hover{
+        background-color: #111111;
+        color:white;
+        cursor:pointer;
+    }
+}
+/* blank div : styling */
+@media screen and 
+    (min-device-width:993px) and 
+    (max-device-width:1440px){
+        .blank-div{
+            min-height:300px;
+            background-color: #ffffff;
+        }
+}
+
+/* footer styling */
+
+@media screen and 
+    (min-device-width:993px) and 
+    (max-device-width:1440px){
+    footer{
+        background-color: #111111;
+        color:white;
+        padding:3rem 6rem;
+        font-family: 'League Spartan', sans-serif;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer .logo-div{
+        font-size:2.25rem;
+        color:white;
+        font-family: 'League Spartan', sans-serif;
+        letter-spacing: 0.15rem;
+        font-weight:700;
+    }
+    footer .address-div{
+        width:50%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size:1rem;
+        font-style: normal;
+    }
+    address{
+        font-style:normal;
+    }
+    address p{
+        line-height:24px;
+    }
+   
+    footer .open-time-div h4{
+        margin:1rem 0;        
+        
+    }
+    
+}
+
+/*-----------------------------------------------*/
+/* tablet :styling */
+/*-----------------------------------------------*/
+/* nav and hero div styling */
+@media screen and 
+    (min-device-width:501px) and 
+    (max-device-width:992px){
+    .wrapper{
+        width:100%;
+        min-height: 1000px;
+        position:relative;
+    }
+    nav{
+        position:absolute;
+        top:2rem;
+        left:2rem;
+        font-size:2.25rem;
+        color:white;
+        font-family: 'League Spartan', sans-serif;
+        letter-spacing: 0.15rem;
+        font-weight:700;
+    }
+    .hero-section-div{
+        width:100%;    
+        background-image:url(../images/booking/hero-bg-desktop.jpg);       
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
+    }
+    .hero-section{
+        width:100%;
+        min-height:500px;
+        padding:9rem 3rem;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border:1px solid #fff;
+    }
+
+    .hero-section h1{
+        width: 380px;
+        padding:2rem 0;
+        font-size: 60px;
+        letter-spacing: -1px;
+        line-height: 60px;
+        color: #ffffff;
+        font-weight: 300;
+        font-family: "League Spartan", sans-serif;
+    }
+    .hero-section p{
+        width: 380px;                                                                                                       
+        height: 90px;
+        font-size: 20px;
+        line-height: 30px;
+        color: #ffffff;
+        font-family: "League Spartan", sans-serif;
+    }
+    .hero-form-div{
+        width:100%;
+        display:flex;
+        justify-content: center;
+        position:relative;
+    }
+    .hero-form-div form{
+        width:380px;
+        height:auto;
+        padding:1rem;
+        border:1px solid #ddd;
+        box-shadow: 0px 0px 5px #aaa;
+        position:absolute;
+        top:-50px;
+        background-color: white;             
+    }
+    .hero-form-div .text-input{
+        display:block;
+        width:320px;
+        height:40px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:1rem;        
+        border:none;
+        outline:none;
+        border-bottom:1px solid rgb(181, 21, 21);
+    }
+    .hero-form-div .text-input::placeholder{
+        color:rgb(181, 21, 21);
+    }
+    .error-span{
+        color:rgb(181, 21, 21);
+        margin-left:20px;
+        font-size:0.75rem;        
+    }
+   
+    .hero-form-div .date-input-div{
+        width:320px;
+        height:40px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:1rem;
+    }
+    .hero-form-div .date-input-div label{
+        color:rgb(181, 21, 21);
+        width:80px;
+        margin-top:1rem;
+    }
+    .people-input{
+        display:block;
+        width:320px;
+        height:60px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:1rem;
+        padding-top:20px;
+        border:none;
+        outline:none;
+        border-bottom:1px solid rgb(181, 21, 21);
+        text-align:center;
+    }
+    .people-input::placeholder{
+        font-size:0.75rem;
+        color:#777;
+    }
+    .date-error-span{
+        color:rgb(181, 21, 21);
+        font-size: 0.75rem;
+        display:block;
+        width:100%;
+    }
+    .short-label{
+        color:rgb(181, 21, 21);
+    }
+    .hero-form-div .date-input{
+        width:40px;
+        height:40px;
+        margin:1rem 1rem 0rem 1rem;        
+        border:none;
+        outline:none;
+        border-bottom:1px solid rgb(181, 21, 21);
+    }
+
+    .hero-form-div button{
+        width:320px;
+        height:60px;
+        margin-left:auto;
+        margin-right:auto;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        border:1px solid black;
+        font-size:1.1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: white;
+        margin-top:2rem;
+        color:black;
+        letter-spacing: 0.05rem;
+    }
+    .hero-form-div button:hover{
+        background-color: #111111;
+        color:white;
+        cursor:pointer;
+    }
+}
+/* blank div styling */
+
+@media screen and 
+    (min-device-width:501px) and 
+    (max-device-width:992px){
+        .blank-div{
+            min-height:450px;
+            background-color: #ffffff;
+        }
+}
+
+/* footer styling */
+@media screen and 
+    (min-device-width:501px) and 
+    (max-device-width:992px){
+    footer{
+        background-color: #111111;
+        color:white;
+        padding:3rem 6rem;
+        font-family: 'League Spartan', sans-serif;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer .logo-div{
+        font-size:2.25rem;
+        color:white;
+        font-family: 'League Spartan', sans-serif;
+        letter-spacing: 0.15rem;
+        font-weight:700;
+    }
+    footer .address-div{
+        width:70%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size:1rem;
+        font-style: normal;
+    }
+    address{
+        font-style:normal;
+    }
+    address p{
+        line-height:24px;
+    }
+   
+    footer .open-time-div h4{
+        margin:1rem 0; 
+    }    
+}
+/*-----------------------------------------------*/
+/* mobile :styling */
+/*-----------------------------------------------*/
+/* nav and hero div styling */
+@media screen and 
+    (min-device-width:375px) and 
+    (max-device-width:501px){
+    .wrapper{
+        width:100%;
+        min-height: 1000px;
+        position:relative;
+    }
+    nav{
+        position:absolute;
+        top:2rem;
+        left:2rem;
+        font-size:2.25rem;
+        color:white;
+        font-family: 'League Spartan', sans-serif;
+        letter-spacing: 0.15rem;
+        font-weight:700;
+    }
+    .hero-section-div{
+        width:100%;    
+        background-image:url(../images/booking/hero-bg-desktop.jpg);       
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
+    }
+    .hero-section{
+        width:100%;
+        min-height:500px;
+        padding:3rem 1rem;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border:1px solid #fff;
+    }
+
+    .hero-section h1{
+        width: 360px;
+        padding:2rem 0;
+        font-size: 60px;
+        letter-spacing: -1px;
+        line-height: 60px;
+        color: #ffffff;
+        font-weight: 300;
+        font-family: "League Spartan", sans-serif;
+    }
+    .hero-section p{
+        width: 360px;                                                                                                       
+        height: 90px;
+        font-size: 20px;
+        line-height: 30px;
+        color: #ffffff;
+        font-family: "League Spartan", sans-serif;
+    }
+    .hero-form-div{
+        width:100%;
+        display:flex;
+        justify-content: center;
+        position:relative;
+    }
+    .hero-form-div form{
+        width:360px;
+        height:auto;
+        padding:1rem;
+        border:1px solid #ddd;
+        box-shadow: 0px 0px 5px #aaa;
+        position:absolute;
+        top:-50px;
+        background-color: white;             
+    }
+    .hero-form-div .text-input{
+        display:block;
+        width:320px;
+        height:40px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:1rem;        
+        border:none;
+        outline:none;
+        border-bottom:1px solid rgb(181, 21, 21);
+    }
+    .hero-form-div .text-input::placeholder{
+        color:rgb(181, 21, 21);
+    }
+    .error-span{
+        color:rgb(181, 21, 21);
+        margin-left:20px;
+        font-size:0.75rem;        
+    }
+   
+    .hero-form-div .date-input-div{
+        width:320px;
+        height:40px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:1rem;
+    }
+    .hero-form-div .date-input-div label{
+        color:rgb(181, 21, 21);
+        width:80px;
+        margin-top:1rem;
+    }
+    .people-input{
+        display:block;
+        width:320px;
+        height:60px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:1rem;
+        padding-top:20px;
+        border:none;
+        outline:none;
+        border-bottom:1px solid rgb(181, 21, 21);
+        text-align:center;
+    }
+    .people-input::placeholder{
+        font-size:0.75rem;
+        color:#777;
+    }
+    .date-error-span{
+        color:rgb(181, 21, 21);
+        font-size: 0.75rem;
+        display:block;
+        width:100%;
+    }
+    .short-label{
+        color:rgb(181, 21, 21);
+    }
+    .hero-form-div .date-input{
+        width:40px;
+        height:40px;
+        margin:1rem 1rem 0rem 1rem;        
+        border:none;
+        outline:none;
+        border-bottom:1px solid rgb(181, 21, 21);
+    }
+
+    .hero-form-div button{
+        width:320px;
+        height:60px;
+        margin-left:auto;
+        margin-right:auto;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        border:1px solid black;
+        font-size:1.1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: white;
+        margin-top:2rem;
+        color:black;
+        letter-spacing: 0.05rem;
+    }
+    .hero-form-div button:hover{
+        background-color: #111111;
+        color:white;
+        cursor:pointer;
+    }
+}
+/* blank div styling */
+@media screen and 
+    (min-device-width:375px) and 
+    (max-device-width:500px){
+        .blank-div{
+            min-height:450px;
+            background-color: #ffffff;
+        }
+}
+/* footer styling */
+@media screen and 
+    (min-device-width:375px) and 
+    (max-device-width:500px){
+    footer{
+        background-color: #111111;
+        color:white;
+        padding:3rem;
+        font-family: 'League Spartan', sans-serif;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    footer .logo-div{
+        font-size:2.25rem;
+        color:white;
+        font-family: 'League Spartan', sans-serif;
+        letter-spacing: 0.15rem;
+        font-weight:700;        
+    }
+    footer .address-div{
+        width:100%;
+        margin-top:3rem;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        font-size:1rem;
+        font-style: normal;
+    }
+    address{
+        font-style:normal;
+    }
+    address p{
+        line-height:24px;
+    }
+   
+    footer .open-time-div h4{
+        margin:1rem 0; 
+    }    
+}
