@@ -5,12 +5,125 @@
     --color-mirage: #17192b;
     --color-ebony-clay:#242b37;
     --color-shuttle-gray: #5c6779;
+    --success-color:green;
+    --error-color:red;
 }
 /* all elements styling */
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
+}
+
+#form {
+    width: 360px;
+    height:auto;        
+    padding: 2rem;
+    background-color:white;
+    border:1px solid #a0a0a0;
+    box-shadow: 0px 0px 3px #aaa;
+    position:relative;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+#email, #username {
+    border: none;
+    border-bottom:1px solid #c0c0c0; 
+    background-color: transparent;       
+    display: block;        
+    padding: 1rem;
+    margin-bottom:0.25rem;
+    width: 100%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+.date-input-div{
+    width:100%;
+    margin-top:2rem;
+    display:flex; 
+    justify-content: space-between;
+    align-items: baseline;               
+}
+.date-input-text, .time-input-text{ 
+    border:none;
+    border-bottom:1px solid #c0c0c0;        
+    width:25%;
+    height:50px;
+    font-size:0.75rem;
+}
+
+.date-input, .time-input{
+    text-align: center;
+    border:none;
+    border-bottom:1px solid #c0c0c0; 
+    width:20%;
+    height:50px;
+    margin-left:0.5rem;
+}
+#select-year,
+#select-month,
+#select-hour, 
+#select-minute, 
+#select-day{
+    height:50px;
+    border:none;
+    border-bottom: 1px solid #c0c0c0;
+    width:20%;
+    text-align: right;
+}
+#select-am-pm{
+    height:50px;
+    border:none;
+    border-bottom: 1px solid #c0c0c0;
+    width:25%;
+    text-align: right;
+}
+
+input#guest-number{
+    width:100%;
+    border:none;
+    border-bottom:1px solid #c0c0c0;
+    height:60px;
+}
+
+#form button {
+    width:100%;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: #111111;
+    color:white;
+    margin-top:3rem;
+    font-weight: bold;
+    letter-spacing: 0.08rem;
+}
+#form button:hover{
+    background-color: white;
+    border:2px solid black;
+    color:black;
 }
 
 /************************************/
@@ -70,111 +183,21 @@
         color: #ffffff;
         font-family: "League Spartan", sans-serif;
     }
+
+/* form styling */
     .hero-form-div{
         width:50%;
         display:flex;
         justify-content: center;
-        position:relative;
-    }
-    .hero-form-div form{
-        width:380px;
-        height:auto;
-        padding:1rem;
-        border:1px solid #ddd;
-        box-shadow: 0px 0px 5px #aaa;
-        position:absolute;
-        top:200px;
-        background-color: white;             
-    }
-    .hero-form-div .text-input{
-        display:block;
-        width:320px;
-        height:40px;
-        margin-left:auto;
-        margin-right:auto;
-        margin-top:1rem;        
-        border:none;
-        outline:none;
-        border-bottom:1px solid rgb(181, 21, 21);
-    }
-    .hero-form-div .text-input::placeholder{
-        color:rgb(181, 21, 21);
-    }
-    .error-span{
-        color:rgb(181, 21, 21);
-        margin-left:20px;
-        font-size:0.75rem;        
-    }
-   
-    .hero-form-div .date-input-div{
-        width:320px;
-        height:40px;
-        margin-left:auto;
-        margin-right:auto;
-        margin-top:1rem;
-    }
-    .hero-form-div .date-input-div label{
-        color:rgb(181, 21, 21);
-        width:80px;
-        margin-top:1rem;
-    }
-    .people-input{
-        display:block;
-        width:320px;
-        height:60px;
-        margin-left:auto;
-        margin-right:auto;
-        margin-top:1rem;
-        padding-top:20px;
-        border:none;
-        outline:none;
-        border-bottom:1px solid rgb(181, 21, 21);
-        text-align:center;
-    }
-    .people-input::placeholder{
-        font-size:0.75rem;
-        color:#777;
-    }
-    .date-error-span{
-        color:rgb(181, 21, 21);
-        font-size: 0.75rem;
-        display:block;
-        width:100%;
-    }
-    .short-label{
-        color:rgb(181, 21, 21);
-    }
-    .hero-form-div .date-input{
-        width:40px;
-        height:40px;
-        margin:1rem 1rem 0rem 1rem;        
-        border:none;
-        outline:none;
-        border-bottom:1px solid rgb(181, 21, 21);
-    }
-
-    .hero-form-div button{
-        width:320px;
-        height:60px;
-        margin-left:auto;
-        margin-right:auto;
-        display:flex;
-        justify-content: center;
         align-items: center;
-        border:1px solid black;
-        font-size:1.1rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        background-color: white;
-        margin-top:2rem;
-        color:black;
-        letter-spacing: 0.05rem;
+        position:relative;        
     }
-    .hero-form-div button:hover{
-        background-color: #111111;
-        color:white;
-        cursor:pointer;
+    #form{
+        top:200px;
     }
+    
+    
+      
 }
 /* blank div : styling */
 @media screen and 
@@ -262,18 +285,18 @@
     }
     .hero-section{
         width:100%;
-        min-height:500px;
-        padding:9rem 3rem;
+        margin-top:6rem;
         display:flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        border:1px solid #fff;
     }
 
     .hero-section h1{
-        width: 380px;
-        padding:2rem 0;
+        width: 480px;
+        padding-top:6rem;
+        margin-bottom:3rem;
+        text-align: left;
         font-size: 60px;
         letter-spacing: -1px;
         line-height: 60px;
@@ -282,10 +305,10 @@
         font-family: "League Spartan", sans-serif;
     }
     .hero-section p{
-        width: 380px;                                                                                                       
-        height: 90px;
-        font-size: 20px;
-        line-height: 30px;
+        width: 480px;                                                                                                       
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        letter-spacing: 0.04rem;
         color: #ffffff;
         font-family: "League Spartan", sans-serif;
     }
@@ -295,113 +318,22 @@
         justify-content: center;
         position:relative;
     }
-    .hero-form-div form{
-        width:380px;
-        height:auto;
-        padding:1rem;
-        border:1px solid #ddd;
-        box-shadow: 0px 0px 5px #aaa;
-        position:absolute;
-        top:-50px;
-        background-color: white;             
-    }
-    .hero-form-div .text-input{
-        display:block;
-        width:320px;
-        height:40px;
-        margin-left:auto;
-        margin-right:auto;
-        margin-top:1rem;        
-        border:none;
-        outline:none;
-        border-bottom:1px solid rgb(181, 21, 21);
-    }
-    .hero-form-div .text-input::placeholder{
-        color:rgb(181, 21, 21);
-    }
-    .error-span{
-        color:rgb(181, 21, 21);
-        margin-left:20px;
-        font-size:0.75rem;        
-    }
-   
-    .hero-form-div .date-input-div{
-        width:320px;
-        height:40px;
-        margin-left:auto;
-        margin-right:auto;
-        margin-top:1rem;
-    }
-    .hero-form-div .date-input-div label{
-        color:rgb(181, 21, 21);
-        width:80px;
-        margin-top:1rem;
-    }
-    .people-input{
-        display:block;
-        width:320px;
-        height:60px;
-        margin-left:auto;
-        margin-right:auto;
-        margin-top:1rem;
-        padding-top:20px;
-        border:none;
-        outline:none;
-        border-bottom:1px solid rgb(181, 21, 21);
-        text-align:center;
-    }
-    .people-input::placeholder{
-        font-size:0.75rem;
-        color:#777;
-    }
-    .date-error-span{
-        color:rgb(181, 21, 21);
-        font-size: 0.75rem;
-        display:block;
-        width:100%;
-    }
-    .short-label{
-        color:rgb(181, 21, 21);
-    }
-    .hero-form-div .date-input{
-        width:40px;
-        height:40px;
-        margin:1rem 1rem 0rem 1rem;        
-        border:none;
-        outline:none;
-        border-bottom:1px solid rgb(181, 21, 21);
-    }
-
-    .hero-form-div button{
-        width:320px;
-        height:60px;
-        margin-left:auto;
-        margin-right:auto;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        border:1px solid black;
-        font-size:1.1rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        background-color: white;
-        margin-top:2rem;
-        color:black;
-        letter-spacing: 0.05rem;
-    }
-    .hero-form-div button:hover{
-        background-color: #111111;
-        color:white;
-        cursor:pointer;
-    }
+    #form {
+        width: 480px;
+        padding:3rem ;
+        position:relative;
+        top:150px;
+    }    
+    
 }
+
 /* blank div styling */
 
 @media screen and 
     (min-device-width:501px) and 
     (max-device-width:992px){
         .blank-div{
-            min-height:450px;
+            min-height:250px;
             background-color: #ffffff;
         }
 }
@@ -478,13 +410,12 @@
     }
     .hero-section{
         width:100%;
-        min-height:500px;
+        margin-top:6rem;
         padding:3rem 1rem;
         display:flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        border:1px solid #fff;
     }
 
     .hero-section h1{
@@ -510,113 +441,20 @@
         display:flex;
         justify-content: center;
         position:relative;
+    } 
+    #form{
+        top:150px;
     }
-    .hero-form-div form{
-        width:360px;
-        height:auto;
-        padding:1rem;
-        border:1px solid #ddd;
-        box-shadow: 0px 0px 5px #aaa;
-        position:absolute;
-        top:-50px;
-        background-color: white;             
-    }
-    .hero-form-div .text-input{
-        display:block;
-        width:320px;
-        height:40px;
-        margin-left:auto;
-        margin-right:auto;
-        margin-top:1rem;        
-        border:none;
-        outline:none;
-        border-bottom:1px solid rgb(181, 21, 21);
-    }
-    .hero-form-div .text-input::placeholder{
-        color:rgb(181, 21, 21);
-    }
-    .error-span{
-        color:rgb(181, 21, 21);
-        margin-left:20px;
-        font-size:0.75rem;        
-    }
-   
-    .hero-form-div .date-input-div{
-        width:320px;
-        height:40px;
-        margin-left:auto;
-        margin-right:auto;
-        margin-top:1rem;
-    }
-    .hero-form-div .date-input-div label{
-        color:rgb(181, 21, 21);
-        width:80px;
-        margin-top:1rem;
-    }
-    .people-input{
-        display:block;
-        width:320px;
-        height:60px;
-        margin-left:auto;
-        margin-right:auto;
-        margin-top:1rem;
-        padding-top:20px;
-        border:none;
-        outline:none;
-        border-bottom:1px solid rgb(181, 21, 21);
-        text-align:center;
-    }
-    .people-input::placeholder{
-        font-size:0.75rem;
-        color:#777;
-    }
-    .date-error-span{
-        color:rgb(181, 21, 21);
-        font-size: 0.75rem;
-        display:block;
-        width:100%;
-    }
-    .short-label{
-        color:rgb(181, 21, 21);
-    }
-    .hero-form-div .date-input{
-        width:40px;
-        height:40px;
-        margin:1rem 1rem 0rem 1rem;        
-        border:none;
-        outline:none;
-        border-bottom:1px solid rgb(181, 21, 21);
-    }
-
-    .hero-form-div button{
-        width:320px;
-        height:60px;
-        margin-left:auto;
-        margin-right:auto;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        border:1px solid black;
-        font-size:1.1rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        background-color: white;
-        margin-top:2rem;
-        color:black;
-        letter-spacing: 0.05rem;
-    }
-    .hero-form-div button:hover{
-        background-color: #111111;
-        color:white;
-        cursor:pointer;
-    }
+    
+    
 }
+
 /* blank div styling */
 @media screen and 
     (min-device-width:375px) and 
     (max-device-width:500px){
         .blank-div{
-            min-height:450px;
+            min-height:250px;
             background-color: #ffffff;
         }
 }

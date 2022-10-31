@@ -24,35 +24,56 @@
         </section>
         
         <div class="hero-form-div">
-          <form>
-            <label>
-              <input class="text-input" type="text" placeholder="Name"  required/>
-              <span class="error-span">This field is required.</span>
-            </label>
-            <label>
-              <input class="text-input" type="email" placeholder="Email"  required/>
-              <span class="error-span">This field is required.</span>
-            </label>
-            <div class="date-input-div">
-              <label class="short-label">Pick a date</label>
-              <input class="date-input" type="text"   required/>
-              <input class="date-input" type="text"   required/>
-              <input class="date-input" type="text"   required/>
-              <span class="date-error-span">This field is required.</span>
+          <form id="form" action="/">            
+            <div class="input-control">                
+                <input id="username" name="username" type="text">
+                <small>Username</small>
             </div>
-            <div class="date-input-div">
-              <label class="short-label">Pick a time</label>
-              <input class="date-input" type="text"   required/>
-              <input class="date-input" type="text"   required/>
-              <input class="date-input" type="text"   required/>
-              <span class="date-error-span">This field is required.</span>
+
+            <div class="input-control">                
+                <input id="email" name="email" type="text">
+                <small>Email</small>
             </div>
-            <label>
-              <input class="people-input text-input" type="text" placeholder="Enter Number of People"  required/>
-              <span class="error-span">This field is required.</span>
-            </label>
-            <button>make Reservation</button>
-            
+
+            <div class="input-control">                
+              <div id="date-input-div">
+                <input type="text" class="date-input-text" value="Pick a date">                
+                <select class="day-input" id="select-day">
+                  <option value="">Day</option>
+                </select>
+                <select class="month-input" id="select-month">
+                  <option value="">Month</option>
+                </select>
+                <select class="year-input" id="select-year">
+                  <option value="">Year</option>
+                </select>
+              </div>
+              <small>booking at least 24 hrs prior</small>
+            </div>
+
+            <div class="input-control">                
+              <div id="time-input-div">
+                <input type="text" class="time-input-text" value="Pick a time">
+                <select class="hour-input" id="select-hour">
+                  <option value="">Hour</option>
+                </select>
+                <select class="minute-input" id="select-minute">
+                  <option value="">Minutes</option>
+                </select>                
+                <select name="select-am-pm" id="select-am-pm">
+                  <option value="am">A.M.</option>
+                  <option value="pm">P.M.</option>
+                </select>
+              </div>
+              <small></small>
+            </div>
+
+            <div class="input-control">                
+              <input id="guest-number" name="guest-number" type="text" placeholder="number of guests">
+              <small></small>
+          </div>
+
+            <button type="submit">make Reservation</button>
           </form>
         </div>
         
