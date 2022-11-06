@@ -189,5 +189,15 @@ export const totalData = [
         "url": "./files/webpage/15_dine_restaurant/index.html",
         "tech":"html css js"
     }, 
+    , 
+    {
+        "id": "22",
+        "category": "webpage",
+        "name": "equilizer_landing_page",
+        "created_on":"2022-11-06",
+        "imgsrc":"./images/banner_equilizer.png",
+        "url": "./files/webpage/16_equalizer_landing_page/index.html",
+        "tech":"html css"
+    }, 
       
 ];

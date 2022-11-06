@@ -19,7 +19,7 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color:aliceblue;
+    background-color:$color-dark-black;
 }
 
 .container{
@@ -42,7 +42,8 @@ h1{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: $color-grey;   
+    background-color: $color-dark-black;
+    color:$color-grey;   
     margin-bottom: 0.5rem;
 }
 #password-text{
