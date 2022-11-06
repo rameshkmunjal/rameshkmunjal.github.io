@@ -32,7 +32,7 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/rameshkmunjal/rameshkmunjal.github.io/tree/master/projects/files/webpage/16_equilizer_landing_page)
-- Live Site URL: [Add live site URL here](https://rameshkmunjal.github.io/projects/files/webpage/16_equilizer_landing_page/index.html)
+- Live Site URL: [Add live site URL here](https://rameshkmunjal.github.io/projects/files/webpage/16_equalizer_landing_page/index.html)
 
 ## My process
 
