@@ -189,7 +189,7 @@ export const totalData = [
         "url": "./files/webpage/15_dine_restaurant/index.html",
         "tech":"html css js"
     }, 
-    , 
+     
     {
         "id": "22",
         "category": "webpage",
@@ -197,6 +197,16 @@ export const totalData = [
         "created_on":"2022-11-06",
         "imgsrc":"./images/banner_equilizer.png",
         "url": "./files/webpage/16_equalizer_landing_page/index.html",
+        "tech":"html css"
+    }, 
+     
+    {
+        "id": "23",
+        "category": "webpage",
+        "name": "typemaster_landing_page",
+        "created_on":"2022-11-07",
+        "imgsrc":"./images/banner_typemaster_LP.png",
+        "url": "./files/webpage/17_typemaster_landing_page/index.html",
         "tech":"html css"
     }, 
       
