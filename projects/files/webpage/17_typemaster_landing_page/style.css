@@ -89,7 +89,9 @@ footer p span:nth-of-type(2){
             width:100%;
             min-height:100vh;
             padding:2.5rem 5rem;
+            background-color: var(--clr-white);
         }
+        
 }
 /* Tablet */
 @media screen 

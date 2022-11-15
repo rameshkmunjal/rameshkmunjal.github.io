@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;800&display=swap');
+:root{
+    --clr-red:#F94F4F;
+    --clr-bg-black:#191921;
+    --clr-white:#FFFFFF;
+    --clr-text-black:#000000;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Commissioner', sans-serif;
+}
+button{
+    border:none;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-size:18px;
+    line-height:32px;
+}
+
+/* page wrapper : styling */
+.page-wrapper{
+    overflow:hidden;
+}
+/* nav */
+nav > ul > li:hover{
+    font-weight:bold;
+    transform:scale(1.05);
+}
+
+/* hero container - styling */
+.hero-img-picture img{
+    max-width:100%;
+}
+.hero-btn{
+    background-color: var(--clr-red);
+    color:var(--clr-white);
+    padding:1rem 2.5rem;
+    font-weight:bold;       
+    text-transform: capitalize;
+    letter-spacing: 0.08rem;
+}
+.hero-btn:hover{
+    opacity:0.5;
+    cursor:pointer;
+}
+/* grid-container : styling */
+.design-text-div{
+    background-color:var(--clr-bg-black);
+    color:var(--clr-white);
+}
+.design-img-div img{
+    max-width:100%;
+}
+.red-span{
+    color:var(--clr-red);
+}
+.white-span{
+    color:var(--clr-white);
+}
+.design-text-div > .design-link{
+    text-decoration:none;
+    font-weight:bold;
+    color:var(--clr-red);
+    font-size:1.5rem;
+    letter-spacing: 0.05rem; 
+    display:inline-block;
+    border-bottom:2px solid #F94F4F;
+    padding-bottom:4px;         
+}
+.design-text-div > .design-link:hover{
+    font-size:1.55rem;
+}
+.strategy-statement-div{      
+    background-color: var(--clr-white);
+    color: var(--clr-text-black);
+}
+.strategy-points-div{
+    background-color: var(--clr-red);
+    color: var(--clr-white);
+}
+/* slide container */
+.icon-div{
+    width:30px;
+    height:30px;
+    border-radius: 50%;    
+    color:#fff;
+    background-color: var(--clr-bg-black);
+    border:1px solid #fff;
+    z-index:990;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-div:hover{
+    opacity:0.5;
+}
+/* cta div */
+.cta-div h3{
+    font-size:2rem;
+    line-height:2.5rem;
+    font-weight: bold;
+    margin-bottom:3rem;
+}
+
+.cta-btn{
+    background-color:var(--clr-red);
+    color:var(--clr-white);
+    width:150px;
+    height:40px;
+    padding-top:10px;
+    text-align:center;
+    font-weight:bold;
+    margin-bottom: 3rem;
+}
+.cta-btn:hover{
+    opacity:0.5;
+}

@@ -209,5 +209,14 @@ export const totalData = [
         "url": "./files/webpage/17_typemaster_landing_page/index.html",
         "tech":"html css"
     }, 
+    {
+        "id": "24",
+        "category": "webpage",
+        "name": "creative_agency_page",
+        "created_on":"2022-11-15",
+        "imgsrc":"./images/banner_creative_agency.png",
+        "url": "./files/webpage/18_creative_agency_page/index.html",
+        "tech":"html css js"
+    }, 
       
 ];

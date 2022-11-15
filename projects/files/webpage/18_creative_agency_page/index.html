@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="./common.css">
+  <link rel="stylesheet" href="./custom.css">  
+  <script src="./script.js" defer></script>
+  <title>Creative single page site</title>
+</head>
+<body>
+
+  <div class="page-wrapper">
+    <nav class="nav">
+      <div class="logo-div">
+        <img src="./assets/desktop/logo.svg" alt="logo">
+      </div>
+      <ul class="nav-ul">
+        <li>About</li>
+        <li>Service</li>
+        <li>Projects</li>
+        <li class="black-btn">Schedule a call</li>
+      </ul>
+      <div class="hamburger-div">
+        <img src="./assets/mobile/icon-hamburger.svg" alt="hamburger icon">
+        <ul class="hamburger-ul hide">
+          <li >
+            <img class="close-btn" src="./assets/mobile/icon-cross.svg" alt="close btn"> 
+          </li>
+          <li>About</li>
+          <li>Service</li>
+          <li>Projects</li>
+        </ul>
+      </div>
+    </nav>
+    <!--hero-container starts-->
+    <main>
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1>Branding & website design agency </h1>
+        <p>
+          We specialize in visual storytelling by creating cohesive brand and website design 
+          solutions for small businesses, giving lasting impressions to audiences in a digital world.
+         </p>
+          <button class="hero-btn">Learn more</button>
+      </div>
+      <div class="hero-img">
+        <picture class="hero-img-picture">
+          <source srcset="./assets/mobile/image-hero.jpg"  media="(max-width: 500px)">        
+          <source srcset="./assets/tablet/image-hero.jpg"  media="(max-width: 992px)">        
+          <img src="./assets/desktop/image-hero.jpg" alt="display image">
+        </picture> 
+      </div>
+    </div>
+    <!--hero-container ends-->
+    <!--grid-container starts-->
+    <div class="grid-container">
+      <div class="design-img-div">
+        <picture class="hero-img-picture">
+          <source srcset="./assets/mobile/image-strategic.jpg"  media="(max-width: 500px)">        
+          <source srcset="./assets/tablet/image-strategic.jpg"  media="(max-width: 992px)">        
+          <img src="./assets/desktop/image-strategic.jpg" alt="display image">
+        </picture>
+      </div>
+      <div class="design-text-div">
+        <h2>
+          <span class="red-span">Design</span>
+          <span class="white-span"> is strategic.</span>
+        </h2>
+        <p>
+          A well-crafted design strategy consistently produces desired outcomes and brand awareness. 
+          We are firm believers that success lies in creative collaboration with our clients.
+        </p>
+        <a href="#" class="design-link">Schedule a call </a>
+      </div>
+      <div class="strategy-statement-div">
+        <h2>Our approach for creating a winning brand </h2>
+      </div>
+      <div class="strategy-points-div">
+        <ul>
+          <li>
+              <h3>01 Brand strategy</h3>
+              <p>
+                Brand strategy is critical for long-term success. Outshining competitors and capturing 
+                the target audience are key.
+              </p>
+          </li>
+          <li>
+            <h3>02 Brand design</h3>
+            <p>              
+              Keeping the brand design unique and meaningful helps in communicating the brand’s timeless 
+              value effectively.
+            </p>
+          </li>
+          <li>
+            <h3>03 Web design</h3>
+            <p>            
+              A beautifully crafted website is the best tool for brand awareness, and ultimately results 
+              in increased revenues.
+            </p>
+          </li>
+        </ul>
+      </div>      
+    </div>
+    <!--grid-container ends-->
+    <!--slider-div starts-->
+    <div class="slide-container">
+    <div class="slider-div">
+      <div class="slide-1 slide active">
+        <div class="slide-text-div">
+          <h3>Brand naming & guidelines </h3>
+        </div>
+        <div class="slide-img-div">
+          <picture class="hero-img-picture">
+            <source srcset="./assets/mobile/image-slide-1.jpg"  media="(max-width: 500px)">        
+            <source srcset="./assets/tablet/image-slide-1.jpg"  media="(max-width: 992px)">        
+            <img src="./assets/desktop/image-slide-1.jpg" alt="slide image">
+          </picture>
+          <p>
+            <strong>Lean Product Roadmap </strong>
+            <small>2019 project</small>
+          </p>
+        </div>        
+      </div>
+
+      <div class="slide-2 slide">
+        <div class="slide-text-div">
+          <h3>Brand identity & merchandise</h3>
+        </div>
+        <div class="slide-img-div">
+          <picture class="hero-img-picture">
+            <source srcset="./assets/mobile/image-slide-2.jpg"  media="(max-width: 500px)">        
+            <source srcset="./assets/tablet/image-slide-2.jpg"  media="(max-width: 992px)">        
+            <img src="./assets/desktop/image-slide-2.jpg" alt="slide image">
+          </picture>
+          <p>
+            <strong>New Majestic Hotel</strong>
+            <small>2018 Project</small>
+          </p>
+        </div>        
+      </div>
+
+      <div class="slide-3 slide">
+        <div class="slide-text-div">
+          <h3>Brand identity & web design</h3>
+        </div>
+        <div class="slide-img-div">
+          <picture class="hero-img-picture">
+            <source srcset="./assets/mobile/image-slide-3.jpg"  media="(max-width: 500px)">        
+            <source srcset="./assets/tablet/image-slide-3.jpg"  media="(max-width: 992px)">        
+            <img src="./assets/desktop/image-slide-3.jpg" alt="slide image">
+          </picture>
+          <p>
+            <strong> Crypto Dashboard</strong>
+            <small>2016 Project</small>
+          </p>
+        </div>        
+      </div>      
+    </div>
+    <div class="left-icon-div icon-div"><i class="fas fa-long-arrow-left"></i></div>
+    <div class="right-icon-div icon-div"><i class="fas fa-long-arrow-right"></i></div>
+  </div>
+    <!--slider-container ends-->
+    <div class="cta-div">
+      <h3>Let's build something great together. </h3>
+      <div class="cta-btn">Schedule a Call </div>
+    </div>
+    </main>
+  </div> <!--page-wrapper ends-->
+</body>
+</html>
+
+<!--
+  
+      
+-->
