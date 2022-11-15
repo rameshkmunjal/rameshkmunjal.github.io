@@ -35,6 +35,7 @@ nav > ul > li:hover{
 
 /* hero container - styling */
 .hero-img-picture img{
+    width:100%;
     max-width:100%;
 }
 .hero-btn{
@@ -55,6 +56,7 @@ nav > ul > li:hover{
     color:var(--clr-white);
 }
 .design-img-div img{
+    width:100%;
     max-width:100%;
 }
 .red-span{

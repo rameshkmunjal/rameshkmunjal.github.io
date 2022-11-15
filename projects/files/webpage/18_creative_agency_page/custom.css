@@ -548,6 +548,7 @@
             right:0;
         }
         .slide-img-div img{
+            width:100%;
             max-width: 100%;
         }
         .slide-img-div p{
@@ -619,6 +620,7 @@
             position: relative;
         }
         .slide-img-div img{
+            width:100%;
             max-width: 100%;
         }
         .slide-img-div p{
