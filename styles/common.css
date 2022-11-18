@@ -71,12 +71,17 @@ a{
     color:ghostwhite;    
 }
 .projects-div{    
-    background-color: #03045e;    
+    background-color: #03045e; 
+    display:flex;
+    flex-wrap: wrap;    
 }
 
 .projects-div .project-card{    
     background:ghostwhite;
-    color:rgba(20, 20, 150, 0.8);    
+    width:300px;
+    height:auto;
+    color:rgba(20, 20, 150, 0.8); 
+      
 }
 .projects-div .card p{
     min-height:100px;
@@ -88,16 +93,16 @@ a{
     color:#ddd;
 }
 .projects-div button:hover{
-    background:#ffc300;
-    color:#03045e;
-    transform:scale(1.1 , 1.08);
-    transition:2s;
+    background:#4361EE;
+    color:#DDD;
+    transform:scale(1.03);
+    transition:1s;
 }
 .projects-div a{
     color:ghostwhite;
     cursor:pointer;
 }
-
+/**/
  /* Skills Section */
  .skills-section{        
     background-color: ghostwhite;

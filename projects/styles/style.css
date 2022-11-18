@@ -312,7 +312,7 @@ a{
             margin-bottom:2rem;
         }
         .card:hover{
-            transform:scale(1.1);
+            transform:scale(1.03);
             background-color: #ffc300;
             box-shadow:0 0 5px #aaa;
         }

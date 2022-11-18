@@ -162,6 +162,7 @@
  @media screen and 
     (min-device-width:501px) and 
     (max-device-width:1440px){
+       
     .projects-section{        
         background-color: #03045e;
     }
@@ -170,12 +171,18 @@
     }
     .projects-div{       
         background-color: #03045e;
+        display:grid;
+        grid-template-columns: repeat(3, minmax(300px,  400px));
+        grid-template-rows:repeat(2, 200px);
     }
     
     
-    .projects-div .card{        
-        color:#03045e;
+    .projects-div .card{
+        width:100%;
+        height:200px;
         background-color:ghostwhite;        
+        color:#03045e;
+        border:2px solid white;        
     }
      
  }
