@@ -218,7 +218,7 @@ export const totalData = [
         "url": "./files/webpage/18_creative_agency_page/index.html",
         "tech":"html css js"
     }, 
-    , 
+     
     {
         "id": "25",
         "category": "games",
@@ -227,6 +227,26 @@ export const totalData = [
         "imgsrc":"./images/banner_connect_four.png",
         "url": "./files/games/connect-four-game/index.html",
         "tech":"html css js"
+    },
+     
+    {
+        "id": "26",
+        "category": "templates",
+        "name": "portfolio-layout",
+        "created_on":"2022-11-21",
+        "imgsrc":"./images/banner_portfolio_layout.png",
+        "url": "./files/templates/portfolio-layout/index.html",
+        "tech":"html css"
     }, 
+     
+    {
+        "id": "27",
+        "category": "games",
+        "name": "tic_tac_toe",
+        "created_on":"2022-12-10",
+        "imgsrc":"./images/banner_tic_tac_toe.png",
+        "url": "./files/games/1_tic_tac_toe/index.html",
+        "tech":"html css js"
+    },
       
 ];

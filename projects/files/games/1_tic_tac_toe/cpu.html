@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    
+    <title>CPU VS PLAYER</title>
+</head>
+<body>
+    <div class="game-container"><!--contains whole gameboard-->
+        <!--links at top-->
+        <a href="index.html" class="nav-btn menu-link">
+            <img src="./assets/logo.svg" alt="logo svg">
+        </a>
+        <div class="nav-btn turn-indicator">
+            <div class="turn-indicator-img-div">
+                <svg class="turn-img" viewbox="0 0 64 64" width="64" height="64" xmlns="http://www.w3.org/2000/svg"><path d="M15.002 1.147 32 18.145 48.998 1.147a3 3 0 0 1 4.243 0l9.612 9.612a3 3 0 0 1 0 4.243L45.855 32l16.998 16.998a3 3 0 0 1 0 4.243l-9.612 9.612a3 3 0 0 1-4.243 0L32 45.855 15.002 62.853a3 3 0 0 1-4.243 0L1.147 53.24a3 3 0 0 1 0-4.243L18.145 32 1.147 15.002a3 3 0 0 1 0-4.243l9.612-9.612a3 3 0 0 1 4.243 0Z" fill="#A8BFC9" fill-rule="evenodd"/></svg>
+            </div>            
+            <span>Turn </span>  
+        </div>
+        <div class="nav-btn">
+            <div class="refresh-btn-div">
+                <img src="./assets/icon-restart.svg" alt="restart icon">
+            </div>
+        </div>
+        <!--tiles total nine-->
+        <div class="tile blank"></div>
+        <div class="tile blank"></div>
+        <div class="tile blank"></div>
+        <div class="tile blank"></div>
+        <div class="tile blank"></div>
+        <div class="tile blank"></div>
+        <div class="tile blank"></div>
+        <div class="tile blank"></div>
+        <div class="tile blank"></div> 
+        <!--info box contains game info like x , o score or tie-->
+        <div class="info-box x-info-box">
+            <span class="x-span">x(you)</span>
+            <span class="score x-score-span">0</span>
+        </div>
+        <div class="info-box tile-info-box">
+            <span class="tie-span">ties</span>
+            <span class="score tie-score-span">0</span>
+        </div>
+        <div class="info-box o-info-box">
+            <span class="o-span">o(cpu)</span>
+            <span class="score o-score-span">0</span>
+        </div>
+    </div> <!--container ends here-->
+    <script src="./scripts/cpu.js" type="module" defer></script>   
+</body>
+</html>

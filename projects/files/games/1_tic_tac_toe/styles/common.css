@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+body{
+    width:100vw;
+    height:100vh;
+    display:grid;
+    place-items: center;
+    background-color:var(--clr-dark-black);
+}
+:root{
+    --clr-dark-green:#31C3BD;
+    --clr-light-green:#65E9E4;
+    --clr-dark-yellow:#F2B137;
+    --clr-light-yellow:#FFC860;
+    --clr-dark-black:#1A2A33;
+    --clr-light-black:#1F3641;
+    --clr-light-gray:#A8BFC9;
+}
+.yellow-btn{
+    background-color: var(--clr-light-yellow);
+    border-bottom:5px solid var(--clr-dark-yellow);
+}
+.green-btn{
+    background-color: var(--clr-light-green);
+    border-bottom:5px solid var(--clr-dark-green);
+}
+.yellow-btn:hover{
+    background-color: var(--clr-light-yellow);
+    border-bottom:8px solid var(--clr-dark-yellow);
+}
+.green-btn:hover{
+    background-color: var(--clr-light-green);
+    border-bottom:8px solid var(--clr-dark-green);
+}

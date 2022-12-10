@@ -1,0 +1,87 @@
+.container{
+    background:var(--clr-dark-black);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px 0;
+}
+.box-1{ 
+    width:90%;   
+    height:80px;
+    background-color: var(--clr-dark-black);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-2{ 
+    width:90%;   
+    padding:1rem;
+    min-height:80px;    
+    border-radius:1rem;
+    margin-bottom:1rem;
+    background-color: var(--clr-light-black);
+    
+}
+.box-2 p{
+    text-align:center;
+    margin:1rem 0;
+    
+}
+.box-2 .icon-div{
+    width:100%;
+    border-radius:1rem;
+    padding:1rem 0; 
+    padding-right:1rem;
+    background-color: var(--clr-dark-black);
+    display:flex;       
+}
+.box-2 > p, .menu-btn{
+    font-size:14px;
+    letter-spacing: 0.8px;
+}
+.box-2 > p:nth-of-type(1){
+    
+    color:var(--clr-light-gray);
+}
+.box-2 :last-child{
+    color:var(--clr-dark-green);
+}
+.icon-div-x-mark, .icon-div-o-mark{
+    width:200px;
+    height:100%;
+}
+.icon-div-x-mark{
+    text-align:right;
+    padding-right:2rem;
+    padding-top:1rem;
+}
+.icon-div-o-mark{
+    background-color:var(--clr-light-gray);
+    padding-left:2rem;
+    border-radius:1rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
+}
+.box-2 .x-mark-svg path{
+    fill:var(--clr-light-gray);
+}
+.box-2 .o-mark-svg path{
+    fill:var(--clr-dark-black);
+}
+.icon-div + p{
+    color:var(--clr-light-gray);
+    text-transform:uppercase;
+}
+.menu-btn{
+    text-decoration:none;
+    color:var(--clr-dark-black);
+    font-weight: bold;
+    width:90%;
+    padding:1.25rem 0;
+    text-align:center;
+    text-transform:uppercase;
+    box-shadow:5px 5px 10px var(--clr-light-black);
+    margin:1rem;
+    border-radius:1rem;
+}
