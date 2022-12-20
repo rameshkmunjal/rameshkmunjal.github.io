@@ -23,3 +23,8 @@ export const TURN_INDICATOR_IMAGE_O=`
 
 export const X_IMAGE='<img src="./assets/icon-x.svg" alt="icon x"  />';
 export const O_IMAGE='<img src="./assets/icon-o.svg" alt="icon o"  />';
+
+export const X_WIN_MESSAGE="X TAKES THE ROUND";
+export const O_WIN_MESSAGE="O TAKES THE ROUND";
+export const TIE_MESSAGE="ROUND TIED";
+export const RESTART_MESSAGE="RESTART GAME";

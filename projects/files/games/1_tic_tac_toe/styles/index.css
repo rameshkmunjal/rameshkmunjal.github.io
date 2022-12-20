@@ -84,4 +84,8 @@
     box-shadow:5px 5px 10px var(--clr-light-black);
     margin:1rem;
     border-radius:1rem;
+    cursor:pointer;
+}
+.menu-btn:hover{
+    transform:scale(1.1);
 }

@@ -38,3 +38,52 @@ body{
     background-color: var(--clr-light-green);
     border-bottom:8px solid var(--clr-dark-green);
 }
+
+.modal-para{
+    font-weight: bold;
+    letter-spacing: 1.8px;
+    margin-bottom:1rem;
+}
+.modal-para-x{
+    color:var(--clr-dark-green);
+}
+.modal-para-o{
+    color:var(--clr-dark-yellow);
+}
+.modal-para-tie-restart{
+    color:var(--clr-light-gray);
+}
+.btn-div{
+    min-height:5rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:1rem;
+}
+.modal-btn{
+    text-transform: uppercase;
+    height:50px;
+    padding:0 1.5rem;
+    padding-bottom:5px;
+    margin:0 0.5rem;
+    border:none;
+    box-shadow: inset 0px -6px 0px #1A2A33;
+    border-radius: 0.5rem;
+    font-weight:bold;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+}
+.quit-btn{
+    background-color:var(--clr-light-gray);
+}
+.next-round-btn{
+    background-color:var(--clr-dark-yellow);
+}
+.cancel-btn{
+    background-color:var(--clr-light-gray);
+}
+.restart-btn{
+    background-color:var(--clr-dark-yellow);
+}

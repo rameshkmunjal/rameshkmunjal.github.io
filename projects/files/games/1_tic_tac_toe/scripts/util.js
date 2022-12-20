@@ -1,7 +1,6 @@
 //function to get all elements of a class
 export const $GEBC=(className)=>{
     let elements=document.querySelectorAll(className);
-    console.log(elements);
     return [...elements];
 }
 
