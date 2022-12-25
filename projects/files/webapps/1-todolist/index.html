@@ -1,26 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" />
-    <title>To-Do_List</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles/style.css"> 
+  <title>Todo app</title>
 </head>
-<body>
-    <div class="container">
-        <div id="display-section">
+<!--body : default light-theme-->
+<body class="body-light-theme">
+  <div id="wrapper"><!--holds complete page-->
+      <header><!--holds title and theme btn-->
+        <div class="header-title-div">
+          <h1> Todo </h1>
+          <div class="theme-btn">
+            <img src="./images/icon-moon.svg" alt="moon icon">
+          </div>         
+        </div>        
+    </header>
+    <!--main : main activity area : holds task list-->
+    <main>
+      <div class="input-div theme-div light-theme">
+        <input id="task-input" type="text" placeholder="Create a new to do">
+      </div>
+      <!--to do list will be shown in this div-->
+      <div class="task-list theme-div light-theme">
+       <!--to do items will be added here dynamically on input by user-->
+      </div>
 
+      <!--bottom div shows active tasks number btn to navigate and clear btn-->
+      <div class="bottom-div theme-div light-theme">
+        <p><span id="items-number-span"></span><span>items left</span></p>
+        <div class="btn-div">
+          <button class="btn all-btn selected">All</button>
+          <button class="btn active-btn">Active</button>
+          <button class="btn completed-btn">Completed</button>
         </div>
-        
-            <form id="create-form">                                 
-                    <input type="text" id="taskName" placeholder="enter task name" />                             
-                    <button type="submit" id="submit-btn">Submit</button>            
-            </form>
-    
+        <div class="clear-btn-div">
+          <button class="clear-btn btn">Clear Completed</button>
+        </div>        
+      </div><!--bottom div ends-->
+    </main><!--main ends-->
+    <!--Attribution-->
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Ramesh Kumar Munjal</a>.
     </div>
-    
-    
+
+  </div><!--wrapper ends-->
+  <script type="module" src="./scripts/index.js"></script>
 </body>
-<script src="scripts.js"></script>
-</html>
+</html><!--ends of html code-->

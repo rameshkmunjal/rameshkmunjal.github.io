@@ -58,8 +58,8 @@ export const totalData = [
         "id": "7",
         "category": "webapp",
         "name": "to-do-list",
-        "created_on":"2021-09-30",
-        "imgsrc":"./images/banner_todolist_app.jpg",
+        "created_on":"2021-12-25",
+        "imgsrc":"./images/banner_todolist.png",
         "url": "./files/webapps/1-todolist/index.html",
         "tech":"vanillajs"
     },

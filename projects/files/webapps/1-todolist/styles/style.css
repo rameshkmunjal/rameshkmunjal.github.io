@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+:root{
+    --clr-very-light-gray:hsl(0, 0%, 98%);
+    --clr-very-light-grayish-blue:hsl(236, 33%, 92%);
+    --clr-light-grayish-blue-1:hsl(233, 11%, 84%);
+    --clr-dark-grayish-blue-1:hsl(236, 9%, 61%);
+    --clr-very-dark-grayish-blue-1:hsl(235, 19%, 35%);
+
+    --clr-very-dark-blue:hsl(235, 21%, 11%);
+    --clr-very-dark-desat-blue:hsl(235, 24%, 19%);
+    --clr-light-grayish-blue-2:hsl(234, 39%, 85%);
+    --clr-light-grayish-blue-hover:hsl(236, 33%, 92%);
+    --clr-dark-grayish-blue-2:hsl(234, 11%, 52%);
+    --clr-very-dark-grayish-blue-2:hsl(233, 14%, 35%);
+    --clr-very-dark-grayish-blue-3:hsl(237, 14%, 26%);
+}
+
+html{
+    font-size:18px;
+}
+/* global classes */ 
+.light-theme{
+    background-color: var(--clr-very-light-gray);
+    color:var(--clr-very-light-grayish-blue-1);
+}
+.dark-theme{
+    background-color:var(--clr-very-dark-grayish-blue-3);
+    color:var(--clr-very-light-gray);
+}
+/* body : styling */
+body{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.body-light-theme{
+    background-color: var(--clr-light-grayish-blue-1);
+}
+.body-dark-theme{
+    background-color: var(--clr-very-dark-blue);
+}
+/* wrapper : styling */
+#wrapper{
+    width:100%;
+    min-height:400px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+/* header : styling */
+header{
+    width:100%;
+    min-height:300px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(../images/bg-desktop-dark.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.header-title-div{
+    width:500px;
+    min-height:80px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+header h1{
+    color:white;
+    text-transform:uppercase;
+    letter-spacing: 0.5rem;
+}
+.theme-btn{
+    background-color: transparent;
+    border:none;
+}
+.theme-btn:hover{
+    cursor:pointer;
+    transform:scale(1.2);
+}
+.theme-btn i.fa-moon{
+    color:white;
+}
+
+/* main : styling */
+main{
+    width:500px;
+    border-radius:0.5rem;
+    position:relative;
+    top:-120px;
+    z-index: 1;
+}
+.input-div{
+    border-radius: 0.5rem;        
+}
+.input-div input{
+    background-color:transparent; 
+    color:lightgray;   
+    padding:0 1rem;
+    display: inline-block;
+    height: 50px;
+    width:100%;  
+    border:none;  
+}
+.input-div input:focus{
+    outline:none;
+}
+.input-div input::placeholder{
+    color:#333;
+    font-size:1rem;
+}
+.task-list{
+    margin-top:1rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    border:1px solid var(--clr-light-grayish-blue-2);
+    box-shadow: 0px 0px 5px var(--clr-very-dark-grayish-blue-1);
+}
+.task-list > .task-div-row{
+    width:100%;
+    padding:1rem;
+    border:1px solid var(--clr-very-light-grayish-blue-1);    
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.task-list > .task-div-row:first-child{
+    border-radius:0.5rem 0.5rem 0 0;
+}
+.radio-btn-div{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    border:2px solid var(--clr-dark-grayish-blue-2);
+}
+.radio-btn-div:hover{
+    transform: scale(1.2);
+}
+.radio-btn-div img{
+    width:30px;
+    max-width:100%;
+}
+.completed{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    border:2px solid var(--clr-dark-grayish-blue-2);
+    background-image:radial-gradient(blue, rgb(82, 2, 82));
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+.completed + .task-item{
+    text-decoration:line-through;
+}
+.dark-theme > .task-list{
+    color:var(--clr-very-light-gray);
+}
+.dark-theme.task-list{
+    border:2px solid blue;
+    border-bottom:none;
+}
+.dark-theme.bottom-div{
+    border:2px solid blue;
+    border-top:none;
+}
+.task-item{
+    width:300px;
+    margin-left:1rem;
+    display:flex;
+    justify-content: start;
+    align-items: center;
+}
+.task-item:first-child{
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+.close-btn-div{
+    width:50px;
+    height:100%;
+}
+.close-btn-div:hover{
+    cursor:pointer;
+}
+.close-btn-div:hover img{
+    transform:scale(1.5);
+}
+/* bottom div : styling */
+.bottom-div{
+    height:50px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 0.5rem 0.5rem;
+    border:1px solid var(--clr-very-light-grayish-blue-1); 
+}
+#items-number-span{
+    font-weight: bold;
+    margin-right:1rem;
+}
+.bottom-div p{
+    margin-left:1rem;
+}
+.bottom-div .clear-btn-div{
+    margin-right:1rem;
+    font-weight:bold;
+    cursor:pointer;
+}
+.bottom-div button{
+    background-color: transparent;
+    border:none;
+}
+.btn-div > .btn{
+    margin:0 0.5rem;
+    font-weight:bold;
+}
+.btn-div button:hover{
+    cursor:pointer;
+}
+.btn-div .selected{
+    color:blue;
+}
+.dark-theme .btn-div .btn{
+    color:white;
+}
+.dark-theme .clear-btn{
+    color:white;
+}
+/* attribution : styling */
+.body-dark-theme .attribution{
+    color:white;
+}
+.attribution { font-size: 11px; text-align: center; padding-bottom:1rem; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* styling for small devices : mobiles */
+@media screen and (max-width:500px) {
+    header{
+        background-image:url(../images/bg-mobile-dark.jpg);
+    }
+    .header-title-div{
+        width:360px;
+    }
+    main{
+        width:360px;
+    }
+    .bottom-div{
+        height:auto;
+        display:flex; 
+        flex-wrap:wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .bottom-div p{
+        width:48%;
+        height:50px;
+        order:1;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-left:2%;
+    }
+    .bottom-div .clear-btn-div{
+        width:48%;
+        height:50px;
+        order:2;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-right:2%;
+    }
+    .btn-div{
+        width:90%;
+        padding:0 5%;
+        height:50px;
+        order:3;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top:2rem;
+        border-radius:0.5rem;
+    }
+    
+    .bottom-div button{
+        border:none;
+    }
+    
+}
