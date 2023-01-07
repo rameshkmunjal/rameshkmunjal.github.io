@@ -1,0 +1,158 @@
+:root{
+    /* body - theme colors   */
+    --main-bgclr-dark-gray:hsl(222, 26%, 31%);
+    --main-bgclr-light-gray:hsl(0, 0%, 90%);
+    --main-bgclr-very-dark-violet:hsl(268, 75%, 9%); 
+
+    /* toggle dots div - themes - bgclr */
+    --toggle-bgclr-one:hsl(223, 31%, 20%);
+    --toggle-bgclr-two:hsl(25, 98%, 40%);
+    --toggle-bgclr-three:hsl(268, 71%, 12%);
+
+    /* toggle - theme colors */
+    --dot-bgclr-one:hsl(6, 70%, 34%);
+    --dot-bgclr-two:hsl(6, 70%, 34%);
+    --dot-bgclr-three:hsl(176, 100%, 44%);
+    /* screen - themes */
+    --screen-bgclr-one:hsl(224, 36%, 15%);
+    --screen-bgclr-two:hsl(0, 5%, 81%);
+    --screen-bgclr-three:hsl(268, 71%, 12%);
+
+    /* keypad - themes */
+    --keypad-bgclr-one:hsl(223, 31%, 20%);
+    --keypad-bgclr-two:hsl(0, 5%, 81%);
+    --keypad-bgclr-three:hsl(268, 71%, 12%);
+    /* keys - themes - bgclr */
+    --keys-bgclr-one:var(--clr-white);
+    --keys-bgclr-two:var(--clr-white);
+    --keys-bgclr-three:hsl(268, 47%, 21%);
+     /* keys - themes - shadow */
+    --keys-shadow-one:hsl(224, 28%, 35%);
+    --keys-shadow-two:hsl(185, 58%, 25%);
+    --keys-shadow-three:hsl(290, 70%, 36%);
+     /* keys - themes - text */
+    --text-theme-one:hsl(221, 14%, 31%);
+    --text-theme-two:hsl(60, 10%, 19%);
+    --text-theme-three:hsl(52, 100%, 62%);
+     /* del and reset keys - themes - bgclr */
+    --del-reset-bgclr-one:hsl(225, 21%, 49%);
+    --del-reset-bgclr-two:hsl(185, 42%, 37%);
+    --del-reset-bgclr-three:hsl(281, 89%, 26%);
+    /* del and reset keys - themes - shadow */
+    --del-reset-shadow-one:hsl(224, 28%, 35%);
+    --del-reset-shadow-two:hsl(185, 58%, 25%);
+    --del-reset-shadow-three:hsl(285, 91%, 52%);
+    /* equal keys - themes - bgclr */
+    --equals-bgclr-one:hsl(6, 63%, 50%);
+    --equals-bgclr-two:hsl(25, 98%, 40%);
+    --equals-bgclr-three:hsl(176, 100%, 44%);
+    /* equal keys - themes - shadow */
+    --equals-shadow-one:hsl(6, 70%, 34%);
+    --equals-shadow-two:hsl(25, 99%, 27%);
+    --equals-shadow-three:hsl(177, 92%, 70%);
+    
+
+    /*                        */
+    --clr-white:hsl(0, 0%, 100%);
+    --clr-grayish-yellow:hsl(60, 10%, 19%);
+    --clr-dark-blue:hsl(225, 21%, 49%);
+    --clr-desat-dark-blue:hsl(224, 28%, 35%);
+    --clr-red:hsl(6, 63%, 50%);
+    --clr-dark-red:hsl(6, 70%, 34%);
+    --clr-light-grayish-orange:hsl(30, 25%, 89%);
+    --clr-grayish-orange:hsl(28, 16%, 65%);
+}
+
+/* body - themes */
+.body-theme-1{ background-color:var(--main-bgclr-dark-gray);}
+.body-theme-2{background-color:var(--main-bgclr-light-gray)}
+.body-theme-3{background-color: var(--main-bgclr-very-dark-violet);}
+/* header - logo div p - themes */
+.header-theme-1{color:var(--clr-white);}
+.header-theme-1 .logo-div{color:var(--clr-white);}
+.header-theme-1 p{color:var(--clr-white);}
+.header-theme-2{color:var(--clr-black);}
+.header-theme-2 .logo-div{color:var(--clr-black);}
+.header-theme-2 p{color:var(--clr-black);}
+.header-theme-3{color:hsl(52, 100%, 62%);}
+.header-theme-3 .logo-div{color:hsl(52, 100%, 62%);}
+.header-theme-3 p{color:hsl(52, 100%, 62%);}
+/* dots div - themes */
+.dots-div-theme-1{ background-color:var(--toggle-bgclr-one);}
+.dots-div-theme-2{ background-color:var(--toggle-bgclr-two);}
+.dots-div-theme-3{ background-color:var(--toggle-bgclr-three);}
+/* dots - themes */
+.theme-dot-1{background-color:var(--dot-bgclr-one) ;}
+.theme-dot-2{background-color: var(--dot-bgclr-two);}
+.theme-dot-3{background-color:var(--dot-bgclr-three) ;}
+/* screen - themes */
+.screen-theme-1{
+    background-color: var(--screen-bgclr-one);
+    color:var(--clr-white);
+}
+.screen-theme-2{
+    background-color: var(--screen-bgclr-two);
+    color:var(--clr-dark-blue);
+}
+.screen-theme-3{
+    background-color: var(--screen-bgclr-three);
+    color:var(--text-theme-three)
+}
+/* keypad - themes */
+.keypad-theme-1{
+    background-color: var(--keypad-bgclr-one);
+}
+.keypad-theme-2{
+    background-color: var(--keypad-bgclr-two);
+}
+.keypad-theme-3{
+    background-color: var(--keypad-bgclr-three);
+}
+/* keys - themes */
+.key-theme-1{
+    background-color: var(--keys-bgclr-one);
+    color:var(--text-theme-one);
+    box-shadow: inset -0px -4px var(--keys-shadow-one);
+}
+.key-theme-2{
+    background-color: var(--keys-bgclr-two);
+    color:var(--text-theme-two);
+    box-shadow: inset -0px -4px var(--keys-shadow-two);
+}
+.key-theme-3{
+    background-color: var(--keys-bgclr-three);
+    color:var(--text-theme-three);
+    box-shadow: inset -0px -4px var(--keys-shadow-three);
+}
+/* del and reset key - themes */
+.reset-del-theme-1{
+    background-color: var(--del-reset-bgclr-one);
+    box-shadow: inset -0px -4px var(--del-reset-shadow-one);
+    color:var(--clr-white);
+}
+.reset-del-theme-2{
+    background-color: var(--del-reset-bgclr-two);
+    box-shadow: inset -0px -4px var(--del-reset-shadow-two);
+    color:var(--clr-white);
+}
+.reset-del-theme-3{
+    background-color: var(--del-reset-bgclr-three);
+    box-shadow: inset -0px -4px var(--del-reset-shadow-three);
+    color:var(--clr-white);
+}
+/* equals key - themes */
+.equals-theme-1{
+    background-color: var(--equals-bgclr-one);
+    box-shadow: inset -0px -4px var(--equals-shadow-one);
+    color:var(--clr-white);
+}
+.equals-theme-2{
+    background-color: var(--equals-bgclr-two);
+    box-shadow: inset -0px -4px var(--equals-shadow-two);
+    color:var(--clr-white);
+}
+.equals-theme-3{
+    background-color: var(--equals-bgclr-three);
+    box-shadow: inset -0px -4px var(--equals-shadow-three);
+    color:black;
+}

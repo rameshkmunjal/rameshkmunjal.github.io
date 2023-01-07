@@ -248,5 +248,14 @@ export const totalData = [
         "url": "./files/games/1_tic_tac_toe/index.html",
         "tech":"html css js"
     },
+    {
+        "id": "28",
+        "category": "webapp",
+        "name": "calculator_app",
+        "created_on":"2023-01-07",
+        "imgsrc":"./images/banner_calculator.png",
+        "url": "./files/webapps/4_calculator/index.html",
+        "tech":"html css js"
+    }, 
       
 ];
