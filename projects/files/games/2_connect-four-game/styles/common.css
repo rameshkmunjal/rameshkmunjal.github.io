@@ -1,0 +1,130 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+:root{
+    --clr-black:#000000;
+    --clr-dark-blue:#5C2DD5;
+    --clr-light-blue:#7945FF;
+    --clr-red:#FD66B7;
+    --clr-yellow:#FFCE67;
+    --clr-white:#FFFFFF;
+}
+h1{
+    font-size:56px;
+    line-height:71px;
+    font-family:'Space Grotesk Bold', sans-serif;
+}
+h2{
+    font-size:20px;
+    line-height:26px;    
+}
+h3{
+    font-weight: 20px;
+    line-height:26px;
+}
+p{
+    font-weight:16px;
+    line-height:21px;
+}
+body{
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-light-blue);
+    font-family:'Space Grotesk Bold', sans-serif;
+    font-weight:bold;
+}
+
+.menu-btn{
+    background-color:var(--clr-red);
+    border-radius:1rem;
+    border:none;
+    text-decoration: none;
+    cursor:pointer;
+    color:var(--clr-white);
+    letter-spacing: 1.5px;
+}
+.restart-btn{
+    background-color:var(--clr-yellow);
+    border-radius:1rem;
+    border:none;
+    cursor:pointer;
+    color:var(--clr-white);
+    letter-spacing: 1.5px;
+}
+
+.msg-modal{
+    width:300px;
+    padding:2rem 0;
+    background-color: var(--clr-light-blue);
+    border:1px solid black;
+    position:absolute;
+    top:15%;
+    left:15%;
+    border-radius:1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal-btn{
+    color:var(--clr-black);
+    width:80%;
+    height:40px;
+    text-align: center;
+    border:none;
+    border-radius:2rem;
+    margin-top:1.25rem;
+    cursor:pointer;
+    font-weight:bold;
+    text-transform: capitalize;
+}
+.continue-btn{
+    background-color:var(--clr-white);
+}
+.reset-btn{
+    background-color:var(--clr-white);
+}
+.quit-btn{
+    background-color:var(--clr-red);
+}
+.player-name{
+    font-size: 1rem;
+}
+
+.hover-bar{
+    padding-left:1rem;
+}
+
+.circle-bg-yellow:hover{
+    background-image:url("../assets/images/marker-yellow.svg");
+    background-size:50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.circle-bg-red:hover{
+    background-image:url("../assets/images/marker-red.svg");
+    background-size:50%;
+    background-repeat: no-repeat;
+    cursor:pointer;
+}
+
+.play-again-btn{
+    background-color:var(--clr-dark-blue);
+    color:var(--clr-white);
+    border-radius:0.5rem;
+    padding:0.25rem 0.5rem;
+    border:none;
+    cursor:pointer;
+    font-size:0.6rem;
+}
+
+.modal-heading{
+    text-transform:uppercase;
+    color:var(--clr-white);
+    letter-spacing: 2px;
+}

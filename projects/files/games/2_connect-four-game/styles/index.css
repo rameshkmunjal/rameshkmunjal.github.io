@@ -1,0 +1,79 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:'Space Grotesk Bold', sans-serif;
+}
+:root{
+    --clr-black:#000000;
+    --clr-dark-blue:#5C2DD5;
+    --clr-light-blue:#7945FF;
+    --clr-red:#FD66B7;
+    --clr-yellow:#FFCE67;
+    --clr-white:#FFFFFF;
+}
+body{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-dark-blue);
+}
+a{
+    text-decoration:none;
+    color:#000000;
+}
+
+.menu-wrapper{
+    width:360px;
+    padding:2rem 0;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color:var(--clr-dark-blue); 
+    box-shadow: 0px 0px 8px var(--clr-black);  
+}
+.menu-wrapper img{
+    margin-bottom:4rem;
+}
+.menu-btn{
+    width:90%;
+    height:60px;
+    text-align: center;
+    font-weight: bold;
+    border:none;
+    border-radius: 2rem;
+    letter-spacing: 0.8px;
+    margin-bottom:1rem;
+    box-shadow:inset 0px -5px black; 
+    padding:0 2rem;   
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-btn:hover{
+    cursor:pointer;
+    transform:scale(1.02);
+    box-shadow:inset 0px -8px black;
+}
+.cpu-btn{
+    background-color:var(--clr-red);
+    color:var(--clr-white);
+    box-shadow:3px 3px 6px var(--clr-black);
+}
+.player-btn{
+    background-color:var(--clr-yellow);
+    color:var(--clr-black);
+    box-shadow:3px 3px 6px var(--clr-black);
+}
+.player-btn img{
+    margin-top:2rem;
+}
+.games-rules-btn{
+    background-color:var(--clr-white);
+    color:var(--clr-black);
+    box-shadow:3px 3px 6px var(--clr-black);
+}

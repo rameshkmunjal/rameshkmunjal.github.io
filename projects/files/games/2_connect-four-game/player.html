@@ -5,35 +5,48 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-  <link rel="stylesheet" href="./styles/style.css"> 
-  <script type="module" src="./scripts/main.js" defer></script>
+  <link rel="stylesheet" href="./styles/common.css"> 
+  <link rel="stylesheet" href="./styles/desktop.css">
+  <link rel="stylesheet" href="./styles/tablet.css"> 
+  <link rel="stylesheet" href="./styles/mobile.css"> 
+ 
+  <script type="module" src="./scripts/player.js" defer></script>
   <title>Connect Four Game</title>
 </head>
 <body>
       <div class="page-wrapper">
         <div class="nav">
-          <button class="menu-btn">Menu</button>
+          <a class="menu-btn" href="./index.html">Menu</a>
           <img src="./assets/images/logo.svg" alt="logo">
           <button class="restart-btn">Restart</button>
         </div>
-        <div class="hover-bar-div">
-          <div class="hover-bar">
-            <div><div class="circle">&#8595</div> </div>
-            <div><div class="circle">&#8595</div> </div>
-            <div><div class="circle">&#8595</div> </div>
-            <div><div class="circle">&#8595</div> </div>
-            <div><div class="circle">&#8595</div> </div>
-            <div><div class="circle">&#8595</div> </div>
-            <div><div class="circle">&#8595</div> </div>
+        
+        <div class="container">          
+          <div class="score-div score-div-left">
+            <div class=" player-score-card">
+              <h5>Player-1</h5>
+              <p id="player-1-score">12</p>
+            </div>
+            <img src="./assets/images/you.svg" alt="">
           </div>
-        </div>
-        <div class="container">
-          <div class="player-1-score"></div>
-          <div class="game-board"> <!--game-board starts-->
-                       
-              <img class="img-1" src="./assets/images/board-layer-black-large.svg" alt="board layer large">
-              <img class="img-2" src="./assets/images/board-layer-white-large.svg" alt="board layer">
-              
+
+          <div class="game-container">
+            <div class="hover-bar-div">
+              <div class="hover-bar" id="hover-bar">
+                <!--clickable btn added here dynamically-->
+              </div>
+            </div>
+
+            <div class="game-board"> <!--game-board starts-->
+              <picture class="hero-img-picture">
+                <source srcset="./assets/images/board-layer-black-small.svg"  media="(max-width: 500px)"> 
+                <img class="img-1" src="./assets/images/board-layer-black-large.svg" alt="board layer large">
+              </picture>
+              <picture class="hero-img-picture">
+                <source srcset="./assets/images/board-layer-white-small.svg"  media="(max-width: 500px)"> 
+                <img class="img-2" src="./assets/images/board-layer-white-large.svg" alt="board layer">
+              </picture>
+
               <div class="gameDisplayDiv">
                 <div class="dot blank-dot" id="1"></div>
                 <div class="dot blank-dot" id="2"></div>
@@ -80,11 +93,37 @@
 
               </div><!--gameDisplayDiv ends-->
           </div><!--game-board ends-->
-          <div class="player-2-score"></div>
+
+          </div>
+          <div class="score-div score-div-left">
+            <div class=" player-score-card">
+              <h5>Player-2</h5>
+              <p id="player-2-score">23</p>
+            </div>
+            <img src="./assets/images/player-two.svg" alt="">
+          </div>          
         </div><!--container ends-->
-        <div class="score-card">
-          <div class="message-box"></div>
+        <div class="message-board-div">          
+          <div class="message-board">
+            <div class="player-name"></div>
+            <div class="win-msg-div"></div>
+            <div class="time-display-board"></div>
+          </div>
         </div>
       </div>
 </body>
 </html>
+
+
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+       

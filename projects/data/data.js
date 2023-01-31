@@ -225,7 +225,7 @@ export const totalData = [
         "name": "connect_four-game",
         "created_on":"2022-11-18",
         "imgsrc":"./images/banner_connect_four.png",
-        "url": "./files/games/connect-four-game/index.html",
+        "url": "./files/games/2_connect-four-game/index.html",
         "tech":"html css js"
     },
      
